@@ -69,7 +69,6 @@ function Project(index: number) {
       id={proj_id}
       type="button"
       className="about-col"
-      onClick={() => displayProj(index)}
       style={{ width: "200px" }}
     >
       <p>
