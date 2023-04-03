@@ -1,11 +1,12 @@
 import projects from "../variables/thumnailprojects";
 import { displayProj, closeProj } from "../functions/ProjectsPortfolio";
 import colors from "../variables/tagcolors";
+import { useState } from "react";
 
 function ProjChoiceButtons() {
   return (
     <>
-      <div className="projLabelsChoice">
+      <div className="projLabelsChoice" id="projLabelsChoice">
         <a type="button" id="projLabelShowAll">
           Show all
         </a>

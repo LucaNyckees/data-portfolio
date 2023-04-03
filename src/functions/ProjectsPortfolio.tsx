@@ -14,13 +14,14 @@ function closeProj() {
   section.style.backgroundColor = "white";
   let title: HTMLElement = document.getElementById("dataTitle") as HTMLElement;
   title.style.filter = "blur(0px)";
+  console.log("Project was closed.");
 }
 
 function displayProj(projIndex: number) {
   for (let i = 0; i < projContents.length; i++) {
     let proj: HTMLElement = document.getElementById(`proj${i}`) as HTMLElement;
     proj.style.filter = "blur(8px)";
-    proj.style.zIndex = "-1";
+    proj.style.zIndex = "auto";
   }
   let projContent = projContents[projIndex];
   let lbls = projContent.labels;
@@ -49,12 +50,15 @@ function displayProj(projIndex: number) {
   }
   modal.innerHTML += "</div>";
   modal.innerHTML += "<div>" + lblsString + "</div>";
-  modal.style.borderColor = "rgba(120, 120, 135, 0.122)";
-  modal.style.zIndex = "auto";
+  modal.style.border = "0.8px solid rgba(120, 120, 135, 0.25)";
+  modal.style.zIndex = "9998";
   let section: HTMLElement = document.getElementById("data") as HTMLElement;
-  section.style.backgroundColor = "rgba(57, 72, 116, 0.401)";
   let title: HTMLElement = document.getElementById("dataTitle") as HTMLElement;
   title.style.filter = "blur(8px)";
+  let options: HTMLElement = document.getElementById(
+    "projLabelsChoice"
+  ) as HTMLElement;
+  options.style.filter = "blur(8px)";
 }
 
 export { displayProj, closeProj };

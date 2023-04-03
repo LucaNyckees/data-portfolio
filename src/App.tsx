@@ -11,8 +11,14 @@ import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import type { Container, Engine } from "tsparticles-engine";
 import { loadFull } from "tsparticles";
+import { closeProj } from "./functions/ProjectsPortfolio";
+import { useState } from "react";
+import Modal from "./components/Modal";
 
 function App() {
+  const [show, setShow] = useState(false);
+  const openModal = () => setShow(true);
+  const closeModal = () => setShow(false);
   const particlesInit = useCallback(async (engine: Engine) => {
     console.log(engine);
 
@@ -125,6 +131,7 @@ function App() {
           </p>
         </div>
         <PortfolioFcts.ProjChoiceButtons></PortfolioFcts.ProjChoiceButtons>
+
         <div className="project" id="myModal" role="dialog"></div>
         <PortfolioFcts.Board></PortfolioFcts.Board>
       </section>
@@ -155,5 +162,17 @@ function App() {
         </div>
       </section>
 */
+
+/*<div className="project" id="myModal" role="dialog">*/
+
+/*<div className="App">
+          {!show && <button onClick={openModal}>Show modal</button>}
+          <Modal
+            className="project"
+            id="myModal"
+            closeModal={closeModal}
+            show={show}
+          />
+        </div>*/
 
 export default App;

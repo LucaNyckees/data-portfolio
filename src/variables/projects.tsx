@@ -1,3 +1,23 @@
+//--- IMAGES
+import UPHESS_project1 from "../../images/UPHESS_project1.jpeg";
+import UPHESS_project2 from "../../images/UPHESS_project2.png";
+import UPHESS_project3 from "../../images/UPHESS_project3.png";
+import UPHESS_project4 from "../../images/UPHESS_project4.png";
+import QH_project1bis from "../../images/QH_project1tris.png";
+import QH_project2 from "../../images/QH_project2.png";
+import QH_project3 from "../../images/QH_project3.png";
+import QH_project4 from "../../images/QH_project4.png";
+import EPFL_project1 from "../../images/EPFL_project1.png";
+import EPFL_project2 from "../../images/EPFL_project2.png";
+import EPFL_project3 from "../../images/EPFL_project3.png";
+import EPFL_project4 from "../../images/EPFL_project4.png";
+
+//--- REPORTS AND POSTERS
+import PDM_poster from "../../files/PDM_poster.pdf";
+import PDM from "../../files/PDM.pdf";
+import LabelPropagationReport from "../../files/LabelPropagationReport.pdf";
+import CNN_report from "../../files/CNN_report.pdf";
+
 //------------------------------------- DATA SCIENCE PROJECTS -------------------------------------------
 
 let projContents = [
@@ -13,7 +33,7 @@ let projContents = [
                      We create an efficient pipeline and develop a Streamlit web application for data visualization. \
                      Interactions between users are modeled through simplicial complexes, whose structure allows \
                      for higher dimensional information within the spreading process.",
-    imageSource: "images/UPHESS_project1.jpeg",
+    imageSource: UPHESS_project1,
     labels: ["docker", "python", "pyvis", "topology", "networks"],
     date: "Spring 2021",
     git: "",
@@ -34,7 +54,7 @@ let projContents = [
                      persistent homology and implemented an associated metric that allows for better understanding\
                      complex data such as high-dimensional point-clound data. We provide a rich visualization of the\
                      method by investigating the case of digit image classification. ",
-    imageSource: "images/UPHESS_project2.png",
+    imageSource: UPHESS_project2,
     labels: [
       "python",
       "higher-dimensional-data",
@@ -45,8 +65,8 @@ let projContents = [
     date: "Spring 2022",
     git: "",
     pres: "",
-    poster: "files/PDM_poster.pdf",
-    report: "files/PDM.pdf",
+    poster: PDM_poster,
+    report: PDM,
   },
 
   {
@@ -62,7 +82,7 @@ let projContents = [
                      this generalization, as well as how they link to one another. We implement a web application \
                      that allows for a visualizing how levelset zigzag homology works when it is used to \
                      study the shape of spaces and point-cloud data.",
-    imageSource: "images/UPHESS_project3.png",
+    imageSource: UPHESS_project3,
     labels: [
       "topology",
       "data-visualization",
@@ -81,7 +101,7 @@ let projContents = [
   {
     title: "Applications of Discrete Morse Theory to Machine Learning",
     description: "...",
-    imageSource: "images/UPHESS_project4.png",
+    imageSource: UPHESS_project4,
     labels: [
       "topology",
       "data-visualization",
@@ -100,7 +120,7 @@ let projContents = [
   {
     title: "Data Visualization for SwissTopo Geolocation Data",
     description: "",
-    imageSource: "images/QH_project1bis.png",
+    imageSource: QH_project1bis,
     labels: ["finance", "real-estate", "viz", "postgreSQL"],
     date: "Autumn 2022",
     git: "",
@@ -112,7 +132,7 @@ let projContents = [
   {
     title: "Behavioral Data Imputer for MNAR-type Data",
     description: "",
-    imageSource: "images/QH_project2.png",
+    imageSource: QH_project2,
     labels: ["imputation", "real-estate", "viz", "MNAR-data"],
     date: "Summer 2022",
     git: "",
@@ -124,7 +144,7 @@ let projContents = [
   {
     title: "Financial Statistics for Real Estate Time-Series Data",
     description: "",
-    imageSource: "images/QH_project3.png",
+    imageSource: QH_project3,
     labels: ["finance", "real-estate", "time-series", "postgreSQL"],
     date: "Autumn 2022",
     git: "",
@@ -136,7 +156,7 @@ let projContents = [
   {
     title: "Developing ESG Criteria for the Real Estate Market",
     description: "",
-    imageSource: "images/QH_project4.png",
+    imageSource: QH_project4,
     labels: ["finance", "real-estate", "time-series", "postgreSQL"],
     date: "Autumn 2022",
     git: "",
@@ -152,13 +172,13 @@ let projContents = [
                      by M. Jaggi and N. Flammarion. It consisted in implementing various convolutional neural network \
                      architectures and comparing their performance on a road segmentation task : road / non-road pixel \
                      classification for satellite images. CNNs were combined with a deterministic non-trainable convolutional step.",
-    imageSource: "images/EPFL_project1.png",
+    imageSource: EPFL_project1,
     labels: ["image-analysis", "neural-net", "segmentation", "pytorch"],
     date: "Autumn 2020",
     git: "",
     pres: "",
     poster: "",
-    report: "files/CNN_report.pdf",
+    report: CNN_report,
   },
 
   {
@@ -172,7 +192,7 @@ let projContents = [
                      based on the problem of classifying hand-written digits. This work will strengthen the a priori \
                      supposition that this label propagation method proves promising when compared to other models, in the case \
                      where only a small amount of labeled data is available.",
-    imageSource: "images/EPFL_project2.png",
+    imageSource: EPFL_project2,
     labels: [
       "graph-theory",
       "discrete-laplacian",
@@ -183,7 +203,7 @@ let projContents = [
     git: "",
     pres: "",
     poster: "",
-    report: "files/LabelPropagationReport.pdf",
+    report: LabelPropagationReport,
   },
 
   {
@@ -194,7 +214,7 @@ let projContents = [
                      analysis of meteorological data in Switzerland, and implementing a time-series forecasting model designed to make \
                      meteorological predictions. An emphasis was put on data visualization - the project came in wrapped up as a \
                      Streamlit web application.",
-    imageSource: "images/EPFL_project3.png",
+    imageSource: EPFL_project3,
     labels: ["web-app", "forecasting", "statistical-analysis", "viz"],
     date: "Autumn 2021",
     git: "https://github.com/KieranVaudaux/SCV_project3",
@@ -211,7 +231,7 @@ let projContents = [
                      analysis of meteorological data in Switzerland, and implementing a time-series forecasting model designed to make \
                      meteorological predictions. An emphasis was put on data visualization - the project came in wrapped up as a \
                      Streamlit web application.",
-    imageSource: "images/EPFL_project4.png",
+    imageSource: EPFL_project4,
     labels: ["statistical-ML", "forecasting", "behavior", "transport"],
     date: "Autumn 2021",
     git: "https://github.com/KieranVaudaux/SCV_project3",

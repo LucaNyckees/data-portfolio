@@ -136,7 +136,7 @@ let projContents = [{title: 'Topological Data Analysis for COVID19 Data',
 
                      {title: 'Data Visualization for SwissTopo Geolocation Data',
                      description: "",
-                     imageSource: "images/QH_project1bis.png",
+                     imageSource: "images/QH_project1tris.png",
                      labels: ['finance', 'real-estate', 'viz', 'postgreSQL'],
                      date: "Autumn 2022",
                      git: "",

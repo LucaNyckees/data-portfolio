@@ -1,7 +1,7 @@
 :root {
-  /*--color2: #C07DF4;*/
-  --color2: #1265b4;
-  --color1: #589fe2;
+  /*--color2: #1d89ee;*/
+  --color2: #657786;
+  --color1: #8cc1f4;
   --grey: rgba(11, 8, 24, 0.606);
   --color1light: #70aee82f;
 }
@@ -20,6 +20,13 @@ background: white;
 width: 100vw;
 height: 100vh;
 z-index: 1;
+}
+
+@media (max-width: 600px) {
+  #particles-js {
+    display: flex;
+    border: 1px solid black;
+  }
 }
 
 .header{
@@ -284,11 +291,6 @@ h3{
   margin: 10px 0;
 }
 
-.project h3{
-font-size: 16px;
-font-weight: 100;
-}
-
 .about-col:hover{
   border: 2px solid var(--color2);
   background-color: var(--color1light);
@@ -317,15 +319,25 @@ font-weight: 100;
   z-index: -1;
 }
 
-.project p{
+.project h3 {
+  font-size: 16px;
+  font-weight: 100;
+  }
+
+.project p {
   text-align: justify;
   margin: 20px 96px;
 }
 
-.project img{
+.project img {
   position: relative;
   width: 54%;
   margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.project h2 {
+  font-size: 20px;
   margin-bottom: 40px;
 }
 
@@ -368,12 +380,7 @@ button img {
 margin-bottom: 10px;
 }
 
-.project h2{
-  font-size: 20px;
-  margin-bottom: 40px;
-}
-
-.close, #myModal button {
+.close, #myModal button{
   position: absolute;
   right: 32px;
   top: 32px;
@@ -568,7 +575,7 @@ text-decoration: none;
 margin-right: 10px;
 }
 
-.proj-btn, #myModal a {
+.proj-btn, #myModal a{
 display: inline-block;
 text-decoration: none;
 color: var(--grey);
@@ -583,7 +590,7 @@ margin-left: 4px;
 margin-right: 4px;
 margin-bottom: 24px;
 }
-.proj-btn:hover, #myModal a:hover {
+.proj-btn:hover, #myModal a:hover{
 border: 1px solid #c07df4be;
 background: #c07df44c;
 transition: 0.8s;
@@ -781,5 +788,78 @@ text-decoration: none;
 
 .contactContainer {
   width: 100%
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.App {
+  margin: 1rem auto;
+  max-width: 1000px;
+  padding: 1rem;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0000003a;
+  transition: opacity 0.2s ease;
+}
+
+.modal {
+  width: 500px;
+  position: relative;
+  margin: 0px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 2px;
+  transform: translateY(100%);
+  transition: transform 0.2s ease;
+  box-shadow: 0 2px 8px 3px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.modal button {
+  position: absolute;
+  right: -1rem;
+  top: -1rem;
+  width: 2rem;
+  height: 2rem;
+  padding: 0.5rem;
+  margin: 0 auto;
+  border-radius: 50%;
+  box-shadow: 1px 1px 1px #0000003a;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.562);
 }
 
