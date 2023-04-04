@@ -1,7 +1,7 @@
-import projects from "../variables/thumnailprojects";
-import { displayProj, closeProj } from "../functions/ProjectsPortfolio";
 import colors from "../variables/tagcolors";
 import { useState } from "react";
+import projContents from "../variables/projects";
+import Modal from "./Modal";
 
 function ProjChoiceButtons() {
   return (
@@ -46,7 +46,8 @@ function LabelList(tags: Array<string>, cut: number) {
 }
 
 function Project(index: number) {
-  let project = projects[index];
+  let project = projContents[index];
+  const [show, setShow] = useState(false);
   let proj_id = `proj${index}`;
   var lock =
     [4, 5, 6, 7].indexOf(index) > -1 ? (
@@ -64,22 +65,37 @@ function Project(index: number) {
     ) : (
       <></>
     );
+  const id = `myModal${index}`;
+  console.log(id);
   return (
-    <button
-      id={proj_id}
-      type="button"
-      className="about-col"
-      style={{ width: "200px" }}
-    >
-      <p>
-        {project.name}
-        {lock}
-      </p>
-      <img src={project.sourceImage} style={{ width: project.rel_width }}></img>
-      <div className="labels-front">
-        {LabelList(project.labels, project.cut)}
+    <>
+      <button
+        id={proj_id}
+        type="button"
+        className="about-col"
+        style={{ width: "200px" }}
+        onClick={() => setShow(true)}
+      >
+        <p>
+          {project.title}
+          {lock}
+        </p>
+        <img
+          src={project.imageSource}
+          style={{ width: project.rel_width }}
+        ></img>
+        <div className="labels-front">
+          {LabelList(project.labels, project.cut)}
+        </div>
+      </button>
+      <div className="App">
+        <Modal
+          className="project"
+          id={id}
+          {...{ index, show, closeModal: () => setShow(false) }}
+        />
       </div>
-    </button>
+    </>
   );
 }
 
@@ -94,8 +110,8 @@ function BoardRow(indices: Array<number>) {
   );
 }
 
-function Board() {
-  let indices = Array.from(projects.keys());
+function Board(props: any) {
+  let indices = Array.from(projContents.keys());
   return (
     <>
       <div id="allProjects">

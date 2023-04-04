@@ -26,15 +26,16 @@ let projContents = [
     description:
       "This is a project done with the Laboratory of Topology and Neuroscience at EPFL, \
                      under the supervision of Prof. Kathryn Hess Bellwald, Dr. Stefania Ebli and Dr. \
-                     Celia Hacker and in collaboration with Yann Mentha.</br>\
-                  </br>\
+                     Celia Hacker and in collaboration with Yann Mentha. \
                      We study the spreading process of COVID19 by analysing contact tracing data through \
                      network and topological methods like graph calibration and standard persistent homology. \
                      We create an efficient pipeline and develop a Streamlit web application for data visualization. \
                      Interactions between users are modeled through simplicial complexes, whose structure allows \
                      for higher dimensional information within the spreading process.",
     imageSource: UPHESS_project1,
-    labels: ["docker", "python", "pyvis", "topology", "networks"],
+    labels: ["docker", "topology", "python", "graph-theory", "web-app"],
+    cut: 3,
+    rel_width: "70%",
     date: "Spring 2021",
     git: "",
     pres: "",
@@ -47,23 +48,17 @@ let projContents = [
     description:
       "This project is part of my master thesis, realized under the supervision of \
                      Prof. Kathryn Hess Bellwald and Dr. Nicolas Berkouk - in the Laboratory of Topology and \
-                     Neuroscience at EPFL.</br>\
-                     </br>\
-                     In applied topology, there is a powerful data analysis tool called persistent homology.\
+                     Neuroscience at EPFL. In applied topology, there is a powerful data analysis tool called persistent homology.\
                      In this project, we considered a generalization of this tool called multi-parameter\
                      persistent homology and implemented an associated metric that allows for better understanding\
                      complex data such as high-dimensional point-clound data. We provide a rich visualization of the\
                      method by investigating the case of digit image classification. ",
     imageSource: UPHESS_project2,
-    labels: [
-      "python",
-      "higher-dimensional-data",
-      "classification",
-      "new-metric",
-      "topology",
-    ],
+    labels: ["topology", "multi-parameter", "metric", "smart-classifier"],
+    cut: 2,
+    rel_width: "70%",
     date: "Spring 2022",
-    git: "",
+    git: "https://github.com/LucaNyckees/topology-metric",
     pres: "",
     poster: PDM_poster,
     report: PDM,
@@ -74,25 +69,18 @@ let projContents = [
     description:
       "This project was realized under the supervision of \
                      Prof. Kathryn Hess Bellwald and Dr. Nicolas Berkouk, from the Laboratory of Topology and \
-                     Neuroscience at EPFL.</br>\
-                     </br>\
-                     In applied topology, there is a powerful data analysis tool called persistent homology.\
+                     Neuroscience at EPFL. In applied topology, there is a powerful data analysis tool called persistent homology.\
                      In this project, we consider a generalization of this tool called levelset zigzag \
                      persistent homology and make a survey about the various techniques revolving around \
                      this generalization, as well as how they link to one another. We implement a web application \
                      that allows for a visualizing how levelset zigzag homology works when it is used to \
                      study the shape of spaces and point-cloud data.",
     imageSource: UPHESS_project3,
-    labels: [
-      "topology",
-      "data-visualization",
-      "geometry",
-      "python",
-      "survey",
-      "streamlit app",
-    ],
+    labels: ["topology", "multi-parameter", "viz", "survey"],
+    cut: 2,
+    rel_width: "70%",
     date: "Summer 2021",
-    git: "https://github.com/LucaNyckees/zigzaghomology",
+    git: "https://github.com/LucaNyckees/zigzag-homology",
     pres: "",
     poster: "",
     report: "https://arxiv.org/abs/2210.00916",
@@ -100,18 +88,24 @@ let projContents = [
 
   {
     title: "Applications of Discrete Morse Theory to Machine Learning",
-    description: "...",
+    description:
+      "We implement tools to apply a specific type of Morse theory called parametric Morse theory. \
+                  This is done in the context of a semester project under the supervision of Celia Hacker and \
+                  Stefania Ebli, in the Laboratory for Topology and Neuroscience at EPFL, directed by Kathryn Hess. \
+                  Discrete Morse theory (DMT) is the discrete analog of smooth Morse theory, as developed by Robin \
+                  Forman. It provides tools for analyzing the topological changes of a simplicial or cubical complex \
+                  through a filtration. In brief, one can build a discrete Morse function on a given complex \
+                  (a real-valued labeling of all simplices or cubes that satisfies some hierarchy conditions) and \
+                  study the related so-called critical cells in the complex. Those are crucial cells in the sense that, \
+                  as opposed to other cells, deleting them from the complex will fundamentally change the overall \
+                  topology of the space. Generally speaking, DMT has broad applications, notably in homology \
+                  computation and, more recently, in image processing via parametric Morse theory.",
     imageSource: UPHESS_project4,
-    labels: [
-      "topology",
-      "data-visualization",
-      "geometry",
-      "python",
-      "survey",
-      "streamlit app",
-    ],
+    labels: ["topology", "python", "graph-theory", "geometry"],
+    cut: 2,
+    rel_width: "80%",
     date: "Summer 2021",
-    git: "https://github.com/LucaNyckees/zigzaghomology",
+    git: "https://github.com/LucaNyckees/parametric-morse-theory",
     pres: "",
     poster: "",
     report: "https://arxiv.org/abs/2210.00916",
@@ -122,6 +116,8 @@ let projContents = [
     description: "",
     imageSource: QH_project1bis,
     labels: ["finance", "real-estate", "viz", "postgreSQL"],
+    cut: 2,
+    rel_width: "76%",
     date: "Autumn 2022",
     git: "",
     pres: "",
@@ -134,6 +130,8 @@ let projContents = [
     description: "",
     imageSource: QH_project2,
     labels: ["imputation", "real-estate", "viz", "MNAR-data"],
+    cut: 2,
+    rel_width: "80%",
     date: "Summer 2022",
     git: "",
     pres: "",
@@ -145,7 +143,9 @@ let projContents = [
     title: "Financial Statistics for Real Estate Time-Series Data",
     description: "",
     imageSource: QH_project3,
-    labels: ["finance", "real-estate", "time-series", "postgreSQL"],
+    labels: ["imputation", "real-estate", "time-series", "postgreSQL"],
+    cut: 2,
+    rel_width: "80%",
     date: "Autumn 2022",
     git: "",
     pres: "",
@@ -157,7 +157,9 @@ let projContents = [
     title: "Developing ESG Criteria for the Real Estate Market",
     description: "",
     imageSource: QH_project4,
-    labels: ["finance", "real-estate", "time-series", "postgreSQL"],
+    labels: ["environment", "real-estate", "ESG", "mobility"],
+    cut: 2,
+    rel_width: "80%",
     date: "Autumn 2022",
     git: "",
     pres: "",
@@ -174,6 +176,8 @@ let projContents = [
                      classification for satellite images. CNNs were combined with a deterministic non-trainable convolutional step.",
     imageSource: EPFL_project1,
     labels: ["image-analysis", "neural-net", "segmentation", "pytorch"],
+    cut: 2,
+    rel_width: "60%",
     date: "Autumn 2020",
     git: "",
     pres: "",
@@ -199,8 +203,10 @@ let projContents = [
       "smart-classifier",
       "propagation",
     ],
+    cut: 2,
+    rel_width: "80%",
     date: "Autumn 2020",
-    git: "",
+    git: "https://github.com/LucaNyckees/graph-label-propagation",
     pres: "",
     poster: "",
     report: LabelPropagationReport,
@@ -216,8 +222,10 @@ let projContents = [
                      Streamlit web application.",
     imageSource: EPFL_project3,
     labels: ["web-app", "forecasting", "statistical-analysis", "viz"],
+    cut: 2,
+    rel_width: "60%",
     date: "Autumn 2021",
-    git: "https://github.com/KieranVaudaux/SCV_project3",
+    git: "https://github.com/LucaNyckees/meteo-forecasting",
     pres: "",
     poster: "",
     report: "",
@@ -226,15 +234,18 @@ let projContents = [
   {
     title: "Mathematical Modeling of Behavior for Urbanity and Mobility",
     description:
-      "This project, done with Kieran Vaudaux, was realized in the contex of the course 'Statistical Computation \
-                     and Visualization' taught by M. Golham at EPFL. It consisted in performing a rigorous statistical \
-                     analysis of meteorological data in Switzerland, and implementing a time-series forecasting model designed to make \
-                     meteorological predictions. An emphasis was put on data visualization - the project came in wrapped up as a \
-                     Streamlit web application.",
+      "This project, done with J. Bierent and J. Roitel, was realized in the contex of the course 'Mathematical \
+      modeling of behavior' taught by M. Bierlaire at the TRANSP-OR lab of EPFL. It consisted in modeling the way \
+      various financial and social factors affect the choice of transporation in Switzerland. The theory of \
+      mathematical modeling of behavior has strong connections to statistical machine learning and has lots of \
+      applications in the domain of urbanity and mobility. We mainly used the Python package Biogeme to implement \
+      our models. ",
     imageSource: EPFL_project4,
     labels: ["statistical-ML", "forecasting", "behavior", "transport"],
+    cut: 2,
+    rel_width: "80%",
     date: "Autumn 2021",
-    git: "https://github.com/KieranVaudaux/SCV_project3",
+    git: "",
     pres: "",
     poster: "",
     report: "",

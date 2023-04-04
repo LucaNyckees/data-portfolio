@@ -11,7 +11,6 @@ import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import type { Container, Engine } from "tsparticles-engine";
 import { loadFull } from "tsparticles";
-import { closeProj } from "./functions/ProjectsPortfolio";
 import { useState } from "react";
 import Modal from "./components/Modal";
 
@@ -131,18 +130,7 @@ function App() {
           </p>
         </div>
         <PortfolioFcts.ProjChoiceButtons></PortfolioFcts.ProjChoiceButtons>
-        <div className="App">
-          {!show && <button onClick={openModal}>Show modal</button>}
-          <Modal
-            className="project"
-            id="myModal"
-            closeModal={closeModal}
-            show={show}
-            index={2}
-          />
-        </div>
-
-        <PortfolioFcts.Board></PortfolioFcts.Board>
+        <PortfolioFcts.Board show={show}></PortfolioFcts.Board>
       </section>
       <section
         className="information"

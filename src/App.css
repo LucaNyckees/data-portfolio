@@ -203,7 +203,7 @@ margin-top: 20px;
 
 
 .row{
-  margin-top: 28px;
+  margin-top: 24px;
   display: flex;
   height: 320px;
   width: 76%;
@@ -224,8 +224,8 @@ margin-top: 20px;
   transition: 0.5s;
   border: 1px solid rgba(11, 8, 24, 0.25);
   background-color: white;
-  margin-left: 14px;
-  margin-right: 14px;
+  margin-left: 1%;
+  margin-right: 1%;
 }
 
 .about .about-btn{
@@ -802,13 +802,6 @@ text-decoration: none;
 
 
 
-
-/*.App {
-  margin: 1rem auto;
-  max-width: 1000px;
-  padding: 1rem;
-}*/
-
 .show {
   display: block;
 }
@@ -835,13 +828,17 @@ text-decoration: none;
   height: auto;
   width: 54%;
   margin-top: 0px;
-  margin-left: 23%;
+  
   margin-right: auto;
   border-radius: 16px;
   background-color: white;
   margin-bottom: auto;
   padding-bottom: 60px;
   z-index: 9998;
+}
+
+#myModal0 {
+  margin-left: -28%;
 }
 
 .modal button {
