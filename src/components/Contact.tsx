@@ -1,4 +1,5 @@
 import { MediaButton } from "./AboutHead";
+import { MailButton } from "./AboutHead";
 
 function MediaInfo(text: string, icon: string) {
   return (
@@ -27,7 +28,7 @@ function Contact() {
           </h2>
         </div>
         <div id="aboutButtons">
-          {MediaButton("", "fa fa-envelope")}
+          {MailButton("fa fa-envelope")}
           {MediaButton(
             "https://www.linkedin.com/in/luca-nyckees-64674320b/",
             "fa fa-linkedin"

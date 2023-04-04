@@ -1,7 +1,7 @@
 :root {
   /*--color2: #1d89ee;*/
-  --color2: #657786;
-  --color1: #8cc1f4;
+  --color2: #6668e1;
+  --color1: #AAC4FF;
   --grey: rgba(11, 8, 24, 0.606);
   --color1light: #70aee82f;
 }
@@ -293,12 +293,13 @@ h3{
 
 .about-col:hover{
   border: 2px solid var(--color2);
-  background-color: var(--color1light);
+  background-color: var(--color1);
   transition: 0.2s;
+  color: white;
 }
 
 .projLabelsChoice a:target{
-  border: 10px solid #7dbaf4;
+  border: 10px solid var(--color2);
   transition: 0.2s;
 }
 
@@ -742,9 +743,9 @@ background-color: white;
   width: 100%;
   margin:auto;
   text-align: center;
-  padding-top: 150px;
-  padding-bottom: 200px;
-  background-color: rgba(52, 84, 228, 0.657);
+  padding-top: 100px;
+  padding-bottom: 400px;
+  background-color: var(--color1);
 }
 
 .information h2{

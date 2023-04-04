@@ -21,6 +21,7 @@
     "react-helmet": "^6.1.0",
     "react-latex": "^2.0.0",
     "react-latex-next": "^2.2.0",
+    "react-router-dom": "^6.10.0",
     "react-tsparticles": "^2.9.3",
     "tsparticles": "^2.9.3"
   },

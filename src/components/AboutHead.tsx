@@ -1,6 +1,22 @@
 import cv_file from "../../files/cv_luca_nyckees.pdf";
 import profile_pic from "../../images/luca.jpeg";
 
+function MailButton(icon: string) {
+  return (
+    <>
+      <a target="_blank">
+        <button
+          type="button"
+          className={icon}
+          onClick={() =>
+            (window.location.href = "mailto:luca.nyckees99@gmail.com")
+          }
+        ></button>
+      </a>
+    </>
+  );
+}
+
 function MediaButton(href: string, icon: string) {
   return (
     <>
@@ -31,4 +47,4 @@ function AboutHead() {
   );
 }
 
-export { AboutHead, MediaButton };
+export { AboutHead, MediaButton, MailButton };

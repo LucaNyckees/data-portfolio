@@ -72,10 +72,10 @@ function App() {
             },
             particles: {
               color: {
-                value: "#589fe2",
+                value: "#AAC4FF",
               },
               links: {
-                color: "#589fe2",
+                color: "#AAC4FF",
                 distance: 150,
                 enable: true,
                 opacity: 0.5,
@@ -136,7 +136,6 @@ function App() {
         className="information"
         id="information"
         style={{
-          backgroundColor: "#589fe2",
           height: "50vh",
         }}
       >
