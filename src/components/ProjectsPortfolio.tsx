@@ -31,7 +31,7 @@ function Label(tag: string) {
       val = colors[key];
     }
   }
-  return <label style={{ backgroundColor: val }}>#{tag}</label>;
+  return <label style={{ backgroundColor: "#aac4ff7e" }}>#{tag}</label>;
 }
 
 function LabelList(tags: Array<string>, cut: number) {

@@ -2,8 +2,8 @@
   /*--color2: #1d89ee;*/
   --color2: #6668e1;
   --color1: #AAC4FF;
+  --color1light: #aac4ff7e;
   --grey: rgba(11, 8, 24, 0.606);
-  --color1light: #70aee82f;
 }
 
 *{
@@ -396,7 +396,7 @@ label{
   position: relative;
   font-size: 12px;
   color: #777;
-  background-color: rgba(100, 184, 237, 0.328);
+  background-color: var(--color1light);
   border-radius: 8px;
   margin: 48px 2px;
   padding: 4px 8px;

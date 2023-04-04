@@ -12,12 +12,9 @@ import Particles from "react-tsparticles";
 import type { Container, Engine } from "tsparticles-engine";
 import { loadFull } from "tsparticles";
 import { useState } from "react";
-import Modal from "./components/Modal";
 
 function App() {
   const [show, setShow] = useState(false);
-  const openModal = () => setShow(true);
-  const closeModal = () => setShow(false);
   const particlesInit = useCallback(async (engine: Engine) => {
     console.log(engine);
 
