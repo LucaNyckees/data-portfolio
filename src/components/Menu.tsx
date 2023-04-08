@@ -12,13 +12,10 @@ function Menu() {
               <a href="#about">ABOUT ME</a>
             </li>
             <li>
-              <a href="#data">DATA STUFF</a>
+              <a href="#data">DATA SCIENCE PORTFOLIO</a>
             </li>
             <li>
-              <a href="#art">ART PROJECTS</a>
-            </li>
-            <li>
-              <a href="#game">A GAME</a>
+              <a href="#game">GAME</a>
             </li>
           </ul>
         </div>

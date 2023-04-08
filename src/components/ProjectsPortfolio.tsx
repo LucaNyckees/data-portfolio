@@ -49,7 +49,7 @@ function Project(index: number) {
   let project = projContents[index];
   const [show, setShow] = useState(false);
   let proj_id = `proj${index}`;
-  var lock =
+  const lock =
     [4, 5, 6, 7].indexOf(index) > -1 ? (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +66,6 @@ function Project(index: number) {
       <></>
     );
   const id = `myModal${index}`;
-  console.log(id);
   return (
     <>
       <button

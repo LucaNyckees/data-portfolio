@@ -1,6 +1,7 @@
 :root {
   /*--color2: #1d89ee;*/
   --color2: #6668e1;
+  --color3: #999ae9;
   --color1: #AAC4FF;
   --color1light: #aac4ff7e;
   --grey: rgba(11, 8, 24, 0.606);
@@ -11,7 +12,7 @@
   padding: 0;
   font-family: 'Poppins', sans-serif; 
   box-sizing: border-box;
-  /*border: 1px solid black;*/
+  /* border: 1px solid black; */
 }
 
 #particles-js {
@@ -206,7 +207,7 @@ margin-top: 20px;
 .row{
   margin-top: 24px;
   display: flex;
-  height: 320px;
+  height: 44vh;
   width: 76%;
   justify-content: space-between;
   margin-left: auto;
@@ -214,6 +215,8 @@ margin-top: 20px;
   left: 20%;
   right: 20%;
   margin-bottom: 14px;
+  max-width: 1600px;
+  max-height: 480px;
 }
 
 .about-col{
@@ -286,10 +289,15 @@ border: 1px solid white;
 color: white;
 }
 
-h3{
+h3, h4{
   text-align: center;
   font-weight: 200;
+}
+h3 {
   margin: 10px 0;
+}
+h4 {
+  font-size: 14px;
 }
 
 .about-col:hover{
@@ -454,19 +462,19 @@ color: white;
 }
 
 .timeline-1-sub h1 {
-  width: 140px;
+  width: 18vh;
   margin-top: 32px;
   margin-bottom: 6px;
   margin-left: auto;
   margin-right: auto;
-  font-size: 12px;
+  font-size: 13px;
   text-align: left;
 }
 
 .timeline-1-sub p {
-  width: 140px;
+  width: 18vh;
   margin: 6px auto;
-  font-size: 10px;
+  font-size: 11px;
   text-align: left;
 }
 
@@ -489,7 +497,6 @@ text-decoration: none;
 
 .timeline-2-sub {
   height: 33px;
-  width: 1px;
   background-color: white;
   border: 1px solid white;
   margin: 1px 100px;
@@ -499,13 +506,13 @@ text-decoration: none;
 
 
 .timeline-2-sub p {
-  width: 140px;
+  width: 14vw;
   margin-top: -90px;
   margin-left: auto;
   margin-right: auto;
-  font-size: 10px;
   text-align: left;
   position: absolute;
+  font-size: 13px;
 
 }
 
@@ -533,6 +540,7 @@ text-decoration: none;
 .displayJobBox h1{
   padding-top: 20px;
   font-size: 18px;
+  color: var(--color3);
 }
 .displayJobBox h2{
   padding-top: 0px;
@@ -542,6 +550,7 @@ text-decoration: none;
 .displayJobBox p{
   text-align: justify;
   padding: 30px 40px;
+  color: var(--color3);
 }
 
 .about-image img {
@@ -746,7 +755,7 @@ background-color: white;
   text-align: center;
   padding-top: 100px;
   padding-bottom: 400px;
-  background-color: var(--color1);
+  background-color: var(--color2);
 }
 
 .information h2{
@@ -773,6 +782,7 @@ left: 48%;
 color: var(--grey);
 outline: none;
 text-decoration: none;
+padding-bottom: 100vh;
 }
 
 /*----------------------------------*/

@@ -1,6 +1,24 @@
 import React from "react";
 import projContents from "../variables/projects";
 
+function LockSymbol(props: any) {
+  const size = props.size;
+  const viewBoxSize = `0 0 ${size} ${size}`;
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      fill="currentColor"
+      className="bi bi-lock"
+      viewBox={viewBoxSize}
+      color="rgba(11, 8, 24, 0.606)"
+    >
+      <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z" />
+    </svg>
+  );
+}
+
 function Modal(props: any) {
   const { index, show, closeModal } = props;
   let projContent = projContents[index];
@@ -11,7 +29,12 @@ function Modal(props: any) {
   let poster = projContent.poster;
   const leftMargin = (-((index % 4) + 0.5) * 74.6) / 4;
   const topMargin = -(344 * Math.floor(index / 4)) + 160;
-
+  const lock =
+    [4, 5, 6, 7].indexOf(index) > -1 ? (
+      <LockSymbol size={16}></LockSymbol>
+    ) : (
+      <></>
+    );
   return (
     <>
       <div className={show ? "overlay" : "hide"} onClick={closeModal} />
@@ -20,6 +43,9 @@ function Modal(props: any) {
         style={{ marginLeft: `${leftMargin}%`, marginTop: `${topMargin}px` }}
       >
         <h2>{projContent.title}</h2>
+        {[4, 5, 6, 7].indexOf(index) > -1 ? (
+          <h4 style={{ marginTop: "0vh" }}>Quanthome project {lock}</h4>
+        ) : null}
         <h3>{projContent.date}</h3>
         <button className="close" onClick={closeModal}>
           x
@@ -27,9 +53,14 @@ function Modal(props: any) {
         <p>{projContent.description}</p>
         <img src={projContent.imageSource}></img>
         <div className="projButton">
-          {!(git === "") && (
+          {!(git === "") && git !== "private" && (
             <a href={git} target="_blank" className="proj-btn">
               GitHub
+            </a>
+          )}
+          {git === "private" && (
+            <a target="_blank" className="proj-btn">
+              GitHub <LockSymbol size={12}></LockSymbol>
             </a>
           )}
           {!(report === "") && (

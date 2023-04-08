@@ -17,6 +17,7 @@ import PDM_poster from "../../files/PDM_poster.pdf";
 import PDM from "../../files/PDM.pdf";
 import LabelPropagationReport from "../../files/LabelPropagationReport.pdf";
 import CNN_report from "../../files/CNN_report.pdf";
+import covid19tda_report from "../../files/covid19tda_report.pdf";
 
 //------------------------------------- DATA SCIENCE PROJECTS -------------------------------------------
 
@@ -37,10 +38,10 @@ let projContents = [
     cut: 3,
     rel_width: "70%",
     date: "Spring 2021",
-    git: "",
+    git: "private",
     pres: "",
     poster: "",
-    report: "",
+    report: covid19tda_report,
   },
 
   {
@@ -113,13 +114,15 @@ let projContents = [
 
   {
     title: "Data Visualization for SwissTopo Geolocation Data",
-    description: "",
+    description:
+      "Creating a complete data visualization analysis pipeline for stochastic real estate data, finance data and \
+      geolocation data. Providing wrapped up web-app interactive summaries.",
     imageSource: QH_project1bis,
     labels: ["finance", "real-estate", "viz", "postgreSQL"],
     cut: 2,
     rel_width: "76%",
     date: "Autumn 2022",
-    git: "",
+    git: "private",
     pres: "",
     poster: "",
     report: "",
@@ -127,13 +130,18 @@ let projContents = [
 
   {
     title: "Behavioral Data Imputer for MNAR-type Data",
-    description: "",
+    description:
+      "MNAR-type data (missing not at random) often arises in data processing challenges. Here, we develop \
+    a deterministic 'behavioral' model for MNAR-type boolean data in the real estate domain. It considers network \
+    structures for modeling interactions between entries with missing data and not only quantifies instances \
+    of True, False and Nan values but also relations or edges between True, False and Nan values.\
+    ",
     imageSource: QH_project2,
     labels: ["imputation", "real-estate", "viz", "MNAR-data"],
     cut: 2,
     rel_width: "80%",
     date: "Summer 2022",
-    git: "",
+    git: "private",
     pres: "",
     poster: "",
     report: "",
@@ -141,13 +149,18 @@ let projContents = [
 
   {
     title: "Financial Statistics for Real Estate Time-Series Data",
-    description: "",
+    description:
+      "We implement various machine learning models from the class of neural networks and ensemble learning \
+    methods to build robust estimation pipelines for non-stochastic financial analysis of real estate data. \
+    We also consider mathematical finance models to build a forecasting pipeline for real estate time-series data. \
+    In particular, we compare the robustness, efficiency and accuracy of random forest regressors, gradient \
+    boosting regressors and standard artificial neural network architectures.",
     imageSource: QH_project3,
-    labels: ["imputation", "real-estate", "time-series", "postgreSQL"],
+    labels: ["ensemble-learning", "real-estate", "time-series", "postgreSQL"],
     cut: 2,
     rel_width: "80%",
     date: "Autumn 2022",
-    git: "",
+    git: "private",
     pres: "",
     poster: "",
     report: "",
@@ -155,13 +168,16 @@ let projContents = [
 
   {
     title: "Developing ESG Criteria for the Real Estate Market",
-    description: "",
+    description:
+      "With a team of data science students, we develop a theory of ESG (environment, society and \
+      governance) criteria for the domain of real estate. These indicators apply, in particular, to real estate \
+      investment funds. This work is in collaboration with both UNIL and EPFL.",
     imageSource: QH_project4,
     labels: ["environment", "real-estate", "ESG", "mobility"],
     cut: 2,
     rel_width: "80%",
     date: "Autumn 2022",
-    git: "",
+    git: "private",
     pres: "",
     poster: "",
     report: "",

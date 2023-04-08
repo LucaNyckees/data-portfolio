@@ -126,6 +126,12 @@ function App() {
         <PortfolioFcts.ProjChoiceButtons></PortfolioFcts.ProjChoiceButtons>
         <PortfolioFcts.Board show={show}></PortfolioFcts.Board>
       </section>
+      <section id="game" className="game">
+        <div id="gameTitle">
+          <h1>THE BRICK DESTROYER</h1>
+        </div>
+      </section>
+
       <section
         className="information"
         id="information"
@@ -138,14 +144,8 @@ function App() {
     </>
   );
 }
+
 /*
-<section id="game" className="game">
-        <div id="gameTitle">
-          <h1>A FUN MATH QUESTION</h1>
-          <p>“When you think about it real good... infinity is A LOT.”</p>
-        </div>
-        <Game></Game>
-</section>
 <section id="art" className="art">
         <div id="artTitle">
           <h1>ART PROJECTS</h1>
