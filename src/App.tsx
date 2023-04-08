@@ -126,12 +126,6 @@ function App() {
         <PortfolioFcts.ProjChoiceButtons></PortfolioFcts.ProjChoiceButtons>
         <PortfolioFcts.Board show={show}></PortfolioFcts.Board>
       </section>
-      <section id="game" className="game">
-        <div id="gameTitle">
-          <h1>THE BRICK DESTROYER</h1>
-        </div>
-      </section>
-
       <section
         className="information"
         id="information"

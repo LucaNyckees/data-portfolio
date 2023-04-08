@@ -1,5 +1,4 @@
 :root {
-  /*--color2: #1d89ee;*/
   --color2: #6668e1;
   --color3: #999ae9;
   --color1: #AAC4FF;
@@ -24,10 +23,231 @@ z-index: 1;
 width: calc(100vw - 15px);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1416px), (max-height: 733px) {
+  .timeline-1 {
+    display: none;
+  }
+  .timeline-2 {
+    display: none;
+  }
+}
+
+@media (max-width: 425px) {
   #particles-js {
     display: flex;
-    border: 1px solid black;
+  }
+  #start-expand {
+    display: none;
+  }
+  .row {
+    display: block;
+    margin-top: auto;
+    margin-bottom: 224vh;
+    height: 44vh;
+    width: 92%;
+  }
+  .modal {
+    color: #777;
+    position: absolute;
+    text-align: center;
+    border: 1px solid 'white';
+    height: auto;
+    width: 96%;
+    margin-top: 0px;
+    margin-right: auto;
+    border-radius: 16px;
+    background-color: white;
+    margin-bottom: auto;
+    padding-bottom: 60px;
+    z-index: 9998;
+  }
+  .project h2, .modal h2 {
+    font-size: 14px;
+    margin-bottom: 40px;
+    padding-top: 32px;
+    margin-left: 26px;
+    margin-right: 26px;
+  }
+  .project h3, .modal h3 {
+    font-size: 12px;
+    font-weight: 100;
+    }
+  .project p, .modal p {
+    text-align: justify;
+    margin: 20px 14px;
+  }
+  .modal label {
+    display: none;
+  }
+  .project {
+    width: 92%;
+    margin-top: auto;
+  }
+  .timeline-1 {
+    display: none;
+  }
+  .timeline-2 {
+    display: none;
+  }
+  .about-image img {
+    height: 200px;
+  }
+  .about-col {
+    min-height: 64vh;
+    margin-top: 3vh;
+  }
+  .about-col p {
+    font-size: 14px;
+  }
+  .data h1{
+    padding-top: 20px;
+  }
+  .projLabelsChoice {
+    display: none;
+  }
+  
+  h1{
+    font-size: 20px;
+    font-weight: 100;
+    color: var(--grey);
+  }
+  
+  h2{
+    font-size: 12px;
+    font-weight: 100;
+    color: var(--grey);
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+  p, .git{
+    color: #777;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+  }
+  .text-box{
+    width: 100%;
+    color: var(--grey);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background-color: transparent;
+    padding-top:120px;
+  }
+  .text-box h1{
+    font-size: 24px;
+  }
+  .text-box p{
+    margin: 10px 0 40px;
+    font-size: 10px;
+    color: var(--grey);
+  }
+  .information h2{
+    color: white;
+    font-weight: 1000;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 426px) {
+  .row {
+    display: flex;
+    margin-top: 24px;
+    margin-bottom: 14px;
+    min-height: 44vh;
+    width: 76%;
+  }
+  .modal {
+    color: #777;
+    position: absolute;
+    text-align: center;
+    border: 1px solid 'white';
+    height: auto;
+    width: 54%;
+    margin-top: 0px;
+    margin-right: auto;
+    border-radius: 16px;
+    background-color: white;
+    margin-bottom: auto;
+    padding-bottom: 60px;
+    z-index: 9998;
+  }
+  .project h3, .modal h3 {
+    font-size: 16px;
+    font-weight: 100;
+    }
+  .project h2, .modal h2 {
+    font-size: 20px;
+    margin-bottom: 40px;
+    padding-top: 60px;
+  }
+  .project p, .modal p {
+    text-align: justify;
+    margin: 20px 96px;
+  }
+  .project {
+    margin-top: 0px;
+    width: "200px";
+    width: 54%;
+  }
+  .about-image img {
+    height: 300px;
+  }
+  .about-col {
+    min-height: 44vh;
+    margin-top: auto;
+  }
+  .data h1{
+    padding-top: 20px;
+  }
+  
+  h1{
+    font-size: 36px;
+    font-weight: 100;
+    color: var(--grey);
+  }
+  
+  h2{
+    font-size: 14px;
+    font-weight: 100;
+    color: var(--grey);
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+  p, .git{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+  }
+  .text-box{
+    width: 100%;
+    color: var(--grey);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background-color: transparent;
+    padding-top:120px;
+  }
+  .text-box h1{
+    font-size: 56px;
+    font-weight: 100;
+  }
+  .text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: var(--grey);
+  }
+  .information h2{
+    color: white;
+    font-weight: 1000;
+    font-size: large;
   }
 }
 
@@ -83,26 +303,7 @@ nav img{
 .nav-links ul li:hover::after{
   width:100%;
 }
-.text-box{
-  width: 100%;
-  color: var(--grey);
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  text-align: center;
-  background-color: transparent;
-  padding-top:120px;
-}
-.text-box h1{
-  font-size: 56px;
-  font-weight: 100;
-}
-.text-box p{
-  margin: 10px 0 40px;
-  font-size: 14px;
-  color: var(--grey);
-}
+
 
 .hero-btn{
   display: inline-block;
@@ -129,9 +330,6 @@ nav .fa{
 }
 
 @media(max-width: 700px){
-  .text-box h1{
-      font-size: 20px;
-  }
   .nav-links ul li{
       display: block;
   }
@@ -172,32 +370,6 @@ nav .fa{
   background-color: white;
 }
 
-.data h1{
-  padding-top: 20px;
-}
-
-h1{
-  font-size: 36px;
-  font-weight: 100;
-  color: var(--grey);
-}
-
-h2{
-  font-size: 14px;
-  font-weight: 100;
-  color: var(--grey);
-  margin-top: 60px;
-  margin-bottom: 20px;
-}
-
-p, .git{
-  color: #777;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 22px;
-  padding: 10px;
-}
-
 .git{
 margin-bottom: 10px;
 margin-top: 20px;
@@ -205,16 +377,11 @@ margin-top: 20px;
 
 
 .row{
-  margin-top: 24px;
-  display: flex;
-  height: 44vh;
-  width: 76%;
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
   left: 20%;
   right: 20%;
-  margin-bottom: 14px;
   max-width: 1600px;
   max-height: 480px;
 }
@@ -318,8 +485,6 @@ h4 {
   text-align: center;
   border: 1px solid 'white';
   height: auto;
-  width: 54%;
-  margin-top: 0px;
   margin-left: 23%;
   margin-right: auto;
   border-radius: 16px;
@@ -329,15 +494,7 @@ h4 {
   z-index: -1;
 }
 
-.project h3, .modal h3 {
-  font-size: 16px;
-  font-weight: 100;
-  }
 
-.project p, .modal p {
-  text-align: justify;
-  margin: 20px 96px;
-}
 
 .project img, .modal img {
   position: relative;
@@ -346,11 +503,6 @@ h4 {
   margin-bottom: 40px;
 }
 
-.project h2, .modal h2 {
-  font-size: 20px;
-  margin-bottom: 40px;
-  padding-top: 60px;
-}
 
 .projLabelsChoice {
 position: relative;
@@ -411,6 +563,8 @@ label{
   padding: 4px 8px;
   text-align: center;
 }
+
+
 
 .labels-front label {
 margin-left: 1px;
@@ -556,7 +710,6 @@ text-decoration: none;
 .about-image img {
   margin-top: 40px;
   margin-bottom: 40px;
-  height: 300px;
   border-radius: 200px;
   border: 6px solid var(--color2);
 }
@@ -755,14 +908,10 @@ background-color: white;
   text-align: center;
   padding-top: 100px;
   padding-bottom: 400px;
-  background-color: var(--color2);
+  background-color: var(--color1);
 }
 
-.information h2{
-  color: white;
-  font-weight: 1000;
-  font-size: large;
-}
+
 
 /*-------- Google font icons -------*/
 
@@ -832,26 +981,7 @@ padding-bottom: 100vh;
   transition: opacity 0.2s ease;
 }
 
-.modal {
-  color: #777;
-  position: absolute;
-  text-align: center;
-  border: 1px solid 'white';
-  height: auto;
-  width: 54%;
-  margin-top: 0px;
-  
-  margin-right: auto;
-  border-radius: 16px;
-  background-color: white;
-  margin-bottom: auto;
-  padding-bottom: 60px;
-  z-index: 9998;
-}
 
-#myModal0 {
-  margin-left: -28%;
-}
 
 .modal button {
   position: absolute;

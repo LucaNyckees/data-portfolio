@@ -35,12 +35,17 @@ function Modal(props: any) {
     ) : (
       <></>
     );
+  const w = window.innerWidth;
   return (
     <>
       <div className={show ? "overlay" : "hide"} onClick={closeModal} />
       <div
         className={show ? "modal" : "hide"}
-        style={{ marginLeft: `${leftMargin}%`, marginTop: `${topMargin}px` }}
+        style={
+          w > 425
+            ? { marginLeft: `${leftMargin}%`, marginTop: `${topMargin}px` }
+            : { marginLeft: "-2%", marginTop: "-64vh" }
+        }
       >
         <h2>{projContent.title}</h2>
         {[4, 5, 6, 7].indexOf(index) > -1 ? (
