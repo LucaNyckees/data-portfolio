@@ -23,16 +23,13 @@ function Contact() {
         }}
       >
         <div className="contactContainer">
-          <h2 style={{ marginBottom: "30px" }}>
+          <h2 style={{ marginBottom: "30px", fontSize: "14px" }}>
             Don't hesitate to send me a message.
           </h2>
         </div>
         <div id="aboutButtons">
           {MailButton("fa fa-envelope")}
-          {MediaButton(
-            "https://www.linkedin.com/in/luca-nyckees-64674320b/",
-            "fa fa-linkedin"
-          )}
+          {MediaButton("https://www.linkedin.com/in/luca-nyckees-64674320b/", "fa fa-linkedin")}
           {MediaButton("https://github.com/LucaNyckees", "fa fa-github")}
         </div>
       </div>

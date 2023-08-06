@@ -13,6 +13,15 @@ import type { Container, Engine } from "tsparticles-engine";
 import { loadFull } from "tsparticles";
 import { useState } from "react";
 
+function componentToHex(c: any) {
+  var hex = c.toString(16);
+  return hex.length == 1 ? "0" + hex : hex;
+}
+
+function rgbToHex(r: any, g: any, b: any) {
+  return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
+}
+
 function App() {
   const [show, setShow] = useState(false);
   const particlesInit = useCallback(async (engine: Engine) => {
@@ -31,6 +40,8 @@ function App() {
     []
   );
 
+  let colorBackParticles = "#ffffff";
+
   return (
     <>
       <section className="header" id="particles-js">
@@ -41,7 +52,7 @@ function App() {
           options={{
             background: {
               color: {
-                value: "#ffffff",
+                value: colorBackParticles,
               },
             },
             fpsLimit: 120,
@@ -117,8 +128,8 @@ function App() {
       </section>
       <section className="data" id="data">
         <div id="dataTitle">
-          <h1>DATA SCIENCE PORTFOLIO</h1>
-          <p style={{ marginBottom: "5%" }}>
+          <h1 id="dataTitleH">DATA SCIENCE PORTFOLIO</h1>
+          <p style={{ marginBottom: "5%" }} id="dataTitleP">
             “- So, what's your first take on all this ?<br></br>- Well... that’s
             one pretty point-cloud.”
           </p>

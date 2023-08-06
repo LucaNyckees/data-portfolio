@@ -74,7 +74,7 @@ function Project(index: number) {
         className="about-col"
         onClick={() => setShow(true)}
       >
-        <p>
+        <p id={proj_id + "P"}>
           {project.title}
           {lock}
         </p>

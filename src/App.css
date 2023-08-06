@@ -1,10 +1,12 @@
 :root {
   --color2: #6668e1;
+  --test: #5558ee;
   --color3: #999ae9;
   --color1: #AAC4FF;
   --color1light: #aac4ff7e;
   --grey: rgba(11, 8, 24, 0.606);
 }
+
 
 *{
   margin: 0;
@@ -12,6 +14,24 @@
   font-family: 'Poppins', sans-serif; 
   box-sizing: border-box;
   /* border: 1px solid black; */
+}
+
+.LightButton {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid var(--color2);
+}
+.LightButtonSymbol {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(to right, white 0%, white 50%, var(--color2) 50%, var(--color2) 100%);
+  border-radius: 20px;
+  border: 1px solid var(--color2);
+  margin: auto;
 }
 
 #particles-js {
@@ -147,7 +167,7 @@ width: calc(100vw - 15px);
   }
   .information h2{
     color: white;
-    font-weight: 1000;
+    font-weight: 100;
     font-size: 12px;
   }
 }
@@ -246,7 +266,7 @@ width: calc(100vw - 15px);
   }
   .information h2{
     color: white;
-    font-weight: 1000;
+    font-weight: 100;
     font-size: large;
   }
 }
@@ -329,22 +349,23 @@ nav .fa{
   display: none;
 }
 
-@media(max-width: 700px){
-  .nav-links ul li{
+@media(max-width: 425px){
+   .nav-links ul li{
       display: block;
   }
+
   .nav-links{
       position: absolute;
       background: var(--color2);
       height: 100vh; 
-      width: 200px;
+      width: 100%;
       top: 0;
-      right: -200px;
+      right: -100vw; 
       text-align: left;
       z-index: 2;
       transition: 1s;
 
-  }
+  } 
   nav .fa{
       display: block;
       color: var(--grey);
@@ -356,12 +377,19 @@ nav .fa{
   .nav-links ul{
       padding: 30px;
   }
+
+  #openMenu:hover + #navLinks {
+    right: 0vw;
+  }
+  #closeMenu:hover + .nav-links {
+    right: -100vw; 
+  }
 }
 
 
 /*----- DATA -----*/
 
-.data{
+#data{
   width: 100%;
   margin:auto;
   text-align: center;

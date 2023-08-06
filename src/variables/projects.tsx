@@ -18,6 +18,8 @@ import PDM from "../../files/PDM.pdf";
 import LabelPropagationReport from "../../files/LabelPropagationReport.pdf";
 import CNN_report from "../../files/CNN_report.pdf";
 import covid19tda_report from "../../files/covid19tda_report.pdf";
+import PMT_report from "../../files/PMT_report.pdf";
+import PMT_presentation from "../../files/PMT_presentation.pdf";
 
 //------------------------------------- DATA SCIENCE PROJECTS -------------------------------------------
 
@@ -107,9 +109,9 @@ let projContents = [
     rel_width: "80%",
     date: "Summer 2021",
     git: "https://github.com/LucaNyckees/parametric-morse-theory",
-    pres: "",
+    pres: PMT_presentation,
     poster: "",
-    report: "https://arxiv.org/abs/2210.00916",
+    report: PMT_report,
   },
 
   {

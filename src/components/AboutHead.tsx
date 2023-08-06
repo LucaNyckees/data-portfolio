@@ -33,13 +33,10 @@ function AboutHead() {
       <h1>ABOUT ME</h1>
       <p>I once solved an 8 years + puzzle in only five years.</p>
       <div className="about-image">
-        <img src={profile_pic}></img>
+        <img src={profile_pic} id="profileImage"></img>
         <div id="aboutButtons">
           {MediaButton(cv_file, "fa fa-file-text")}
-          {MediaButton(
-            "https://www.linkedin.com/in/luca-nyckees-64674320b/",
-            "fa fa-linkedin"
-          )}
+          {MediaButton("https://www.linkedin.com/in/luca-nyckees-64674320b/", "fa fa-linkedin")}
           {MediaButton("https://github.com/LucaNyckees", "fa fa-github")}
         </div>
       </div>
