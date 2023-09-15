@@ -22,3 +22,20 @@ app.add_middleware(
 @app.get("/", tags=["root"])
 async def read_root() -> dict:
     return {"message": "Welcome to your todo list."}
+
+
+todos = [
+    {
+        "id": "1",
+        "item": "Read a book."
+    },
+    {
+        "id": "2",
+        "item": "Cycle around town."
+    }
+]
+
+
+@app.get("/todo", tags=["todos"])
+async def get_todos() -> dict:
+    return {"data": todos}

@@ -12,6 +12,10 @@ import Particles from "react-tsparticles";
 import type { Container, Engine } from "tsparticles-engine";
 import { loadFull } from "tsparticles";
 import { useState } from "react";
+import React from "react";
+import { render } from "react-dom";
+import { ChakraProvider } from "@chakra-ui/react";
+import Todos from "./components/Todos"; // new
 
 function componentToHex(c: any) {
   var hex = c.toString(16);
@@ -146,6 +150,9 @@ function App() {
       >
         <Contact></Contact>
       </section>
+      {/* <ChakraProvider>
+        <Todos /> 
+      </ChakraProvider> */}
     </>
   );
 }
