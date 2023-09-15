@@ -15,7 +15,6 @@ import { useState } from "react";
 import React from "react";
 import { render } from "react-dom";
 import { ChakraProvider } from "@chakra-ui/react";
-import Todos from "./components/Todos"; // new
 
 function componentToHex(c: any) {
   var hex = c.toString(16);
