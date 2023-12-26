@@ -56,8 +56,10 @@ function Modal(props: any) {
         className={show ? "modal" : "hide"}
         style={
           w > 425
-            ? { marginLeft: `${leftMargin}%`, marginTop: `${topMargin}px` }
-            : { marginLeft: "-2%", marginTop: "-64vh" }
+            // ? { marginLeft: `${leftMargin}%`, marginTop: `${topMargin}px` }
+            // : { marginLeft: "-2%", marginTop: "-64vh" }
+            ? { marginLeft: `${leftMargin}%` }
+            : { marginLeft: "-2%" }
         }
       >
         <h2>{projContent.title}</h2>
@@ -69,7 +71,7 @@ function Modal(props: any) {
           x
         </button>
         <p>{projContent.description}</p>
-        <img src={projContent.imageSource}></img>
+        <img width={projContent.rel_width_open} src={projContent.imageSource}></img>
         <div className="projButton">
           {!(git === "") && git !== "private" && (
             <a href={git} target="_blank" className="proj-btn">

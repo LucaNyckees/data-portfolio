@@ -39,6 +39,7 @@ let projContents = [
     labels: ["docker", "topology", "python", "graph-theory", "web-app"],
     cut: 3,
     rel_width: "70%",
+    rel_width_open: "44%",
     date: "Spring 2021",
     git: "private",
     pres: "",
@@ -60,6 +61,7 @@ let projContents = [
     labels: ["topology", "multi-parameter", "metric", "smart-classifier"],
     cut: 2,
     rel_width: "70%",
+    rel_width_open: "44%",
     date: "Spring 2022",
     git: "https://github.com/LucaNyckees/topology-metric",
     pres: "",
@@ -82,6 +84,7 @@ let projContents = [
     labels: ["topology", "multi-parameter", "viz", "survey"],
     cut: 2,
     rel_width: "70%",
+    rel_width_open: "44%",
     date: "Summer 2021",
     git: "https://github.com/LucaNyckees/zigzag-homology",
     pres: "",
@@ -92,12 +95,11 @@ let projContents = [
   {
     title: "Applications of Discrete Morse Theory to Machine Learning",
     description:
-      "We implement tools to apply a specific type of Morse theory called parametric Morse theory. \
-                  This is done in the context of a semester project under the supervision of Celia Hacker and \
+                  "This project done in the context of a semester project under the supervision of Celia Hacker and \
                   Stefania Ebli, in the Laboratory for Topology and Neuroscience at EPFL, directed by Kathryn Hess. \
-                  Discrete Morse theory (DMT) is the discrete analog of smooth Morse theory, as developed by Robin \
-                  Forman. It provides tools for analyzing the topological changes of a simplicial or cubical complex \
-                  through a filtration. In brief, one can build a discrete Morse function on a given complex \
+                  We implement a framework for working with parametric Morse theory, which \
+                  provides tools for analyzing the topological changes of a simplicial (cubical) complex \
+                  through a filtration. One can build a discrete Morse function on a given complex \
                   (a real-valued labeling of all simplices or cubes that satisfies some hierarchy conditions) and \
                   study the related so-called critical cells in the complex. Those are crucial cells in the sense that, \
                   as opposed to other cells, deleting them from the complex will fundamentally change the overall \
@@ -107,6 +109,7 @@ let projContents = [
     labels: ["topology", "python", "graph-theory", "geometry"],
     cut: 2,
     rel_width: "80%",
+    rel_width_open: "44%",
     date: "Summer 2021",
     git: "https://github.com/LucaNyckees/parametric-morse-theory",
     pres: PMT_presentation,
@@ -123,6 +126,7 @@ let projContents = [
     labels: ["finance", "real-estate", "viz", "postgreSQL"],
     cut: 2,
     rel_width: "76%",
+    rel_width_open: "54%",
     date: "Autumn 2022",
     git: "private",
     pres: "",
@@ -142,6 +146,7 @@ let projContents = [
     labels: ["imputation", "real-estate", "viz", "MNAR-data"],
     cut: 2,
     rel_width: "80%",
+    rel_width_open: "44%",
     date: "Summer 2022",
     git: "private",
     pres: "",
@@ -161,6 +166,7 @@ let projContents = [
     labels: ["ensemble-learning", "real-estate", "time-series", "postgreSQL"],
     cut: 2,
     rel_width: "84%",
+    rel_width_open: "54%",
     date: "Autumn 2022",
     git: "private",
     pres: "",
@@ -178,6 +184,7 @@ let projContents = [
     labels: ["environment", "real-estate", "ESG", "mobility"],
     cut: 2,
     rel_width: "80%",
+    rel_width_open: "54%",
     date: "Autumn 2022",
     git: "private",
     pres: "",
@@ -196,6 +203,7 @@ let projContents = [
     labels: ["image-analysis", "neural-net", "segmentation", "pytorch"],
     cut: 2,
     rel_width: "74%",
+    rel_width_open: "44%",
     date: "Autumn 2020",
     git: "",
     pres: "",
@@ -223,6 +231,7 @@ let projContents = [
     ],
     cut: 2,
     rel_width: "90%",
+    rel_width_open: "54%",
     date: "Autumn 2020",
     git: "https://github.com/LucaNyckees/graph-label-propagation",
     pres: "",
@@ -242,6 +251,7 @@ let projContents = [
     labels: ["web-app", "forecasting", "statistical-analysis", "viz"],
     cut: 2,
     rel_width: "60%",
+    rel_width_open: "44%",
     date: "Autumn 2021",
     git: "https://github.com/LucaNyckees/climate-forecasting-v4",
     pres: "",
@@ -262,6 +272,7 @@ let projContents = [
     labels: ["statistical-ML", "forecasting", "behavior", "transport"],
     cut: 2,
     rel_width: "80%",
+    rel_width_open: "54%",
     date: "Autumn 2021",
     git: "",
     pres: "",

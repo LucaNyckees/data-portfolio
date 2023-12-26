@@ -68,7 +68,7 @@ width: calc(100vw - 15px);
   }
   .modal {
     color: #777;
-    position: absolute;
+    /* position: absolute; */
     text-align: center;
     border: 1px solid 'white';
     height: auto;
@@ -80,6 +80,10 @@ width: calc(100vw - 15px);
     margin-bottom: auto;
     padding-bottom: 60px;
     z-index: 9998;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
   }
   .project h2, .modal h2 {
     font-size: 14px;
@@ -182,7 +186,10 @@ width: calc(100vw - 15px);
   }
   .modal {
     color: #777;
-    position: absolute;
+    flex-direction: column;
+    position: fixed;
+    top: 36px;
+    bottom: 0;
     text-align: center;
     border: 1px solid 'white';
     height: auto;
@@ -526,7 +533,7 @@ h4 {
 
 .project img, .modal img {
   position: relative;
-  width: 54%;
+  /* width: 50%; */
   margin-top: 20px;
   margin-bottom: 40px;
 }
@@ -1027,4 +1034,3 @@ padding-bottom: 100vh;
   height: 32px;
   opacity: 0.5;
 }
-
