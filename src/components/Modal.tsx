@@ -49,6 +49,12 @@ function Modal(props: any) {
       document.body.classList.remove("no-scroll");
     };
   }, [show]);
+  const originalWidthString = projContent.rel_height_open;
+  const numericValue = parseFloat(originalWidthString);
+  const viewportHeight = window.innerHeight;
+  const screenCoverageProportion = viewportHeight / screen.height;
+  const newNumericValue = numericValue * screenCoverageProportion * 0.8;
+  const newHeightString = `${newNumericValue}%`;
   return (
     <>
       <div className={show ? "overlay" : "hide"} onClick={closeModal} />
@@ -71,7 +77,7 @@ function Modal(props: any) {
           x
         </button>
         <p>{projContent.description}</p>
-        <img width={projContent.rel_width_open} src={projContent.imageSource}></img>
+        <img height={newHeightString} src={projContent.imageSource}></img>
         <div className="projButton">
           {!(git === "") && git !== "private" && (
             <a href={git} target="_blank" className="proj-btn">
