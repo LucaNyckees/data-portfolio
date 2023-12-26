@@ -989,7 +989,10 @@ padding-bottom: 100vh;
 
 
 
-
+/* Add this to your global stylesheet or in your HTML file */
+.no-scroll {
+  overflow: hidden;
+}
 
 .show {
   display: block;
@@ -1007,6 +1010,11 @@ padding-bottom: 100vh;
   height: 100%;
   background: #0000003a;
   transition: opacity 0.2s ease;
+}
+
+.overlay {
+  /* Add this style to prevent the body from scrolling when the overlay is displayed */
+  overflow: hidden;
 }
 
 

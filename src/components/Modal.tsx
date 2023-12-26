@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from 'react';
 import projContents from "../variables/projects";
 
 function LockSymbol(props: any) {
@@ -36,6 +36,19 @@ function Modal(props: any) {
       <></>
     );
   const w = window.innerWidth;
+  useEffect(() => {
+    // Add or remove 'no-scroll' class to body based on the modal visibility
+    if (show) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+
+    // Cleanup: remove the class when the component is unmounted
+    return () => {
+      document.body.classList.remove("no-scroll");
+    };
+  }, [show]);
   return (
     <>
       <div className={show ? "overlay" : "hide"} onClick={closeModal} />
