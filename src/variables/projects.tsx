@@ -33,7 +33,7 @@ let projContents = [
                      We study the spreading process of COVID19 by analysing contact tracing data through \
                      network and topological methods like graph calibration and standard persistent homology. \
                      We create an efficient pipeline and develop a Streamlit web application for data visualization. \
-                     Interactions between users are modeled through simplicial complexes, whose structure allows \
+                     Interactions between users are modeled through simplicial complexes, allowing \
                      for higher dimensional information within the spreading process.",
     imageSource: UPHESS_project1,
     labels: ["docker", "topology", "python", "graph-theory", "web-app"],

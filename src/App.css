@@ -83,12 +83,10 @@ width: calc(100vw - 15px);
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 0;
   }
   .project h2, .modal h2 {
     font-size: 14px;
-    margin-bottom: 40px;
-    padding-top: 32px;
+    margin-bottom: 36px;
     margin-left: 26px;
     margin-right: 26px;
   }
@@ -194,7 +192,7 @@ width: calc(100vw - 15px);
     border: 1px solid 'white';
     height: auto;
     width: 54%;
-    margin-top: 0px;
+    margin-top: 22px;
     margin-right: auto;
     border-radius: 16px;
     background-color: white;
@@ -202,14 +200,15 @@ width: calc(100vw - 15px);
     padding-bottom: 60px;
     z-index: 9998;
   }
+  
   .project h3, .modal h3 {
     font-size: 16px;
     font-weight: 100;
     }
   .project h2, .modal h2 {
     font-size: 20px;
-    margin-bottom: 40px;
-    padding-top: 60px;
+    margin-bottom: 36px;
+    padding-top: 12px;
   }
   .project p, .modal p {
     text-align: justify;
@@ -533,9 +532,8 @@ h4 {
 
 .project img, .modal img {
   position: relative;
-  /* width: 50%; */
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin-top: auto;
+  margin-bottom: 20px;
 }
 
 

@@ -28,7 +28,6 @@ function Modal(props: any) {
   let report = projContent.report;
   let poster = projContent.poster;
   const leftMargin = (-((index % 4) + 0.5) * 74.6) / 4;
-  const topMargin = -(344 * Math.floor(index / 4)) + 160;
   const lock =
     [4, 5, 6, 7].indexOf(index) > -1 ? (
       <LockSymbol size={16}></LockSymbol>
@@ -53,7 +52,7 @@ function Modal(props: any) {
   const numericValue = parseFloat(originalWidthString);
   const viewportHeight = window.innerHeight;
   const screenCoverageProportion = viewportHeight / screen.height;
-  const newNumericValue = numericValue * screenCoverageProportion * 0.8;
+  const newNumericValue = numericValue * screenCoverageProportion;
   const newHeightString = `${newNumericValue}%`;
   return (
     <>
