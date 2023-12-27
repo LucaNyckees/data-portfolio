@@ -783,7 +783,7 @@ text-decoration: none;
 .displayJobBox {
   margin-top: 80px;
   background-color: var(--color1);
-  border-radius: 50px;
+  border-radius: 30px;
   margin-left: 20%;
   margin-right: 20%;
   margin-bottom: 100px;

@@ -35,7 +35,7 @@ function Job(index: number) {
             onMouseOver={() => utils.displayJob(index)}
             onMouseLeave={utils.undisplayJob}
           >
-            more_horiz
+            description
           </a>
           <a
             href={job.href}
