@@ -3,18 +3,20 @@ import * as utils from "../functions/TimelineJobs";
 function Timeline1() {
   return (
     <>
-      <div className="timeline-2">
-        <div className="timeline-2-sub" style={{ left: "200px" }}>
+      <div className="timeline-top">
+        <div className="timeline-top-sub" style={{ left: "100px" }}>
           <p>
             Bachelor of Sciences <br></br> in Mathematics, EPFL <br></br>{" "}
             2017-2020
           </p>
         </div>
-        <div className="timeline-2-sub" style={{ left: "500px" }}>
+        <div className="timeline-top-sub" style={{ left: "500px" }}>
           <p>
             Masters of Sciences <br></br> in Mathematics, EPFL <br></br>{" "}
             2020-2022
           </p>
+        </div>
+        <div className="timeline-top-sub" style={{ left: "766px" }}>
         </div>
       </div>
     </>
@@ -26,7 +28,7 @@ function Job(index: number) {
   let id = `job${index}`;
   return (
     <>
-      <div className="timeline-1-sub" id={id}>
+      <div className="timeline-bottom-sub" id={id}>
         <h1>{job.title}</h1>
         <p style={{ paddingLeft: "0px" }}>{job.text}</p>
         <div className="jobMoreBtns">
@@ -76,7 +78,7 @@ var jobs = [
 function Timeline2() {
   return (
     <>
-      <div className="timeline-1">
+      <div className="timeline-bottom">
         {Job(0)}
         {Job(1)}
         {Job(2)}
