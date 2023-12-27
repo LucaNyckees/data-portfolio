@@ -137,7 +137,7 @@ function App() {
             one pretty point-cloud.”
           </p>
         </div>
-        {/* <PortfolioFcts.ProjChoiceButtons></PortfolioFcts.ProjChoiceButtons> */}
+        <PortfolioFcts.ProjLocationLabels></PortfolioFcts.ProjLocationLabels>
         <PortfolioFcts.Board show={show}></PortfolioFcts.Board>
       </section>
       <section

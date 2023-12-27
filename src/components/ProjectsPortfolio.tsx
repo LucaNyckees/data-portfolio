@@ -3,22 +3,14 @@ import { useState } from "react";
 import projContents from "../variables/projects";
 import Modal from "./Modal";
 
-function ProjChoiceButtons() {
+
+function ProjLocationLabels() {
   return (
     <>
-      <div className="projLabelsChoice" id="projLabelsChoice">
-        <a type="button" id="projLabelShowAll">
-          Show all
-        </a>
-        <a type="button" id="projLabelShow0">
-          Topological Machine Learning
-        </a>
-        <a type="button" id="projLabelShow1">
-          Financial Data Analysis
-        </a>
-        <a type="button" id="projLabelShow2">
-          Statistical Machine Learning
-        </a>
+      <div className="proj-location-legend">
+        <p id="proj-loc-1">Laboratory for Topology and Neuroscience at EPFL</p>
+        <p id="proj-loc-2">Quanthome SA, Lausanne</p>
+        <p id="proj-loc-3">Academical Curriculum at EPFL</p>
       </div>
     </>
   );
@@ -66,12 +58,22 @@ function Project(index: number) {
       <></>
     );
   const id = `myModal${index}`;
+  let circle_color = ''
+  if ([0, 1, 2, 3].includes(index)) {
+    circle_color = 'var(--topocolor)';
+  } else if ([4, 5, 6, 7].includes(index)) {
+    circle_color = 'var(--qhcolor)';
+  }
+  else {
+    circle_color = 'var(--epflcolor)';
+  }
   return (
     <>
       <button
         id={proj_id}
         type="button"
         className="about-col"
+        style={{ position: 'relative' }}
         onClick={() => setShow(true)}
       >
         <p id={proj_id + "P"}>
@@ -85,6 +87,7 @@ function Project(index: number) {
         <div className="labels-front">
           {LabelList(project.labels, project.cut)}
         </div>
+        <div className="proj-location-label" style={{ border: `1.8px solid ${circle_color}` }}></div>
       </button>
       <div className="App">
         <Modal
@@ -121,4 +124,4 @@ function Board(props: any) {
   );
 }
 
-export { Board, ProjChoiceButtons };
+export { Board, ProjLocationLabels };
