@@ -518,7 +518,7 @@ nav .fa {
   flex-basis: 31%;
   border-radius: 16px;
   margin-bottom: 0%;
-  padding: 0px 12px;
+  padding: 0px 11px;
   box-sizing: border-box;
   transition: 0.5s;
   border: 1px solid rgba(11, 8, 24, 0.25);
@@ -664,14 +664,6 @@ h4 {
   color: white;
   transition: 0.4s;
 }
-
-/*#projLabelShowAll {
-  border: 1px solid #b260f1ba;
-  background: #b260f1ba;
-  color: white;
-  border: 0px solid #b260f1ba;
-}*/
-
 
 button img {
   margin-bottom: 10px;
