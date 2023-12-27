@@ -783,12 +783,13 @@ text-decoration: none;
 .displayJobBox {
   margin-top: 80px;
   background-color: var(--color1);
-  border-radius: 30px;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 100px;
   position: absolute;
-  width: 60%;
+  padding-left: 20%;
+  padding-right: 20%;
+  width: 100%;
 }
 
 .displayJobBox h1{
