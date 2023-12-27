@@ -132,7 +132,8 @@ function App() {
       <section className="data" id="data">
         <div id="dataTitle">
           <h1 id="dataTitleH">DATA SCIENCE PORTFOLIO</h1>
-          <p style={{ marginBottom: "5%" }} id="dataTitleP">
+          <h2>A selection of data science projects</h2>
+          <p style={{ marginBottom: "2.7%" }} id="dataTitleP">
             “- So, what's your first take on all this ?<br></br>- Well... that’s
             one pretty point-cloud.”
           </p>
