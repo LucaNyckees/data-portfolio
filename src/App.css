@@ -856,8 +856,9 @@ margin-right: 4px;
 margin-bottom: 24px;
 }
 .proj-btn:hover, #myModal a:hover{
-border: 1px solid #c07df4be;
-background: #c07df44c;
+border: 1px solid hsl(216, 100%, 50%, 0.696);
+background: hsla(216, 100%, 50%, 0.696);
+color: white;
 transition: 0.8s;
 }
 
