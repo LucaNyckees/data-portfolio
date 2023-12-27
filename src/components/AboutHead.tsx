@@ -31,7 +31,7 @@ function AboutHead() {
   return (
     <>
       <h1>ABOUT ME</h1>
-      <p>I once solved an 8 years + puzzle in only five years.</p>
+      <p>I once solved a 4-8 years puzzle in only 3 years.</p>
       <div className="about-image">
         <img src={profile_pic} id="profileImage"></img>
         <div id="aboutButtons">
