@@ -39,11 +39,20 @@ let jobContents = [
     company: "Quanthome SA",
     period: "August 2023 - present",
     description:
-      "Quanthome is a data science startup based in Lausanne, and aiming at digitalizing and analysing \
-                      the Swiss real estate market.  \
-                      Together with a team of passionate web developers and data scientists, we're designing and implementing complex \
-                      pipelines with the latest technology. So far, I have had the chance to work on two main projects, namely one about financial \
-                      estimations, and one about developing ESG criteria for buildings and real estate funds.",
+      "Quanthome is a data science startup based in Lausanne, aiming at digitalizing \
+      the Swiss real estate market. \
+      With a team of passionate web developers and data scientists, we're designing complex \
+      pipelines with the latest technology in order to deliver a platform product. \
+      Addressed subjects include \
+      (1) applying finance models to the real estate market \
+      (2) evaluating the environmental impact of buildings \
+      (3) working on ESG theory for the real estate domain. \
+      Addressed tasks include \
+      (1) data architecture and database maintenance \
+      (2) machine learning engineering \
+      (3) supervision of master thesis students and interns \
+      (4) projects coordination. \
+      Made a collaboration with the CRML at UNIL (Center for Risk Management of Lausanne)."
   },
 ];
 
