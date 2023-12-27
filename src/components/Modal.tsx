@@ -72,8 +72,9 @@ function Modal(props: any) {
           <h4 style={{ marginTop: "0vh" }}>Quanthome project {lock}</h4>
         ) : null}
         <h3>{projContent.date}</h3>
-        <button className="close" onClick={closeModal}>
-          x
+        <button type="button" className="btn-close" onClick={closeModal}>
+          <span className="icon-cross"></span>
+          <span className="visually-hidden">Close</span>
         </button>
         <p>{projContent.description}</p>
         <img height={newHeightString} src={projContent.imageSource}></img>
