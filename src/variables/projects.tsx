@@ -3,7 +3,7 @@ import UPHESS_project1 from "../../images/UPHESS_project1.jpeg";
 import UPHESS_project2 from "../../images/UPHESS_project2.png";
 import UPHESS_project3 from "../../images/UPHESS_project3.png";
 import UPHESS_project4 from "../../images/UPHESS_project4.png";
-import QH_project1bis from "../../images/QH_project1tris.png";
+import QH_project1 from "../../images/QH_project1.png";
 import QH_project2 from "../../images/QH_project2.png";
 import QH_project3 from "../../images/QH_project3.png";
 import QH_project4 from "../../images/QH_project4.png";
@@ -25,7 +25,7 @@ import PMT_presentation from "../../files/PMT_presentation.pdf";
 
 let projContents = [
   {
-    title: "Topological Data Analysis for COVID19 Data",
+    title: "Topological Data Analysis for COVID19 Data in Geneva",
     description:
       "This is a project done with the Laboratory of Topology and Neuroscience at EPFL, \
                      under the supervision of Prof. Kathryn Hess Bellwald, Dr. Stefania Ebli and Dr. \
@@ -48,7 +48,7 @@ let projContents = [
   },
 
   {
-    title: "Topological Optimization Machine Learning",
+    title: "Topological Optimization Machine Learning for Classification",
     description:
       "This project is part of my master thesis, realized under the supervision of \
                      Prof. Kathryn Hess Bellwald and Dr. Nicolas Berkouk - in the Laboratory of Topology and \
@@ -70,7 +70,7 @@ let projContents = [
   },
 
   {
-    title: "Computing Levelset Zigzag Homology",
+    title: "Computing Levelset Zigzag Homology (Topological DA Theoretical Topic)",
     description:
       "This project was realized under the supervision of \
                      Prof. Kathryn Hess Bellwald and Dr. Nicolas Berkouk, from the Laboratory of Topology and \
@@ -118,15 +118,19 @@ let projContents = [
   },
 
   {
-    title: "Data Visualization for SwissTopo Geolocation Data",
+    title: "Estimating Energy consumption and CO2 Emissions at Building-Level",
     description:
-      "Creating a complete data visualization analysis pipeline for stochastic real estate data, finance data and \
-      geolocation data. Providing wrapped up web-app interactive summaries.",
-    imageSource: QH_project1bis,
-    labels: ["finance", "real-estate", "viz", "postgreSQL"],
+      "In this project, we realized a framework designed to estimate both CO2 emissions and the energy consumption \
+      of buildings in Switzerland through a very standard machine learning pipeline. We make use of the class of \
+      gradient boosting regressors, fit to work with on tabular data with both categorical and numerical variables. \
+      The real work of this project lies in the data engineering part, in which we extract meaningful multi-granularity \
+      features (i.e. building-level, district-level, locality-level and so on). This was done as part of the master \
+      thesis of Hilda Horvath, a student at EPFL in the data science program.",
+    imageSource: QH_project1,
+    labels: ["CO2", "real-estate", "energy", "building-physics"],
     cut: 2,
     rel_width: "76%",
-    rel_height_open: "48%",
+    rel_height_open: "42%",
     date: "Autumn 2022",
     git: "private",
     pres: "",
@@ -135,15 +139,15 @@ let projContents = [
   },
 
   {
-    title: "Behavioral Data Imputer for MNAR-type Data",
+    title: "Impact of Macro-economic Variables on the Real Estate Market",
     description:
-      "MNAR-type data (missing not at random) often arises in data processing challenges. Here, we develop \
-    a deterministic 'behavioral' model for MNAR-type boolean data in the real estate domain. It considers network \
-    structures for modeling interactions between entries with missing data and not only quantifies instances \
-    of True, False and Nan values but also relations or edges between True, False and Nan values.\
-    ",
+      "The real estate market is intricately linked to macro-economic variables, creating a dynamic interplay that \
+      shapes its trajectory. We study the impact of macro-economic factors on this market, analyzing how variables \
+      such as interest rates, inflation, GDP growth, real estate rent index and employment rates influence property \
+      values, real estate asset incomes, demand, and investment patterns. We combine standard mathematical finance \
+      techniques to the use of artificial neural networks.",
     imageSource: QH_project2,
-    labels: ["imputation", "real-estate", "viz", "MNAR-data"],
+    labels: ["macro-economics", "rates", "indices", "time-series"],
     cut: 2,
     rel_width: "80%",
     rel_height_open: "40%",
@@ -155,13 +159,14 @@ let projContents = [
   },
 
   {
-    title: "Financial Statistics for Real Estate Time-Series Data",
+    title: "Machine Learning-based Techniques for Real Estate Time-Series Forecasting",
     description:
-      "We implement various machine learning models from the class of neural networks and ensemble learning \
-    methods to build robust estimation pipelines for non-stochastic financial analysis of real estate data. \
-    We also consider mathematical finance models to build a forecasting pipeline for real estate time-series data. \
-    In particular, we compare the robustness, efficiency and accuracy of random forest regressors, gradient \
-    boosting regressors and standard artificial neural network architectures.",
+      "By integrating machine learning capabilities with the precision of mathematical finance, we develop a \
+      framework not only ensuring precise predictions but also furnishing valuable insights into the complexities \
+      of real estate finance. Whether engaged in non-temporal estimations or time-series forecasting, this modular \
+      approach guarantees adaptability and optimal performance across a spectrum of scenarios. On the machine learning \
+      side, used for non-temporal estimations of financial target variables, we focus on conventional neural \
+      network architectures as well as ensemble learning models such as the class gradient boosting regressors.",
     imageSource: QH_project3,
     labels: ["ensemble-learning", "real-estate", "time-series", "postgreSQL"],
     cut: 2,
@@ -175,16 +180,21 @@ let projContents = [
   },
 
   {
-    title: "Developing ESG Criteria for the Real Estate Market",
+    title: "Environmental Damage Function at Building-Level Data (Hail Insurance Claims)",
     description:
-      "With a team of data science students, we develop a theory of ESG (environment, society and \
-      governance) criteria for the domain of real estate. These indicators apply, in particular, to real estate \
-      investment funds. This work is in collaboration with both UNIL and EPFL.",
+      "This project is an on-going work, in collaboration with two UNIL labs, namely the CRML (Center for Risk \
+        Management at Lausanne) and ECCE (Extreme Climatics Center Expertise). Firstly, we aim at providing \
+        an environmental damage function - current focus on hail - at the building-level \
+        by downscaling climate data from MeteoSwiss and fitting extreme values models on insurance claims data. \
+        Secondly, we aim at developing a cost function modeling the financial impact on a building price. \
+        The goal is to improve the study of Dr. Ophelia Miralles and Prof. Anthony Davison (article : \
+        Bayesian Modeling of Insurance Claims for Hail Damage) by adding a building fragility index to their \
+        framework.",
     imageSource: QH_project4,
-    labels: ["environment", "real-estate", "ESG", "mobility"],
+    labels: ["environment", "real-estate", "ESG", "hail", "climate"],
     cut: 2,
-    rel_width: "80%",
-    rel_height_open: "44%",
+    rel_width: "70%",
+    rel_height_open: "40%",
     date: "Autumn 2022",
     git: "private",
     pres: "",
