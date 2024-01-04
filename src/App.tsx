@@ -138,7 +138,6 @@ function App() {
             one pretty point-cloud.”
           </p>
         </div>
-        <PortfolioFcts.ProjLocationLabels></PortfolioFcts.ProjLocationLabels>
         <PortfolioFcts.Board show={show}></PortfolioFcts.Board>
       </section>
       <section

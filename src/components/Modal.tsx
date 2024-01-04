@@ -9,8 +9,8 @@ function LockSymbol(props: any) {
       xmlns="http://www.w3.org/2000/svg"
       width={size}
       height={size}
-      fill="currentColor"
-      className="bi bi-lock"
+      // fill="currentColor"
+      className="bi-bi-lock"
       viewBox={viewBoxSize}
       color="rgba(11, 8, 24, 0.606)"
     >

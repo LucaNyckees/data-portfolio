@@ -1,5 +1,6 @@
 :root {
   --color2: #6668e1;
+  /* --color2: hsla(216, 100%, 50%, 0.696); */
   --test: #5558ee;
   --color3: #999ae9;
   --color1: #AAC4FF;
@@ -324,32 +325,6 @@
   }
 }
 
-.proj-location-label {
-  border-radius: 50%;
-  height: 20px;
-  width: 20px;
-  bottom: 3%;
-  left: 5%;
-  position: absolute;
-}
-
-.proj-location-legend {
-  display: flex;
-  max-width: 60%;
-  margin-top: 0px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0px 3%;
-}
-
-.proj-location-legend p {
-  border: solid 2px;
-  border-radius: 12px;
-  margin-left: 0.5%;
-  margin-right: 0.5%;
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
 
 #proj-loc-1 {
   border: solid 1.8px var(--topocolor);
@@ -414,7 +389,7 @@ nav img {
   background: var(--color2);
   display: block;
   margin: 5px auto;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
 .nav-links ul li:hover::after {
@@ -533,8 +508,8 @@ nav .fa {
   padding: 0px 10px;
   box-sizing: border-box;
   transition: 0.5s;
-  border: 1px solid rgba(11, 8, 24, 0.25);
-  background-color: white;
+  border: none;
+  background-color: rgb(252, 251, 251);
   margin-left: 1%;
   margin-right: 1%;
 }
@@ -553,7 +528,8 @@ nav .fa {
   padding: 10px 10px;
   border-radius: 40px;
   color: var(--color2);
-  border: 1px solid var(--color2);
+  /* border: 1px solid var(--color2); */
+  border: none;
   background-color: white;
   font-size: 24px;
   height: 48px;
@@ -580,16 +556,15 @@ nav .fa {
 }
 
 #aboutButtons button:hover {
-  border: 2px solid var(--color2);
-  background-color: var(--color1light);
+  /* border: 2px solid var(--color2); */
+  background-color: var(--color2);
   color: white;
   transition: 0.2s;
 }
 
-
-
 .about-col img {
   margin-top: 10px;
+  border-radius: 10px;
 }
 
 .about h1,
@@ -612,10 +587,27 @@ h4 {
 }
 
 .about-col:hover {
-  border: 2px solid var(--color2);
+  /* border: 2px solid var(--color1); */
   background-color: var(--color1);
   transition: 0.2s;
   color: white;
+  cursor: pointer;
+}
+
+.about-col:hover p, .about-col:hover svg {
+  color: white;
+  font-weight: 500;
+}
+
+.about-col:hover label {
+  background-color: white;
+  color: var(--color1);
+}
+
+.about-col label {
+  font-weight: 500;
+  color: white;
+  background-color: var(--color1);
 }
 
 .projLabelsChoice a:target {
@@ -674,7 +666,7 @@ h4 {
   border: 1px solid var(--color1);
   background: var(--color1);
   color: white;
-  transition: 0.4s;
+  transition: 0.2s;
 }
 
 button img {
@@ -762,8 +754,8 @@ button img {
 label {
   position: relative;
   font-size: 12px;
-  color: #777;
-  background-color: var(--color1light);
+  color: white;
+  background-color: var(--color1);
   border-radius: 8px;
   margin: 48px 2px;
   padding: 4px 8px;
@@ -919,7 +911,7 @@ label {
   margin-top: 40px;
   margin-bottom: 40px;
   border-radius: 200px;
-  border: 6px solid var(--color2);
+  /* border: 6px solid var(--color2); */
 }
 
 .about-btn {
@@ -938,7 +930,7 @@ label {
 .about-btn:hover {
   border: 1px solid var(--color2);
   background: #c07df486;
-  transition: 0.8s;
+  transition: 0.2s;
 
 }
 
@@ -969,10 +961,10 @@ label {
 
 .proj-btn:hover,
 #myModal a:hover {
-  border: 1px solid hsl(216, 100%, 50%, 0.696);
-  background: hsla(216, 100%, 50%, 0.696);
+  border: solid 1px var(--color2);
+  background: var(--color2);
   color: white;
-  transition: 0.8s;
+  transition: 0.2s;
 }
 
 
