@@ -11,7 +11,7 @@ function Label(tag: string) {
       val = colors[key];
     }
   }
-  return <label>#{tag}</label>;
+  return <label>{tag}</label>;
 }
 
 function LabelList(tags: Array<string>, cut: number) {

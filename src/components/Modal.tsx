@@ -106,11 +106,11 @@ function Modal(props: any) {
           )}
         </div>
         <div>
-          {lbls.length > 0 ? <label>#{lbls[0]}</label> : null}
-          {lbls.length > 1 ? <label>#{lbls[1]}</label> : null}
-          {lbls.length > 2 ? <label>#{lbls[2]}</label> : null}
-          {lbls.length > 3 ? <label>#{lbls[3]}</label> : null}
-          {lbls.length > 4 ? <label>#{lbls[4]}</label> : null}
+          {lbls.length > 0 ? <label>{lbls[0]}</label> : null}
+          {lbls.length > 1 ? <label>{lbls[1]}</label> : null}
+          {lbls.length > 2 ? <label>{lbls[2]}</label> : null}
+          {lbls.length > 3 ? <label>{lbls[3]}</label> : null}
+          {lbls.length > 4 ? <label>{lbls[4]}</label> : null}
         </div>
       </div>
     </>
