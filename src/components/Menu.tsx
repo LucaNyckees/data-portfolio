@@ -37,6 +37,9 @@ function Menu() {
             <li>
               <a href="#data">DATA SCIENCE PORTFOLIO</a>
             </li>
+            <li>
+              <a href="#stack">TECH STACK</a>
+            </li>
             {/* <li>
               <a href="#game">GAME</a>
             </li> */}

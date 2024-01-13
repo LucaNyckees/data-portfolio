@@ -1,5 +1,6 @@
 import Menu from "./components/Menu";
 import Intro from "./components/Intro";
+import Stack from "./components/Stack";
 import { AboutHead } from "./components/AboutHead";
 import AboutTimeline from "./components/AboutTimeline";
 import * as PortfolioFcts from "./components/ProjectsPortfolio";
@@ -139,6 +140,9 @@ function App() {
           </p>
         </div>
         <PortfolioFcts.Board show={show}></PortfolioFcts.Board>
+      </section>
+      <section className="stack" id="stack">
+      <Stack></Stack>
       </section>
       <section
         className="information"
