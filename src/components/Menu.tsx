@@ -1,4 +1,6 @@
 import lightSwitch from "../functions/lightSwitch";
+import React from 'react';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 function Button(icon: string) {
   return (
@@ -17,35 +19,79 @@ function Button(icon: string) {
 }
 
 function Menu() {
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <>
       <nav id="menuBar">
-        {/* <button type="button" className="LightButton" onClick={lightSwitch}>
-          <div className="LightButtonSymbol"></div>
-        </button> */}
-
         <div className="nav-links" id="navLinks">
           <i className="fa fa-times" id="closeMenu"></i>
           <ul>
-            <li></li>
             <li>
-              <a href="#particles-js">HOME</a>
+              <Link
+                activeClass="active"
+                to="particles-js"
+                spy={true}
+                smooth={true}
+                offset={-70} // Adjust the offset as needed
+                duration={500}
+              >
+                HOME
+              </Link>
             </li>
             <li>
-              <a href="#about">ABOUT ME</a>
+              <Link
+                activeClass="active"
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                ABOUT
+              </Link>
             </li>
             <li>
-              <a href="#data">DATA SCIENCE PORTFOLIO</a>
+              <Link
+                activeClass="active"
+                to="data"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                DATA SCIENCE PORTFOLIO
+              </Link>
             </li>
             <li>
-              <a href="#stack">TECH STACK</a>
+              <Link
+                activeClass="active"
+                to="stack"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                TECH STACK
+              </Link>
             </li>
-            {/* <li>
-              <a href="#game">GAME</a>
-            </li> */}
+            <li>
+              <Link
+                activeClass="active"
+                to="information"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                CONTACT
+              </Link>
+            </li>
           </ul>
         </div>
-        <i className="fa fa-bars" id="openMenu"></i>
+        <i className="fa fa-bars" id="openMenu" onClick={scrollToTop}></i>
       </nav>
     </>
   );

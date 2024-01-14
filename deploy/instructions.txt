@@ -6,7 +6,7 @@ rm -rf /home/ubuntu/build/*
 
 # terminal 1
 
-cd Desktop/portfolio/portfolio
+cd Desktop/my-repos/portfolio
 
 npm run build
 

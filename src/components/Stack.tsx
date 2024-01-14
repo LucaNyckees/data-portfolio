@@ -18,6 +18,7 @@ import KerasLogoSvg from '../../images/stack_logos/keras-svgrepo-com.svg'
 import TensorflowLogoSvg from '../../images/stack_logos/tensorflow-enterprise-svgrepo-com.svg'
 import SklearnLogoSvg from '../../images/stack_logos/Scikit_learn_logo_small.svg'
 import XgboostLogoPng from '../../images/stack_logos/XGBoost_logo.png'
+import ScipyLogoSvg from '../../images/stack_logos/SCIPY_2.svg'
 
 import NumpyLogoSvg from '../../images/stack_logos/numpy-svgrepo-com.svg'
 import PandasLogoSvg from '../../images/stack_logos/pandas-svgrepo-com.svg'
@@ -25,6 +26,8 @@ import PolarsLogoSvg from '../../images/stack_logos/polars_logo_icon_248809.svg'
 
 import AirflowLogoSvg from '../../images/stack_logos/apache-airflow-svgrepo-com.svg'
 import KafkaLogoSvg from '../../images/stack_logos/data-accesskafka-cluster-svgrepo-com.svg'
+import GithubLogoSvg from '../../images/stack_logos/github-icon-1-logo-svgrepo-com.svg'
+import GitLogoSvg from '../../images/stack_logos/git-deployment-svgrepo-com.svg'
 
 import MatplotlibLogoSvg from '../../images/stack_logos/Matplotlib_icon.svg'
 import PlotlyLogoSvg from '../../images/stack_logos/Plotly.svg'
@@ -52,6 +55,8 @@ const logosByCategory = {
     workflow_orchestration: [
         { id: 'airflow-logo', logo: AirflowLogoSvg },
         { id: 'kafka-logo', logo: KafkaLogoSvg },
+        { id: 'github-logo', logo: GithubLogoSvg },
+        { id: 'git-logo', logo: GitLogoSvg },
     ],
     web_development: [
         { id: 'fastapi-logo', logo: FastAPILogoSvg },
@@ -64,6 +69,7 @@ const logosByCategory = {
         { id: 'pytorch-logo', logo: PytorchLogoSvg },
         { id: 'keras-logo', logo: KerasLogoSvg },
         { id: 'tensorflow-logo', logo: TensorflowLogoSvg },
+        { id: 'scipy-logo', logo: ScipyLogoSvg },
         { id: 'sklearn-logo', logo: SklearnLogoSvg },
         { id: 'xgboost-logo', logo: XgboostLogoPng },
     ],
@@ -80,7 +86,7 @@ const logosByCategory = {
     performance_monitoring: [
         { id: 'streamlit-logo', logo: StreamlitLogoSvg },
         { id: 'mlflow-logo', logo: MLflowLogoSvg },
-],
+    ],
 };
 
 // Rest of the code remains unchanged
@@ -103,18 +109,20 @@ function Stack() {
                 <div className='stack-content'>
                     {Object.entries(logosByCategory).map(([category, logos]) => (
                         <div key={category} className='stack-category'>
-                            <div className='stack-logos-list'>
+                            <div className='stack-logos-card'>
                                 <h2>{formatKeyToTitle(category)}</h2>
-                                {logos.map((logoObj, index) => (
-                                    <span className='stack-image-div' key={index}>
-                                        <img
-                                            id={logoObj.id || `logo_${index}`}
-                                            key={index}
-                                            src={logoObj.logo}
-                                            alt={`Logo ${index + 1}`}
-                                        />
-                                    </span>
-                                ))}
+                                <div className='stack-logos-list'>
+                                    {logos.map((logoObj, index) => (
+                                        <span className='stack-image-div' key={index}>
+                                            <img
+                                                id={logoObj.id || `logo_${index}`}
+                                                key={index}
+                                                src={logoObj.logo}
+                                                alt={`Logo ${index + 1}`}
+                                            />
+                                        </span>
+                                    ))}
+                                </div>
                             </div>
                         </div>
                     ))}

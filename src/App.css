@@ -394,7 +394,10 @@ nav img {
   color: var(--grey);
   text-decoration: none;
   font-size: 13px;
+}
 
+.nav-links ul li a:hover {
+  cursor: pointer;
 }
 
 .nav-links ul li::after {
@@ -1323,9 +1326,13 @@ label {
   background: linear-gradient(to right, var(--color1) 0%, var(--color1) 16%, white 16%, white 100%);
 }
 
+.stack-logos-card {
+  aspect-ratio: 1 / 1;
+  display: flex;
+}
+
 .stack-logos-list {
   overflow: auto;
-  aspect-ratio: 1 / 1;
   display: flex;
 }
 
