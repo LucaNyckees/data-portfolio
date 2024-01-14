@@ -7,7 +7,7 @@ function Intro() {
       <h1 className='name-and-logo'>
         LUCA NYCKEES
       </h1>
-      <img src={my_logo} alt="My Logo" className="logo" />
+      {/* <img src={my_logo} alt="My Logo" className="logo" /> */}
       <h2>Mathematician &#8226; Data scientist &#8226; Software enthusiast</h2>
       <p>
         Hey there. I’m a mathematician, working as <br></br>

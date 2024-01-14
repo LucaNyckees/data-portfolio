@@ -142,7 +142,7 @@ function App() {
         <PortfolioFcts.Board show={show}></PortfolioFcts.Board>
       </section>
       <section className="stack" id="stack">
-      <Stack></Stack>
+        <Stack></Stack>
       </section>
       <section
         className="information"
@@ -170,14 +170,14 @@ function App() {
 
 /*<div className="project" id="myModal" role="dialog">*/
 
-/*<div className="App">
-          {!show && <button onClick={openModal}>Show modal</button>}
-          <Modal
-            className="project"
-            id="myModal"
-            closeModal={closeModal}
-            show={show}
-          />
-        </div>*/
+{/* <div className="App">
+  {!show && <button onClick={openModal}>Show modal</button>}
+  <Modal
+    className="project"
+    id="myModal"
+    closeModal={closeModal}
+    show={show}
+  />
+</div> */}
 
 export default App;

@@ -1,0 +1,108 @@
+/* ----- game section -----*/
+
+.game {
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 200px;
+    background-color: var(--color1);
+    color: white;
+}
+
+.game h2 {
+    text-align: left;
+    font-weight: 1000;
+    padding-left: 30px;
+    padding-right: 2px;
+    height: 3vh;
+    margin-top: 0vh;
+    color: white;
+}
+
+.game p {
+    text-align: justify;
+    padding: 20px 30px;
+    color: white;
+}
+
+.game .about-btn {
+    border: 1px solid white;
+}
+
+#gameTitle p {
+    text-align: center;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    color: white;
+}
+
+.game a {
+    text-align: left;
+}
+
+.game h1 {
+    color: white;
+}
+
+.game-content {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 24px;
+    margin-bottom: 40px;
+}
+
+.game-right,
+.game-left {
+    width: 48%;
+    margin: auto;
+    height: 62vh;
+    border: 1px solid rgba(173, 177, 178, 0.583);
+    border-radius: 16px;
+}
+
+.intro-game {
+    width: 100%;
+    margin: 20px auto;
+    background-color: transparent;
+    border-radius: 16px;
+}
+
+.intro-game p {
+    text-align: justify;
+}
+
+.viz-game {
+    width: 90%;
+    margin: 30px auto;
+}
+
+.viz-game canvas {
+    width: 100%;
+    margin: 30px auto;
+    position: relative;
+    /*border: 1px solid rgba(11, 8, 24, 0.25);*/
+    border-radius: 16px;
+    display: block;
+    background-color: white;
+}
+
+#show-game-answer-ensemble {
+    display: flex;
+    height: 3vh;
+}
+
+#walk-answer {
+    background-color: transparent;
+}
+
+#game-answer-display {
+    height: 16vh;
+    margin-top: 0px;
+}
+
+#lattice-link {
+    color: transparent;
+}
