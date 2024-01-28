@@ -4,7 +4,7 @@ let jobContents = [
     company: "Department of Mathematics, EPFL",
     period: "",
     description:
-      "As student assistant at EPFL, I've had the chance to be responsible of various tasks such as \
+      "As student assistant at EPFL, I've had the chance to be responsible for various tasks such as \
                       on-site and online individual teaching, group teaching, grading of exams and homeworks, creation of exercises and \
                       presenting the resolution of exercises in front of a class. I have been hired by the department of mathematics, \
                       for a wide variety of courses including first year analysis, mecanical physics, algebra and geometry courses, as well as more advanced 2nd and 3rd year math courses.",
@@ -28,7 +28,7 @@ let jobContents = [
     period: "",
     description:
       "The Laboratory for Topology and Neuroscience of EPFL has a divsion that focuses \
-                      on the applciations of topology to data analysis and machine learning. As a research developer, \
+                      on the applications of topology to data analysis and machine learning. As a research developer, \
                       I collaborated with Nicolas Berkouk to make a survey about a powerful data analysis tool called \
                       'Levelset Zigzag Persistent Homology'. In realizing this project, I also implemented a Streamlit web application \
                       allowing for an intuitive visual guide of how using this tool works.",

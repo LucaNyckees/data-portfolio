@@ -11,19 +11,12 @@
   --grey: rgba(11, 8, 24, 0.606);
 }
 
-/* 1385 lines before refactoring >>> 1216 after first rapid clean up*/
-
 * {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
   /* border: 1px solid black; */
-}
-
-.name-and-logo {
-  display: flex;
-  width: 100%;
 }
 
 .logo {
@@ -34,7 +27,7 @@
 }
 
 #name-and-logo-text-box {
-  width: 50%;
+  width: auto;
   margin-left: auto;
   margin-right: auto;
   margin-top: 4vh;
@@ -65,7 +58,6 @@
   width: 100vw;
   height: 100vh;
   z-index: 1;
-  width: calc(100vw - 15px);
 }
 
 @media (max-width: 1416px),
@@ -276,17 +268,18 @@
 
   .modal {
     color: #777;
-    flex-direction: column;
+    /* flex-direction: column; */
     position: fixed;
     top: 36px;
     bottom: 0;
     text-align: center;
-    border: 1px solid 'white';
+    border: none;
     height: auto;
-    width: 54%;
+    width: 100%;
+    left: 0;
     margin-top: 22px;
-    margin-right: auto;
-    border-radius: 16px;
+    /* margin-right: auto; */
+    /* border-radius: 16px; */
     background-color: white;
     margin-bottom: auto;
     padding-bottom: 60px;
@@ -309,7 +302,9 @@
   .project p,
   .modal p {
     text-align: justify;
-    margin: 20px 96px;
+    width: min(40vw, 80%, 600px);
+    margin: auto;
+    margin-bottom: min(28px, 2vh);
   }
 
   .project {
@@ -323,7 +318,7 @@
   }
 
   .about-col {
-    min-height: 44vh;
+    min-height: min(44vh, 541px);
     margin-top: auto;
   }
 
@@ -332,8 +327,10 @@
     margin-top: 18px;
   }
 
-  .data p {
-    margin-bottom: 24px;
+  .about-col p {
+    margin-left: min(10px, 0.83vh);
+    margin-right: min(10px, 0.83vh);
+    margin-bottom: min(20px, 1.66vh);
   }
 
   h1 {
@@ -369,7 +366,6 @@
   .text-box h1 {
     font-size: calc(min(3.8vw, 60px));
     font-weight: 100;
-    padding-left: 20%;
     text-align: center;
     margin: auto;
   }
@@ -400,7 +396,6 @@
 }
 
 .header {
-  min-height: 100vh;
   width: 100%;
   background-position: center;
   background-color: rgba(255, 255, 255, 0);
@@ -512,13 +507,13 @@ nav .fa {
   flex-basis: 31%;
   border-radius: 16px;
   margin-bottom: 0%;
-  padding: 0px 10px;
+  padding: 0px min(0.83vh, 10px);
   box-sizing: border-box;
   transition: 0.5s;
   border: none;
   background-color: rgb(252, 251, 251);
-  margin-left: 1%;
-  margin-right: 1%;
+  margin-left: 1vw;
+  margin-right: 1vw;
 }
 
 .about .about-btn {
@@ -638,7 +633,7 @@ h4 {
 .modal img {
   position: relative;
   margin-top: auto;
-  margin-bottom: 20px;
+  margin-bottom: min(1.7vh, 20px);
 }
 
 .projLabelsChoice {
@@ -789,19 +784,19 @@ label {
   border: 2px solid var(--color2);
   height: 1px;
   text-align: center;
-  margin-bottom: 96px;
-  margin-top: 32px;
+  margin-bottom: 12vh;
   margin-left: auto;
   margin-right: auto;
 }
 
 .timeline-bottom-sub {
-  height: 16px;
-  width: 16px;
+  height: 24px;
+  width: 24px;
   background-color: white;
-  border: 3px solid var(--color2);
+  border: 5px solid var(--color1);
   border-radius: 100%;
-  margin: -8px 100px;
+  margin-left: 16%;
+  margin-top: -1.5vh;
   display: inline-block;
 }
 
@@ -821,56 +816,57 @@ label {
 
 .timeline-bottom-sub p {
   width: 18vh;
-  margin: 6px auto;
+  height: min(10vh, 72px);
+  margin: min(1vh, 6px) auto;
   font-size: 12px;
   text-align: left;
 }
 
 .timeline-bottom-sub a {
+  padding: 8px 8px;
+  border-radius: 100px;
+  color: var(--color2);
+  border: none;
+  background-color: white;
+  font-size: 16px;
+  height: 32px;
+  width: 32px;
+}
+
+.timeline-bottom-sub a:hover {
+  background-color: var(--color2);
   color: white;
-  outline: none;
-  text-decoration: none;
+  transition: 0.2s;
+  cursor: pointer;
 }
 
 .timeline-top {
   width: 80%;
-  border: 2px solid white;
-  height: 1px;
-  text-align: center;
-  margin-bottom: 32px;
-  margin-top: 140px;
+  border: 0.2vh solid white;
+  margin-top: 18vh;
+  margin-bottom: 4vh;
   margin-left: auto;
   margin-right: auto;
 }
 
 .timeline-top-sub {
-  height: 33px;
+  height: 4.1vh;
   background-color: white;
-  border: 1px solid white;
-  margin: 1px 100px;
+  border: 0.2vh solid white;
+  margin-left: 6vw;
+  margin-top: 0.1vh;
   display: inline-block;
   position: absolute;
 }
 
 .timeline-top-sub p {
+  height: min(10vh, 72px);
   width: 14vw;
-  margin-top: -90px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: max(-10.4vh, -100px);
   text-align: left;
   position: absolute;
   font-size: 12px;
 
-}
-
-.timeline-bottom-sub button {
-  height: 20px;
-  border-radius: 100px;
-  padding-bottom: 24px;
-  padding-top: 0px;
-  background-color: var(--color1);
-  border-color: rgba(119, 119, 119, 0.371);
-  color: rgba(33, 89, 94, 0.657)
 }
 
 .displayJobBox {
@@ -925,7 +921,6 @@ label {
   border: 1px solid var(--color2);
   background: #c07df486;
   transition: 0.2s;
-
 }
 
 .timeline-bottom-sub .jobMoreBtns {
@@ -942,15 +937,15 @@ label {
   text-decoration: none;
   color: var(--grey);
   border: 1px solid rgba(11, 8, 24, 0.25);
-  padding: 5px 18px;
-  font-size: 13px;
+  padding: max(0.42vh, 5px) max(1.5vh, 18px);
+  font-size: max(1.1vh, 13px);
   background: transparent;
   position: relative;
   cursor: pointer;
-  border-radius: 12px;
-  margin-left: 4px;
-  margin-right: 4px;
-  margin-bottom: 24px;
+  border-radius: max(1vh, 12px);
+  margin-left: max(0.33vh, 4px);
+  margin-right: max(0.33vh, 4px);
+  margin-bottom: max(2vh, 24px);
 }
 
 .proj-btn:hover,
@@ -979,6 +974,7 @@ label {
   text-align: center;
   padding-top: 100px;
   padding-bottom: 400px;
+  height: 40vh;
   background-color: var(--color2);
 }
 
@@ -995,13 +991,12 @@ label {
 
 #start-expand {
   font-size: 48px;
-  margin-top: 8vh;
-  position: absolute;
-  left: 48%;
+  margin-top: 20vh;
   color: var(--grey);
   outline: none;
   text-decoration: none;
-  height: 3vh;
+  width: 6vw;
+  height: 6vh;
 }
 
 #from-top-to-about:hover {
@@ -1139,14 +1134,13 @@ label {
 }
 
 .stack-category {
-  margin-bottom: 1vh;
-  padding-left: 10px;
+  margin-bottom: min(1vh, 9.2px);
   padding-left: 2vh;
   border: none;
   border-radius: 16px;
   text-align: center;
   width: 100%;
-  height: 10vh;
+  height: min(10vh, 92px);
   aspect-ratio: 1 / 1;
   background: linear-gradient(to right, var(--color1) 0%, var(--color1) 16%, white 16%, white 100%);
 }
@@ -1161,15 +1155,31 @@ label {
   display: flex;
 }
 
-.stack-category img {
-  height: 5.4vh;
-  margin-right: 2.4vh;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
+.stack-image {
+  height: min(5.4vh, 49.68px);
+  /* min-width: 10vh; */
+  margin-right: min(2.4vh, 22.08px);
+  margin-top: min(2vh, 18.4px);
+  margin-bottom: min(2vh, 18.4px);
+}
+
+.stack-image {
+  transition: transform 0.1s ease-in-out;
+}
+
+.stack-image:hover {
+  transform: scale(1.2);
+  z-index: 1;
+  cursor: pointer;
+}
+
+.stack-image-div:hover::after {
+  opacity: 1;
+  /* Make the tooltip visible on hover */
 }
 
 .stack-image-div {
-  height: 10vh;
+  height: min(10vh, 92px);
 }
 
 .stack-category h2 {
@@ -1184,7 +1194,7 @@ label {
   margin-bottom: 0px;
   background-color: var(--color2);
   color: white;
-  height: 10vh;
+  height: min(10vh, 92px);
   font-weight: 400;
 }
 

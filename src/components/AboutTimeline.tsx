@@ -4,19 +4,19 @@ function Timeline1() {
   return (
     <>
       <div className="timeline-top">
-        <div className="timeline-top-sub" style={{ left: "100px" }}>
+        <div className="timeline-top-sub" style={{ left: "8vw" }}>
           <p>
             Bachelor of Sciences <br></br> in Mathematics, EPFL <br></br>{" "}
             2017-2020
           </p>
         </div>
-        <div className="timeline-top-sub" style={{ left: "500px" }}>
+        <div className="timeline-top-sub" style={{ left: "28vw" }}>
           <p>
             Masters of Sciences <br></br> in Mathematics, EPFL <br></br>{" "}
             2020-2022
           </p>
         </div>
-        <div className="timeline-top-sub" style={{ left: "766px" }}>
+        <div className="timeline-top-sub" style={{ left: "56vw" }}>
         </div>
       </div>
     </>
@@ -24,11 +24,19 @@ function Timeline1() {
 }
 
 function Job(index: number) {
+  const marginLeftDict: Record<string, string> = {
+    // job0: "-140px;",
+    job1: "0px;",
+    job2: "max(-10.4vh, -100px);",
+    job3: "max(-10.4vh, -100px);",
+    // Add more entries as needed
+  };
   let job = jobs[index];
   let id = `job${index}`;
+  let margin_left = marginLeftDict[id] || "0px";
   return (
     <>
-      <div className="timeline-bottom-sub" id={id}>
+      <div className="timeline-bottom-sub" id={id} style={{ marginLeft: margin_left }}>
         <h1>{job.title}</h1>
         <p style={{ paddingLeft: "0px" }}>{job.text}</p>
         <div className="jobMoreBtns">

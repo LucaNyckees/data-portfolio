@@ -13,7 +13,7 @@ function displayJob(jobIndex: number) {
     ${jobContent.company}</h1>`;
   box.innerHTML += `<p>${jobContent.description}</p>`;
   box.style.backgroundColor = "white";
-  box.style.border = `2px solid ${color2copy}`;
+  box.style.border = `none`;
 }
 
 function undisplayJob() {

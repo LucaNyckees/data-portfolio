@@ -59,13 +59,13 @@ function Modal(props: any) {
       <div className={show ? "overlay" : "hide"} onClick={closeModal} />
       <div
         className={show ? "modal" : "hide"}
-        style={
-          w > 425
-            // ? { marginLeft: `${leftMargin}%`, marginTop: `${topMargin}px` }
-            // : { marginLeft: "-2%", marginTop: "-64vh" }
-            ? { marginLeft: `${leftMargin}%` }
-            : { marginLeft: "-2%" }
-        }
+        // style={
+        //   w > 425
+        //     // ? { marginLeft: `${leftMargin}%`, marginTop: `${topMargin}px` }
+        //     // : { marginLeft: "-2%", marginTop: "-64vh" }
+        //     ? { marginLeft: `${leftMargin}vw` }
+        //     : { marginLeft: "-2%" }
+        // }
       >
         <h2>{projContent.title}</h2>
         {[4, 5, 6, 7].indexOf(index) > -1 ? (
@@ -76,7 +76,7 @@ function Modal(props: any) {
           <span className="icon-cross"></span>
           <span className="visually-hidden">Close</span>
         </button>
-        <p>{projContent.description}</p>
+        <p className="project-description-text">{projContent.description}</p>
         <img height={newHeightString} src={projContent.imageSource}></img>
         <div className="projButton">
           {!(git === "") && git !== "private" && (

@@ -25,7 +25,7 @@ import PMT_presentation from "../../files/PMT_presentation.pdf";
 
 let projContents = [
   {
-    title: "Topological Data Analysis for COVID19 Data in Geneva",
+    title: "Network and Topological Data Analysis for COVID19 Data in Geneva",
     description:
       "This is a project done with the Laboratory of Topology and Neuroscience at EPFL, \
                      under the supervision of Prof. Kathryn Hess Bellwald, Dr. Stefania Ebli and Dr. \
@@ -48,7 +48,7 @@ let projContents = [
   },
 
   {
-    title: "Topological Optimization Machine Learning for Classification",
+    title: "A New Clustering Technique with Topological Optimization Machine Learning",
     description:
       "This project is part of my master thesis, realized under the supervision of \
                      Prof. Kathryn Hess Bellwald and Dr. Nicolas Berkouk - in the Laboratory of Topology and \
@@ -70,7 +70,7 @@ let projContents = [
   },
 
   {
-    title: "Computing Levelset Zigzag Homology (Topological DA Theoretical Topic)",
+    title: "Computing and Visualising Levelset Zigzag Homology (TDA Theoretical Topic)",
     description:
       "This project was realized under the supervision of \
                      Prof. Kathryn Hess Bellwald and Dr. Nicolas Berkouk, from the Laboratory of Topology and \
@@ -93,7 +93,7 @@ let projContents = [
   },
 
   {
-    title: "Applications of Discrete Morse Theory to Machine Learning",
+    title: "Applications of Parametric Morse Theory to Machine Learning",
     description:
                   "This project done in the context of a semester project under the supervision of Celia Hacker and \
                   Stefania Ebli, in the Laboratory for Topology and Neuroscience at EPFL, directed by Kathryn Hess. \
