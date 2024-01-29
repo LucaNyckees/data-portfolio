@@ -35,6 +35,10 @@ let projContents = [
                      We create an efficient pipeline and develop a Streamlit web application for data visualization. \
                      Interactions between users are modeled through simplicial complexes, allowing \
                      for higher dimensional information within the spreading process.",
+    implementation:
+      "We implement this using standard network and topology libraries, including GUDHI and NetworkX for the analysis. \
+      We make use of PyVis and Plotly for everything related to visualisation purposes. Moreover, Streamlit is used \
+      in order to develop a web app (interactive dashboard). The whole project is built as a Docker image.",
     imageSource: UPHESS_project1,
     labels: ["docker", "topology", "python", "graph-theory", "web-app"],
     cut: 3,
@@ -57,6 +61,10 @@ let projContents = [
                      persistent homology and implemented an associated metric that allows for better understanding\
                      complex data such as high-dimensional point-clound data. We provide a rich visualization of the\
                      method by investigating the case of digit image classification. ",
+    implementation:
+    "We implement the core neural network algorithms with TensorFlow. The clustering part ouputs a distance matrix,  \
+    which we visualize with a UMAP embedding (Uniform Manifold Approximation and Projection for Dimension Reduction). \
+    We make use of PyVis and Plotly for everything related to visualisation purposes.",
     imageSource: UPHESS_project2,
     labels: ["topology", "multi-parameter", "metric", "smart-classifier"],
     cut: 2,
@@ -80,6 +88,10 @@ let projContents = [
                      this generalization, as well as how they link to one another. We implement a web application \
                      that allows for a visualizing how levelset zigzag homology works when it is used to \
                      study the shape of spaces and point-cloud data.",
+    implementation:
+    "For this work, we make use of the topology and geometry library GUDHI for the core algorithms. \
+      We use both PyVis and Plotly for everything related to visualisation purposes, and wrap a part of the project \
+      (the diagram bijection) as a Streamlit web app product.",
     imageSource: UPHESS_project3,
     labels: ["topology", "multi-parameter", "viz", "survey"],
     cut: 2,
@@ -95,7 +107,7 @@ let projContents = [
   {
     title: "Applications of Parametric Morse Theory to Machine Learning",
     description:
-                  "This project done in the context of a semester project under the supervision of Celia Hacker and \
+      "This project done in the context of a semester project under the supervision of Celia Hacker and \
                   Stefania Ebli, in the Laboratory for Topology and Neuroscience at EPFL, directed by Kathryn Hess. \
                   We implement a framework for working with parametric Morse theory, which \
                   provides tools for analyzing the topological changes of a simplicial (cubical) complex \
@@ -105,6 +117,10 @@ let projContents = [
                   as opposed to other cells, deleting them from the complex will fundamentally change the overall \
                   topology of the space. Generally speaking, DMT has broad applications, notably in homology \
                   computation and, more recently, in image processing via parametric Morse theory.",
+    implementation:
+    "For this work, we make use of the topology and geometry library GUDHI for the core algorithms. A lot of those\
+    algorithms are implemented by us, built on top of pre-existing ones.\
+      We use both PyVis and Plotly for everything related to visualisation purposes.",
     imageSource: UPHESS_project4,
     labels: ["topology", "python", "graph-theory", "geometry"],
     cut: 2,
@@ -126,6 +142,10 @@ let projContents = [
       The real work of this project lies in the data engineering part, in which we extract meaningful multi-granularity \
       features (i.e. building-level, district-level, locality-level and so on). This was done as part of the master \
       thesis of Hilda Horvath, a student at EPFL in the data science program.",
+    implementation:
+      "We make use of the XGboost package for building our estimation pipelines, and compare their performance \
+      with scikit-learn random regressor models. We use both PyVis and Plotly for \
+      everything related to visualisation purposes.",
     imageSource: QH_project1,
     labels: ["CO2", "real-estate", "energy", "building-physics"],
     cut: 2,
@@ -146,6 +166,11 @@ let projContents = [
       such as interest rates, inflation, GDP growth, real estate rent index and employment rates influence property \
       values, real estate asset incomes, demand, and investment patterns. We combine standard mathematical finance \
       techniques to the use of artificial neural networks.",
+    implementation:
+    "Data comes, in particular, from SwissFundData. \
+    We make use of the XGboost package for building our estimation pipelines, and compare their performance \
+    with scikit-learn random regressor models. We use both PyVis and Plotly for \
+    everything related to visualisation purposes.",
     imageSource: QH_project2,
     labels: ["macro-economics", "rates", "indices", "time-series"],
     cut: 2,
@@ -167,6 +192,8 @@ let projContents = [
       approach guarantees adaptability and optimal performance across a spectrum of scenarios. On the machine learning \
       side, used for non-temporal estimations of financial target variables, we focus on conventional neural \
       network architectures as well as ensemble learning models such as the class gradient boosting regressors.",
+    implementation:
+    "We combine the use of XGboost and ARIMA methods.",
     imageSource: QH_project3,
     labels: ["ensemble-learning", "real-estate", "time-series", "postgreSQL"],
     cut: 2,
@@ -190,6 +217,10 @@ let projContents = [
         The goal is to improve the study of Dr. Ophelia Miralles and Prof. Anthony Davison (article : \
         Bayesian Modeling of Insurance Claims for Hail Damage) by adding a building fragility index to their \
         framework.",
+    implementation:
+      "Data comes from SwissTopo (aerial images of houses, to predict a hail fragility index via roof analysis), \
+      Quanthome (for the financial and other structural features), and AECA (for the insurance data in the canton of \
+        Vaud, Switzerland). ",
     imageSource: QH_project4,
     labels: ["environment", "real-estate", "ESG", "hail", "climate"],
     cut: 2,
@@ -209,6 +240,9 @@ let projContents = [
                      by M. Jaggi and N. Flammarion. It consisted in implementing various convolutional neural network \
                      architectures and comparing their performance on a road segmentation task : road / non-road pixel \
                      classification for satellite images. CNNs were combined with a deterministic non-trainable convolutional step.",
+    implementation:
+      "We use the neural network framework from Keras to build our models. Datasets of satellite images (with labels) \
+      were provided beforehand by the course administrators.",
     imageSource: EPFL_project1,
     labels: ["image-analysis", "neural-net", "segmentation", "pytorch"],
     cut: 2,
@@ -232,6 +266,10 @@ let projContents = [
                      based on the problem of classifying hand-written digits. This work will strengthen the a priori \
                      supposition that this label propagation method proves promising when compared to other models, in the case \
                      where only a small amount of labeled data is available.",
+    implementation:
+      "We make use of almost no external libraries for the graph label propagation algorithms, as the scope was to make a \
+      from-scratch implementation of those. For comparing with other methods, we use standard libraries, including scikit-learn. \
+      Finally, plotly is used for everything that is visualisation-related.",
     imageSource: EPFL_project2,
     labels: [
       "graph-theory",
@@ -257,6 +295,10 @@ let projContents = [
                      analysis of meteorological data in Switzerland, and implementing a time-series forecasting model designed to make \
                      meteorological predictions. An emphasis was put on data visualization - the project came in wrapped up as a \
                      Streamlit web application.",
+    implementation:
+      "Data comes from the European Climate Assessment and Dataset Center. We used various statistical analysis frameworks, \
+      including scipy, statsmodels and scikit-learn. Visualisation was made with matplotlib and Plotly. The whole project \
+      came in as a wrapped up Streamlit application, containing both the final report and a multi-pages dashboard.",
     imageSource: EPFL_project3,
     labels: ["web-app", "forecasting", "statistical-analysis", "viz"],
     cut: 2,
@@ -278,6 +320,9 @@ let projContents = [
       mathematical modeling of behavior has strong connections to statistical machine learning and has lots of \
       applications in the domain of urbanity and mobility. We mainly used the Python package Biogeme to implement \
       our models. ",
+    implementation:
+      "We use the statistical analysis framework Biogeme, dedicated to tasks related to mathematical behavior modeling and \
+      implemented by the TRANSP-OR lab of EPFL.",
     imageSource: EPFL_project4,
     labels: ["statistical-ML", "forecasting", "behavior", "transport"],
     cut: 2,

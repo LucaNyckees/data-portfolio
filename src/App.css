@@ -272,7 +272,7 @@
     position: fixed;
     top: 36px;
     bottom: 0;
-    text-align: center;
+    /* text-align: center; */
     border: none;
     height: auto;
     width: 100%;
@@ -284,26 +284,32 @@
     margin-bottom: auto;
     padding-bottom: 60px;
     z-index: 9998;
+    /* display: flex; */
   }
 
   .project h3,
   .modal h3 {
     font-size: 16px;
     font-weight: 100;
+    text-align: left;
   }
 
   .project h2,
-  .modal h2 {
-    font-size: 20px;
-    margin-bottom: 36px;
+  #modal h2 {
+    font-size: 32px;
+    font-weight: 260;
+    margin-bottom: 6vh;
     padding-top: 12px;
+    height: 6vh;
+    width: 80vw;
+    margin-left: 10vw;
   }
 
   .project p,
   .modal p {
     text-align: justify;
-    width: min(40vw, 80%, 600px);
-    margin: auto;
+    width: min(40vw, 92%, 600px);
+    margin: 0;
     margin-bottom: min(28px, 2vh);
   }
 
@@ -521,21 +527,37 @@ nav .fa {
   border: 1px solid white;
 }
 
-#aboutButtons a {
+#modalButtons {
+  text-align: left;
+  margin-left: 2vw;
+  margin-top: 3vh;
+}
+
+#aboutButtons a,
+#modalButtons a {
   margin: auto 10px;
   height: 40px;
 }
 
-#aboutButtons button {
+#aboutButtons button,
+#modalButtons button {
   padding: 10px 10px;
   border-radius: 40px;
-  color: var(--color2);
   /* border: 1px solid red; */
   border: none;
-  background-color: white;
   font-size: 24px;
   height: 48px;
   width: 48px;
+}
+
+#aboutButtons button {
+  color: var(--color2);
+  background-color: white;
+}
+
+#modalButtons button {
+  color: white;
+  background-color: var(--color2);
 }
 
 #mediaInfoFooter button {
@@ -554,8 +576,13 @@ nav .fa {
   margin-top: 30px;
 }
 
+#modalButtons button:hover {
+  background-color: var(--color1);
+  color: white;
+  transition: 0.2s;
+}
+
 #aboutButtons button:hover {
-  /* border: 2px solid var(--color2); */
   background-color: var(--color2);
   color: white;
   transition: 0.2s;
@@ -636,6 +663,46 @@ h4 {
   margin-bottom: min(1.7vh, 20px);
 }
 
+.modal-left {
+  /* border: 2px solid blue; */
+  width: 43vw;
+  margin-left: 5vw;
+  margin-right: 2vw;
+  padding: auto;
+}
+
+.modal-right {
+  /* border: 2px solid green; */
+  width: 43vw;
+  margin-left: 2vw;
+  margin-right: 5vw;
+}
+
+.modal-right img {
+  width: 88%;
+}
+
+.modal-left p {
+  margin: auto;
+}
+
+.modal-left h3 {
+  width: 92%;
+  margin-left: 2.2vw;
+  font-weight: 500;
+  margin-top: 3vh;
+}
+
+.modal-labels {
+  margin-bottom: 4vh;
+}
+
+.modal-left-and-right {
+  display: flex;
+  height: 80%;
+  margin-top: 8vh;
+}
+
 .projLabelsChoice {
   position: relative;
   margin: auto;
@@ -683,7 +750,7 @@ button img {
   margin: 0;
   border: 0;
   padding: 0;
-  background: hsl(216, 100%, 50%);
+  background: var(--color2);
   border-radius: 50%;
   width: 80px;
   height: 80px;
@@ -698,7 +765,7 @@ button img {
 .btn-close:hover,
 .btn-close:focus {
   transform: rotateZ(90deg);
-  background: hsl(216, 100%, 40%);
+  background: var(--color1);
 }
 
 .btn-close .icon-cross {
@@ -747,12 +814,12 @@ button img {
 
 label {
   position: relative;
-  font-size: 12px;
+  font-size: 14px;
   color: white;
-  background-color: var(--color1);
+  background-color: var(--color2);
   border-radius: 20px;
   margin: 48px 2px;
-  padding: 4px 8px;
+  padding: 8px 12px;
   text-align: center;
 }
 
@@ -761,6 +828,9 @@ label {
   margin-right: 1px;
   margin-top: 10px;
   margin-bottom: 8px;
+  font-size: 12px;
+  padding: 4px 8px;
+  background-color: var(--color1);
 
 }
 
@@ -1069,13 +1139,13 @@ label {
   overflow: hidden;
 }
 
-.modal button {
+.modal .btn-close {
   position: absolute;
   right: 32px;
   top: 32px;
   width: 32px;
   height: 32px;
-  opacity: 0.5;
+  /* opacity: 0.5; */
 }
 
 .stack-container {

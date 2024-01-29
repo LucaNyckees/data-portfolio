@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import projContents from "../variables/projects";
+import { MediaButton } from './AboutHead';
 
 function LockSymbol(props: any) {
   const size = props.size;
@@ -58,59 +59,61 @@ function Modal(props: any) {
     <>
       <div className={show ? "overlay" : "hide"} onClick={closeModal} />
       <div
-        className={show ? "modal" : "hide"}
-        // style={
-        //   w > 425
-        //     // ? { marginLeft: `${leftMargin}%`, marginTop: `${topMargin}px` }
-        //     // : { marginLeft: "-2%", marginTop: "-64vh" }
-        //     ? { marginLeft: `${leftMargin}vw` }
-        //     : { marginLeft: "-2%" }
-        // }
+        className={show ? "modal" : "hide"} id='modal'
+      // style={
+      //   w > 425
+      //     // ? { marginLeft: `${leftMargin}%`, marginTop: `${topMargin}px` }
+      //     // : { marginLeft: "-2%", marginTop: "-64vh" }
+      //     ? { marginLeft: `${leftMargin}vw` }
+      //     : { marginLeft: "-2%" }
+      // }
       >
         <h2>{projContent.title}</h2>
-        {[4, 5, 6, 7].indexOf(index) > -1 ? (
-          <h4 style={{ marginTop: "0vh" }}>Quanthome project {lock}</h4>
+        <div className='modal-left-and-right'>
+          <div className='modal-left'>
+            <button type="button" className="btn-close" onClick={closeModal}>
+              <span className="icon-cross"></span>
+              <span className="visually-hidden">Close</span>
+            </button>
+            <h3>Description</h3>
+            <p className="project-description-text">{projContent.description}</p>
+            <h3>Implementation</h3>
+            <p className="project-description-text">{projContent.implementation}</p>
+            <h3>Resources</h3>
+            <div id="modalButtons">
+              {[4, 5, 6, 7].indexOf(index) > -1 ? (
+            <p>This is a private project - don't hesitate to contact me for more details. {lock}</p>
         ) : null}
-        <h3>{projContent.date}</h3>
-        <button type="button" className="btn-close" onClick={closeModal}>
-          <span className="icon-cross"></span>
-          <span className="visually-hidden">Close</span>
-        </button>
-        <p className="project-description-text">{projContent.description}</p>
-        <img height={newHeightString} src={projContent.imageSource}></img>
-        <div className="projButton">
-          {!(git === "") && git !== "private" && (
-            <a href={git} target="_blank" className="proj-btn">
-              GitHub
-            </a>
-          )}
-          {git === "private" && (
+              {!(git === "") && git !== "private" && (
+                MediaButton(git, "fa fa-github")
+              )}
+              {/* {git === "private" && (
             <a target="_blank" className="proj-btn">
               GitHub <LockSymbol size={12}></LockSymbol>
             </a>
-          )}
-          {!(report === "") && (
-            <a href={report} target="_blank" className="proj-btn">
-              Report
-            </a>
-          )}
-          {!(pres === "") && (
-            <a href={pres} target="_blank" className="proj-btn">
-              Presentation
-            </a>
-          )}
-          {!(poster === "") && (
-            <a href={poster} target="_blank" className="proj-btn">
-              Poster
-            </a>
-          )}
-        </div>
-        <div>
-          {lbls.length > 0 ? <label>{lbls[0]}</label> : null}
-          {lbls.length > 1 ? <label>{lbls[1]}</label> : null}
-          {lbls.length > 2 ? <label>{lbls[2]}</label> : null}
-          {lbls.length > 3 ? <label>{lbls[3]}</label> : null}
-          {lbls.length > 4 ? <label>{lbls[4]}</label> : null}
+          )} */}
+              {!(report === "") && (
+                MediaButton(report, "fa fa-file-text")
+              )}
+              {!(pres === "") && (
+                MediaButton(pres, "fa fa-person-chalkboard")
+              )}
+              {!(poster === "") && (
+                MediaButton(poster, "fa fa-image")
+              )}
+            </div>
+          </div>
+          <div className='modal-right'>
+            {/* <h3>Period : {projContent.date}</h3> */}
+            <div className='modal-labels'>
+              {lbls.length > 0 ? <label>{lbls[0]}</label> : null}
+              {lbls.length > 1 ? <label>{lbls[1]}</label> : null}
+              {lbls.length > 2 ? <label>{lbls[2]}</label> : null}
+              {lbls.length > 3 ? <label>{lbls[3]}</label> : null}
+              {lbls.length > 4 ? <label>{lbls[4]}</label> : null}
+            </div>
+            <img src={projContent.imageSource}></img>
+          </div>
         </div>
       </div>
     </>
