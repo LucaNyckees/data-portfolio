@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import projContents from "../variables/projects";
-import { MediaButton } from './AboutHead';
+import { MediaButton, MediaButtonBlocked } from './AboutHead';
 
 function LockSymbol(props: any) {
   const size = props.size;
@@ -87,16 +87,14 @@ function Modal(props: any) {
               {!(git === "") && git !== "private" && (
                 MediaButton(git, "fa fa-github")
               )}
-              {/* {git === "private" && (
-            <a target="_blank" className="proj-btn">
-              GitHub <LockSymbol size={12}></LockSymbol>
-            </a>
-          )} */}
+              {(git === "private") && (
+                MediaButtonBlocked(git, "fa fa-github")
+              )}
               {!(report === "") && (
                 MediaButton(report, "fa fa-file-text")
               )}
               {!(pres === "") && (
-                MediaButton(pres, "fa fa-person-chalkboard")
+                MediaButton(pres, "fa fa fa-image")
               )}
               {!(poster === "") && (
                 MediaButton(poster, "fa fa-image")

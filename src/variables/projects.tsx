@@ -38,7 +38,9 @@ let projContents = [
     implementation:
       "We implement this using standard network and topology libraries, including GUDHI and NetworkX for the analysis. \
       We make use of PyVis and Plotly for everything related to visualisation purposes. Moreover, Streamlit is used \
-      in order to develop a web app (interactive dashboard). The whole project is built as a Docker image.",
+      in order to develop a web app (interactive dashboard). The whole project is built as a Docker image. Data comes from \
+      a collaboration between the lab and hospitals in Geneva and are confidential - we thus chose to keep the \
+      GitHub repository private.",
     imageSource: UPHESS_project1,
     labels: ["docker", "topology", "python", "graph-theory", "web-app"],
     cut: 3,
@@ -124,7 +126,7 @@ let projContents = [
     imageSource: UPHESS_project4,
     labels: ["topology", "python", "graph-theory", "geometry"],
     cut: 2,
-    rel_width: "80%",
+    rel_width: "64%",
     rel_height_open: "32%",
     date: "Summer 2021",
     git: "https://github.com/LucaNyckees/parametric-morse-theory",

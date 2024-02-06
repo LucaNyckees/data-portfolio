@@ -9,6 +9,8 @@
   --topocolor: rgba(34, 15, 160, 0.392);
   --epflcolor: rgba(0, 36, 128, 0.559);
   --grey: rgba(11, 8, 24, 0.606);
+  --yes: green;
+  --no: red;
 }
 
 * {
@@ -577,15 +579,20 @@ nav .fa {
 }
 
 #modalButtons button:hover {
-  background-color: var(--color1);
+  background-color: var(--yes);
   color: white;
   transition: 0.2s;
+  cursor: pointer;
 }
 
 #aboutButtons button:hover {
   background-color: var(--color2);
   color: white;
   transition: 0.2s;
+}
+
+#modalButtons #media-btn-blocked:hover {
+  background-color: var(--no);
 }
 
 .about-col img {

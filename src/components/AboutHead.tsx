@@ -27,6 +27,16 @@ function MediaButton(href: string, icon: string) {
   );
 }
 
+function MediaButtonBlocked(href: string, icon: string) {
+  return (
+    <>
+      <a>
+        <button type="button" className={icon} id="media-btn-blocked"></button>
+      </a>
+    </>
+  );
+}
+
 function AboutHead() {
   return (
     <>
@@ -44,4 +54,4 @@ function AboutHead() {
   );
 }
 
-export { AboutHead, MediaButton, MailButton };
+export { AboutHead, MediaButton, MailButton, MediaButtonBlocked };
