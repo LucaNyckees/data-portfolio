@@ -8,6 +8,7 @@ let jobContents = [
                       on-site and online individual teaching, group teaching, grading of exams and homeworks, creation of exercises and \
                       presenting the resolution of exercises in front of a class. I have been hired by the department of mathematics, \
                       for a wide variety of courses including first year analysis, mecanical physics, algebra and geometry courses, as well as more advanced 2nd and 3rd year math courses.",
+    href: "https://www.epfl.ch/schools/sb/research/math/",
   },
 
   {
@@ -20,6 +21,7 @@ let jobContents = [
                       We developed a pipeline designed to study the COVID19 spreading process in the canton of Geneva. \
                       We made use of graph theoretical, statistical and topological techniques in order to modelize and analyse \
                       this process. As a final product, the project came in as a Dockerized Streamlit web application.",
+    href: "https://www.epfl.ch/labs/hessbellwald-lab/",
   },
 
   {
@@ -32,6 +34,7 @@ let jobContents = [
                       I collaborated with Nicolas Berkouk to make a survey about a powerful data analysis tool called \
                       'Levelset Zigzag Persistent Homology'. In realizing this project, I also implemented a Streamlit web application \
                       allowing for an intuitive visual guide of how using this tool works.",
+    href: "https://www.epfl.ch/labs/hessbellwald-lab/",
   },
 
   {
@@ -43,16 +46,12 @@ let jobContents = [
       the Swiss real estate market. \
       With a team of passionate web developers and data scientists, we're designing complex \
       pipelines with the latest technology in order to deliver a platform product. \
-      Addressed subjects include \
-      (1) applying finance models to the real estate market \
-      (2) evaluating the environmental impact of buildings \
-      (3) working on ESG theory for the real estate domain. \
-      Addressed tasks include \
-      (1) data architecture and database maintenance \
-      (2) machine learning engineering \
-      (3) supervision of master thesis students and interns \
-      (4) projects coordination. \
-      Made a collaboration with the CRML at UNIL (Center for Risk Management of Lausanne)."
+      Applying a comprehensive data science stack (databases maintenance, data migration \
+      projects, machine learning engineering, workflow orchestration, CI/CD) - to applications \
+      focused on both financial and environmental data analysis as well as real estate market analysis. \
+      Responsibilities involved recruiting and supervising data science master students. \
+      Made a collaboration with the CRML at UNIL (Center for Risk Management of Lausanne).",
+    href: "https://www.quanthome.ch/",
   },
 ];
 

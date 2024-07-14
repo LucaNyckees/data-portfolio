@@ -5,7 +5,6 @@ import { AboutHead } from "./components/AboutHead";
 import AboutTimeline from "./components/AboutTimeline";
 import * as PortfolioFcts from "./components/ProjectsPortfolio";
 import Contact from "./components/Contact";
-import Game from "./components/Game";
 import "./App.css";
 import "material-symbols";
 import { useCallback } from "react";
@@ -84,10 +83,10 @@ function App() {
             },
             particles: {
               color: {
-                value: "#AAC4FF",
+                value: "#4d4b4b",
               },
               links: {
-                color: "#AAC4FF",
+                color: "#4d4b4b",
                 distance: 150,
                 enable: true,
                 opacity: 0.5,
@@ -128,16 +127,17 @@ function App() {
       </section>
       <section className="about" id="about">
         <AboutHead></AboutHead>
+        {/* <Timeline></Timeline> */}
         <AboutTimeline></AboutTimeline>
       </section>
       <section className="data" id="data">
-        <div id="dataTitle">
-          <h1 id="dataTitleH">DATA SCIENCE PORTFOLIO</h1>
+        <div className="portfolio-section-header">
+          <h1>DATA SCIENCE PORTFOLIO</h1>
           <h2>A selection of data science projects</h2>
-          <p style={{ marginBottom: "2.7%" }} id="dataTitleP">
+          {/* <p style={{ marginBottom: "2.7%" }}>
             “- So, what's your first take on all this ?<br></br>- Well... that’s
             one pretty point-cloud.”
-          </p>
+          </p> */}
         </div>
         <PortfolioFcts.Board show={show}></PortfolioFcts.Board>
       </section>
@@ -147,9 +147,6 @@ function App() {
       <section
         className="information"
         id="information"
-        style={{
-          height: "50vh",
-        }}
       >
         <Contact></Contact>
       </section>

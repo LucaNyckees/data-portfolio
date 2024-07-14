@@ -26,12 +26,11 @@ import PandasLogoSvg from '../../images/stack_logos/pandas-svgrepo-com.svg'
 import PolarsLogoSvg from '../../images/stack_logos/polars_logo_icon_248809.svg'
 
 import AirflowLogoSvg from '../../images/stack_logos/apache-airflow-svgrepo-com.svg'
-
 import KafkaLogoSvg from '../../images/stack_logos/data-accesskafka-cluster-svgrepo-com.svg'
-
 import GithubLogoSvg from '../../images/stack_logos/github-icon-1-logo-svgrepo-com.svg'
 import GitLogoSvg from '../../images/stack_logos/git-deployment-svgrepo-com.svg'
 import DockerLogoSvg from '../../images/stack_logos/docker-4.svg'
+import DatabricksLogoSvg from '../../images/stack_logos/databricks-icon.svg'
 
 import MatplotlibLogoSvg from '../../images/stack_logos/Matplotlib_icon.svg'
 import PlotlyLogoSvg from '../../images/stack_logos/Plotly.svg'
@@ -56,11 +55,13 @@ const logosByCategory = {
         { id: 'sqlite-logo', logo: SQLiteLogoSvg, text: 'SQLite', link: 'https://www.sqlite.org/docs.html' },
         { id: 'alembic-logo', logo: AlembicLogoPng, text: 'SQLite', link: 'https://alembic.sqlalchemy.org/en/latest/' },
     ],
-    operational: [
+    data_ops: [
         { id: 'airflow-logo', logo: AirflowLogoSvg, text: 'Apache Airflow', link: 'https://airflow.apache.org/' },
         { id: 'docker-logo', logo: DockerLogoSvg, text: 'Docker', link: 'https://www.docker.com/' },
         { id: 'github-logo', logo: GithubLogoSvg, text: 'GitHub', link: 'https://github.com/' },
         { id: 'git-logo', logo: GitLogoSvg, text: 'Git', link: 'https://git-scm.com/' },
+        { id: 'mlflow-logo', logo: MLflowLogoSvg, text: 'MLFlow', link: 'https://mlflow.org/' },
+        { id: 'databricks-logo', logo: DatabricksLogoSvg, text: 'Databricks', link: 'https://www.databricks.com/' },
     ],
     // data_streaming: [
     //     { id: 'kafka-logo', logo: KafkaLogoSvg, text: 'Apache Kafka', link: 'https://kafka.apache.org/' },
@@ -111,7 +112,7 @@ function Stack() {
         <section className='stack-section'>
             <div className='stack-section-header'>
                 <h1>TECH STACK</h1>
-                <h2>Some tools and technologies from my data science stack (click for doc)</h2>
+                <h2>Some tools and technologies from my data science stack</h2>
             </div>
             <div className="stack-container">
                 <div className='stack-content'>
@@ -130,6 +131,7 @@ function Stack() {
                                                 title={logoObj.text}
                                                 className='stack-image'
                                             />
+                                            <span className="tooltiptext">{logoObj.text}</span>
                                         </a>
                                     ))}
                                 </div>

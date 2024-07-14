@@ -1,5 +1,4 @@
 import { Link } from 'react-scroll';
-import my_logo from "../../images/my_logo.png";
 
 function Intro() {
   return (
