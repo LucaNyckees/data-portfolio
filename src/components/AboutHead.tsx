@@ -41,7 +41,7 @@ function AboutHead() {
   return (
     <>
       <div className="about-section-header">
-      <h1>ABOUT ME</h1>
+      <h1>ABOUT</h1>
       <p>I once solved a 4-8 years puzzle in only 3 years.</p>
       </div>
       <div className="about-image">

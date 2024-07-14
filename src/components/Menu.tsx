@@ -62,7 +62,7 @@ function Menu() {
                 offset={-70}
                 duration={500}
               >
-                DATA SCIENCE PORTFOLIO
+                PORTFOLIO
               </Link>
             </li>
             <li>

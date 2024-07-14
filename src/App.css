@@ -7,17 +7,30 @@
   --writingdark: #4d4b4b;
   --writinglight: #4d4b4b;
   --white: white;
-  --grey: rgb(246, 241, 241);
+  --grey: rgb(254, 251, 251);
   --blocked: red;
 }
 
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
   box-sizing: border-box;
   /* cursor: url(/lightning-bolt-outline.svg) 4 4, pointer; */
   /* border: 1px solid black; */
+}
+
+h1 {
+  font-family: 'Impact', 'Fantasy', sans-serif;
+}
+
+h2 {
+  font-family: "Andale Mono", monospace;
+  /* font-family: Copperplate, "Copperplate Gothic Light", fantasy; */
+}
+
+p, * {
+  font-family: 'Bookman', 'URW Bookman L', serif;
 }
 
 .logo {
@@ -312,6 +325,7 @@
     width: min(40vw, 92%, 600px);
     margin: 0;
     margin-bottom: min(28px, 2vh);
+    font-size: 16px;
   }
 
   .project {
@@ -379,7 +393,7 @@
 
   .text-box p {
     margin: 10px 0 40px;
-    font-size: 14px;
+    font-size: 18px;
     color: var(--writingdark);
   }
 
@@ -460,7 +474,7 @@ nav .fa {
   margin: auto;
   text-align: center;
   padding-top: 150px;
-  padding-bottom: 4vh;
+  padding-bottom: 1vh;
   background-color: var(--white);
 }
 
@@ -532,7 +546,7 @@ nav .fa {
 }
 
 #mediaInfoFooter p {
-  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
   color: var(--writinglight);
 }
 
@@ -818,25 +832,28 @@ button img {
 
 .about-section-header {
   background-color: var(--grey);
-  padding-bottom: 10vh;
+  padding-bottom: 6vh;
   padding-top: 10vh;
   margin-top: 0vh;
+  border-bottom: 1px solid var(--writinglight);
 }
 
 .portfolio-section-header {
   background-color: var(--grey);
-  padding-bottom: 10vh;
+  padding-bottom: 6vh;
   padding-top: 10vh;
   margin-top: 0vh;
   margin-bottom: 10vh;
+  border-bottom: 1px solid var(--writinglight);
 }
 
 .stack-section-header {
   background-color: var(--grey);
-  padding-bottom: 10vh;
+  padding-bottom: 6vh;
   padding-top: 10vh;
   margin-top: 0vh;
   margin-bottom: 10vh;
+  border-bottom: 1px solid var(--writinglight);
 }
 
 .timeline-bottom {
@@ -954,7 +971,7 @@ button img {
   text-align: justify;
   padding: 30px 10px;
   color: var(--writinglight);
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .about-image img {
@@ -1230,10 +1247,11 @@ button img {
   visibility: visible;
 }
 
-.stack-category h2 {
+.stack-category p {
   padding-top: 1vh;
   padding-bottom: 1vh;
   padding-right: 1vh;
+  padding-left: 1vh;
   width: 14vh;
   margin-right: 3.2vh;
   margin-left: -1px;
@@ -1242,7 +1260,6 @@ button img {
   background-color: var(--writinglight);
   color: white;
   height: min(10vh, 92px);
-  font-weight: 400;
 }
 
 .stack-section-header h2 {

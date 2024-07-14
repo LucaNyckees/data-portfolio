@@ -132,7 +132,7 @@ function App() {
       </section>
       <section className="data" id="data">
         <div className="portfolio-section-header">
-          <h1>DATA SCIENCE PORTFOLIO</h1>
+          <h1>PORTFOLIO</h1>
           <h2>A selection of data science projects</h2>
           {/* <p style={{ marginBottom: "2.7%" }}>
             “- So, what's your first take on all this ?<br></br>- Well... that’s

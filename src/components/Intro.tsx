@@ -9,10 +9,8 @@ function Intro() {
       {/* <img src={my_logo} alt="My Logo" className="logo" /> */}
       <h2>Mathematician &#8226; Data scientist &#8226; Software enthusiast</h2>
       <p>
-        Hey there. I'm a mathematician, working as <br></br>
-        data scientist at Quanthome SA, Lausanne.
+        Hey there, welcome to my homepage.
       </p>
-      <p>This is my homepage.</p>
       <Link to="about" smooth={true} duration={500} id="from-top-to-about">
         <a id="start-expand" className="material-symbols-outlined bouncing">
           expand_more

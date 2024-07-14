@@ -86,7 +86,7 @@ const logosByCategory = {
         { id: 'pandas-logo', logo: PandasLogoSvg, text: 'Pandas', link: 'https://pandas.pydata.org/' },
         { id: 'polars-logo', logo: PolarsLogoSvg, text: 'Polars', link: 'https://pola.rs/' },
     ],
-    data_visualisation: [
+    data_vis: [
         { id: 'matplotlib-logo', logo: MatplotlibLogoSvg, text: 'Matplotlib', link: 'https://matplotlib.org/' },
         { id: 'plotly-logo', logo: PlotlyLogoSvg, text: 'Plotly', link: 'https://plotly.com/python/' },
         { id: 'networkx-logo', logo: NetworkxLogoSvg, text: 'Networkx', link: 'https://networkx.org/' },
@@ -119,7 +119,7 @@ function Stack() {
                     {Object.entries(logosByCategory).map(([category, logos]) => (
                         <div key={category} className='stack-category'>
                             <div className='stack-logos-card'>
-                                <h2>{formatKeyToTitle(category)}</h2>
+                                <p>{formatKeyToTitle(category)}</p>
                                 <div className='stack-logos-list'>
                                     {logos.map((logoObj, index) => (
                                         <a className='stack-image-div' key={index} href={logoObj.link} target='_blank'>
