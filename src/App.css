@@ -14,7 +14,6 @@
 * {
   margin: 0;
   padding: 0;
-  /* font-family: 'Poppins', sans-serif; */
   box-sizing: border-box;
   /* cursor: url(/lightning-bolt-outline.svg) 4 4, pointer; */
   /* border: 1px solid black; */
@@ -26,7 +25,6 @@ h1 {
 
 h2 {
   font-family: "Andale Mono", monospace;
-  /* font-family: Copperplate, "Copperplate Gothic Light", fantasy; */
 }
 
 p, * {
@@ -104,7 +102,6 @@ p, * {
 
   .modal {
     color: var(--writinglight);
-    /* position: absolute; */
     text-align: center;
     border: 1px solid 'white';
     height: auto;
@@ -336,6 +333,9 @@ p, * {
 
   .about-image img {
     height: 260px;
+    position: relative;
+    display: flex;
+    align-items: center;
   }
 
   .about-col {
@@ -512,31 +512,48 @@ nav .fa {
   margin-top: 3vh;
 }
 
-#aboutButtons a,
-#modalButtons a {
+#modalButtons a,
+#contactButtons a {
   margin: auto 10px;
   height: 40px;
 }
 
 #aboutButtons button,
-#modalButtons button {
+#modalButtons button,
+#contactButtons button {
   padding: 10px 10px;
   border-radius: 40px;
-  border: none;
   font-size: 24px;
   height: 48px;
   width: 48px;
   border: 1px solid var(--writinglight);
-}
-
-#aboutButtons button {
   color: var(--writinglight);
   background-color: var(--white);
 }
 
-#modalButtons button {
-  color: var(--color2);
-  background-color: var(--white);
+#aboutButtons {
+  display: flex;
+  flex-direction: column;
+  margin-top: -130px;
+  margin-left: 24vw;
+  transform: translateY(-50%);
+}
+
+#aboutButtons a {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#aboutButtons a:nth-child(1) {
+  transform: translateX(-18px);
+}
+
+#aboutButtons a:nth-child(2) {
+  transform: translateX(4px);
+}
+
+#aboutButtons a:nth-child(3) {
+  transform: translateX(-18px);
 }
 
 #mediaInfoFooter button {
@@ -546,7 +563,6 @@ nav .fa {
 }
 
 #mediaInfoFooter p {
-  /* font-family: 'Poppins', sans-serif; */
   color: var(--writinglight);
 }
 
@@ -555,14 +571,9 @@ nav .fa {
   margin-top: 30px;
 }
 
-#modalButtons button:hover {
-  background-color: var(--color2);
-  color: var(--white);
-  transition: 0.2s;
-  cursor: pointer;
-}
-
-#aboutButtons button:hover {
+#aboutButtons button:hover,
+#modalButtons button:hover,
+#contactButtons button:hover {
   background-color: var(--color2);
   color: var(--white);
   transition: 0.2s;
@@ -914,7 +925,7 @@ button img {
 .timeline-top {
   width: 80%;
   border: 1px solid transparent;
-  margin-top: 18vh;
+  margin-top: 4vh;
   margin-bottom: 8vh;
   margin-left: auto;
   margin-right: auto;
@@ -975,9 +986,10 @@ button img {
 }
 
 .about-image img {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 8vh;
+  margin-bottom: 0vh;
   border-radius: 200px;
+  margin-left: calc(50vw - 130px);
 }
 
 .jobMoreBtns {
@@ -1206,12 +1218,10 @@ button img {
 
 .stack-image {
   height: min(5.4vh, 49.68px);
-  margin-right: min(2.4vh, 22.08px);
+  margin-right: min(1.2vh, 11.04px);
+  margin-left: min(1.2vh, 11.04px);
   margin-top: min(2vh, 18.4px);
   margin-bottom: min(2vh, 18.4px);
-}
-
-.stack-image {
   transition: transform 0.1s ease-in-out;
 }
 
