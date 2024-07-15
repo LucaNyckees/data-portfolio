@@ -52,7 +52,7 @@ function Job({ index, isActive, onClick }: JobProps) {
         className="timeline-job-logo"
         src={job.imageSource}
         onClick={onClick}
-        style={{ border: isActive ? '5px solid #4d4b4b' : 'none' }}
+        style={{ border: isActive ? '3px solid #4d4b4b' : 'none' }}
       />
       <h1 style={{ fontWeight: isActive ? 'bold' : 'normal' }}>{job.title}</h1>
       <p style={{ paddingLeft: "0px", fontWeight: isActive ? 'bold' : 'normal' }}>
