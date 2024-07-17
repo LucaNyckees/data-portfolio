@@ -7,7 +7,8 @@
   --writingdark: #4d4b4b;
   --writinglight: #4d4b4b;
   --white: white;
-  --grey: rgb(254, 251, 251);
+  --grey: rgb(247, 245, 245);
+  /* --grey: rgb(254, 251, 251); */
   --blocked: red;
   --hovertimeline: #4d4b4b;
 }
@@ -504,7 +505,7 @@ nav .fa {
   box-sizing: border-box;
   transition: 0.5s;
   border: none;
-  background-color: rgb(252, 251, 251);
+  background-color: var(--grey);
   margin-left: 1vw;
   margin-right: 1vw;
 }
@@ -868,7 +869,7 @@ button img {
 .portfolio-section-header h2,
 .stack-section-header h2 {
   text-align: left;
-  margin-left: 10vw;
+  margin-left: 13vw;
 }
 
 .about-section-header h1,
@@ -892,7 +893,7 @@ button img {
 }
 
 .timeline-bottom {
-  width: 80%;
+  width: 70%;
   border: 1px solid var(--writinglight);
   height: 1px;
   text-align: center;
@@ -964,7 +965,7 @@ button img {
   height: calc(5vh + 1px);
   background-color: var(--white);
   border: 1px solid var(--writinglight);
-  margin-left: 6vw;
+  margin-left: 10vw;
   display: inline-block;
   position: absolute;
 }

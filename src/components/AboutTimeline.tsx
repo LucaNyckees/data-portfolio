@@ -10,13 +10,13 @@ function Timeline1() {
         <div className="timeline-top-sub" style={{ left: "8vw" }}>
           <p>
             Bachelor of Sciences <br></br> in Mathematics, EPFL <br></br>{" "}
-            <i>2017-2020</i>
+            <i>Sept. 2017 - June 2020</i>
           </p>
         </div>
         <div className="timeline-top-sub" style={{ left: "28vw" }}>
           <p>
             Masters of Sciences <br></br> in Mathematics, EPFL <br></br>{" "}
-            <i>2020-2022</i>
+            <i>Sept. 2020 - June 2022</i>
           </p>
         </div>
       </div>
@@ -76,28 +76,28 @@ var jobs = [
   {
     title: "Teaching Assistant",
     text: "Department of Mathematics, EPFL",
-    dates: "09/2019 - 08/2022",
+    dates: "Sept. 2019 - June 2022",
     href: "https://www.epfl.ch/schools/sb/research/math/",
     imageSource: epfl_logo,
   },
   {
     title: "Data Science Intern",
     text: "Laboratory for Topology and Neuroscience, EPFL",
-    dates: "12/2020 - 07/2021",
+    dates: "Dec. 2020 - July 2021",
     href: "https://www.epfl.ch/labs/hessbellwald-lab/",
     imageSource: epfl_logo,
   },
   {
     title: "Research Developer",
     text: "Laboratory for Topology and Neuroscience, EPFL",
-    dates: "08/2021 - 02/2022",
+    dates: "August 2021 - Feb. 2022",
     href: "https://www.epfl.ch/labs/hessbellwald-lab/",
     imageSource: epfl_logo,
   },
   {
     title: "Data Scientist",
     text: "Quanthome SA, Lausanne, Switzerland",
-    dates: "08/2022 - present",
+    dates: "August 2022 - present",
     href: "https://www.quanthome.ch/",
     imageSource: quanthome_logo,
   },
