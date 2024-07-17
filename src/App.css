@@ -1227,6 +1227,7 @@ button img {
   height: min(10vh, 92px);
   aspect-ratio: 1 / 1;
   border: 1px solid var(--writinglight);
+  overflow-y: hidden;
 }
 
 .stack-logos-card {
@@ -1236,6 +1237,7 @@ button img {
 .stack-logos-list {
   overflow: auto;
   display: flex;
+  overflow-y: hidden;
 }
 
 .stack-image {
