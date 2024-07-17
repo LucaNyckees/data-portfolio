@@ -22,11 +22,6 @@ function Contact() {
           marginBottom: "60px",
         }}
       >
-        <div className="contactContainer">
-          <h2 style={{ marginBottom: "30px", fontSize: "14px" }}>
-            Don't hesitate to send me a message.
-          </h2>
-        </div>
         <div id="contactButtons">
           {MailButton("fa fa-envelope")}
           {MediaButton("https://www.linkedin.com/in/luca-nyckees-64674320b/", "fa fa-linkedin")}

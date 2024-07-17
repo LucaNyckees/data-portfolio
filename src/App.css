@@ -25,11 +25,13 @@ h1 {
 }
 
 h2 {
-  font-family: "Andale Mono", monospace;
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+  font-weight: normal;
 }
 
-p, * {
-  font-family: 'Bookman', 'URW Bookman L', serif;
+p, a, * {
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+  font-weight: normal;
 }
 
 .logo {
@@ -43,7 +45,7 @@ p, * {
   width: auto;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 4vh;
+  margin-top: 18vh;
 }
 
 .LightButton {
@@ -430,7 +432,7 @@ nav img {
 .nav-links {
   flex: 1;
   text-align: right;
-  box-shadow: inset 0em -0.2em var(--color2);
+  box-shadow: inset 0px -2px var(--color2);
 }
 
 .nav-links ul li {
@@ -580,6 +582,11 @@ nav .fa {
   color: var(--white);
   transition: 0.2s;
   cursor: pointer;
+}
+
+#contactButtons {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 }
 
 #modalButtons #media-btn-blocked:hover {
@@ -843,30 +850,45 @@ button img {
   background-color: var(--color1);
 }
 
-.about-section-header {
-  background-color: var(--grey);
-  padding-bottom: 6vh;
-  padding-top: 10vh;
-  margin-top: 0vh;
-  border-bottom: 1px solid var(--writinglight);
-}
-
-.portfolio-section-header {
-  background-color: var(--grey);
-  padding-bottom: 6vh;
-  padding-top: 10vh;
-  margin-top: 0vh;
-  margin-bottom: 10vh;
-  border-bottom: 1px solid var(--writinglight);
-}
-
+.about-section-header,
+.portfolio-section-header,
 .stack-section-header {
   background-color: var(--grey);
-  padding-bottom: 6vh;
-  padding-top: 10vh;
+  padding-bottom: 4vh;
+  padding-top: 4vh;
   margin-top: 0vh;
   margin-bottom: 10vh;
   border-bottom: 1px solid var(--writinglight);
+}
+
+.about-section-header h1,
+.portfolio-section-header h1,
+.stack-section-header h1,
+.about-section-header h2,
+.portfolio-section-header h2,
+.stack-section-header h2 {
+  text-align: left;
+  margin-left: 10vw;
+}
+
+.about-section-header h1,
+.portfolio-section-header h1,
+.stack-section-header h1 {
+  font-size: 36px;
+  margin-bottom: 0vh;
+  padding-bottom: 0vh;
+  padding-top: 0vh;
+  margin-top: 0vh;
+}
+
+.about-section-header h2,
+.portfolio-section-header h2,
+.stack-section-header h2 {
+  font-size: 18px;
+  margin-top: 0vh;
+  padding-top: 0vh;
+  padding-bottom: 0vh;
+  margin-bottom: 0vh;
 }
 
 .timeline-bottom {
@@ -890,9 +912,10 @@ button img {
   display: inline-block;
 }
 
-.timeline-bottom-sub h1 {
+.timeline-bottom-sub h2 {
   width: 20vh;
   margin-top: 32px;
+  margin-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
   font-size: 15px;
@@ -932,13 +955,13 @@ button img {
   width: 80%;
   border: 1px solid transparent;
   margin-top: 4vh;
-  margin-bottom: 8vh;
+  margin-bottom: 5vh;
   margin-left: auto;
   margin-right: auto;
 }
 
 .timeline-top-sub {
-  height: calc(8vh + 1px);
+  height: calc(5vh + 1px);
   background-color: var(--white);
   border: 1px solid var(--writinglight);
   margin-left: 6vw;
@@ -971,17 +994,13 @@ button img {
   height: 30vh;
 }
 
-.displayJobBox h1 {
+.displayJobBox h2 {
   padding-top: 20px;
   padding-bottom: 20px;
+  margin-bottom: 0vh;
   font-size: 18px;
   color: var(--writinglight);
   border: 1px solid var(--writinglight);
-}
-
-.displayJobBox h2 {
-  padding-top: 0px;
-  font-size: 14px;
 }
 
 .displayJobBox p {
@@ -1059,7 +1078,7 @@ button img {
 }
 
 #start-expand {
-  font-size: 48px;
+  font-size: 72px;
   margin-top: 20vh;
   color: var(--writingdark);
   outline: none;
@@ -1106,10 +1125,6 @@ button img {
 
 #particles-js {
   background-color: transparent;
-}
-
-.contactContainer {
-  width: 100%
 }
 
 .no-scroll {
@@ -1276,12 +1291,6 @@ button img {
   background-color: var(--writinglight);
   color: white;
   height: min(10vh, 92px);
-}
-
-.stack-section-header h2 {
-  color: var(--writinglight);
-  font-size: 18px;
-  margin-top: 18px;
 }
 
 .stack-section-header h1 {

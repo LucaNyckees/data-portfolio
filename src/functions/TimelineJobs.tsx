@@ -6,12 +6,12 @@ function displayJob(jobIndex: number) {
     "displayJobBox"
   ) as HTMLElement;
   box.innerHTML = `
-    <h1>
+    <h2>
       ${jobContent.title} at
       <a href="${jobContent.href}" target="_blank" style="color: 4d4b4b;">
       ${jobContent.company}
       </a>
-    </h1>
+    </h2>
   `;
   box.innerHTML += `<p>${jobContent.description}</p>`;
   // box.style.backgroundColor = "white";

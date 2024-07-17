@@ -54,7 +54,7 @@ function Job({ index, isActive, onClick }: JobProps) {
         onClick={onClick}
         style={{ border: isActive ? '3px solid #4d4b4b' : 'none' }}
       />
-      <h1 style={{ fontWeight: isActive ? 'bold' : 'normal' }}>{job.title}</h1>
+      <h2 style={{ fontWeight: isActive ? 'bold' : 'normal' }}>{job.title}</h2>
       <p style={{ paddingLeft: "0px", fontWeight: isActive ? 'bold' : 'normal' }}>
         <i>{job.dates}</i>
       </p>

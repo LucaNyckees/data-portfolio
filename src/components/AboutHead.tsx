@@ -42,7 +42,7 @@ function AboutHead() {
     <>
       <div className="about-section-header">
       <h1>ABOUT</h1>
-      <p>I once solved a 4-8 years puzzle in only 3 years.</p>
+      <h2>Profile and work experience</h2>
       </div>
       <div className="about-image">
         <img src={profile_pic} id="profileImage"></img>
