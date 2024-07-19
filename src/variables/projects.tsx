@@ -27,17 +27,14 @@ let projContents = [
   {
     title: "Network and Topological Data Analysis for COVID19 Data in Geneva",
     description:
-      "This is a project done with the Laboratory of Topology and Neuroscience at EPFL, \
-                     under the supervision of Prof. Kathryn Hess Bellwald, Dr. Stefania Ebli and Dr. \
-                     Celia Hacker and in collaboration with Yann Mentha. \
-                     We study the spreading process of COVID19 by analysing contact tracing data through \
+      "We study the spreading process of COVID19 by analysing contact tracing data through \
                      network and topological methods like graph calibration and standard persistent homology. \
                      We create an efficient pipeline and develop a Streamlit web application for data visualization. \
                      Interactions between users are modeled through simplicial complexes, allowing \
                      for higher dimensional information within the spreading process.",
     implementation:
       "We implement this using standard network and topology libraries, including GUDHI and NetworkX for the analysis. \
-      We make use of PyVis and Plotly for everything related to visualisation purposes. Moreover, Streamlit is used \
+      We use PyVis and Plotly for visualisation. Moreover, Streamlit is used \
       in order to develop a web app (interactive dashboard). The whole project is built as a Docker image. Data comes from \
       a collaboration between the lab and hospitals in Geneva and are confidential - we thus chose to keep the \
       GitHub repository private.",
@@ -56,11 +53,10 @@ let projContents = [
   {
     title: "A New Clustering Technique with Topological Optimization Machine Learning",
     description:
-      "This project is part of my master thesis, realized under the supervision of \
-                     Prof. Kathryn Hess Bellwald and Dr. Nicolas Berkouk - in the Laboratory of Topology and \
-                     Neuroscience at EPFL. In applied topology, there is a powerful data analysis tool called persistent homology.\
-                     In this project, we considered a generalization of this tool called multi-parameter\
-                     persistent homology and implemented an associated metric that allows for better understanding\
+      "This project is part of my master thesis, realized with Dr. Nicolas Berkouk. \
+                     In applied topology, there is a powerful data analysis tool called persistent homology.\
+                     We consider a generalization of this tool called multi-parameter\
+                     persistent homology and implement an associated metric that allows for better understanding\
                      complex data such as high-dimensional point-clound data. We provide a rich visualization of the\
                      method by investigating the case of digit image classification. ",
     implementation:
@@ -82,12 +78,9 @@ let projContents = [
   {
     title: "Computing and Visualising Levelset Zigzag Homology (TDA Theoretical Topic)",
     description:
-      "This project was realized under the supervision of \
-                     Prof. Kathryn Hess Bellwald and Dr. Nicolas Berkouk, from the Laboratory of Topology and \
-                     Neuroscience at EPFL. In applied topology, there is a powerful data analysis tool called persistent homology.\
-                     In this project, we consider a generalization of this tool called levelset zigzag \
-                     persistent homology and make a survey about the various techniques revolving around \
-                     this generalization, as well as how they link to one another. We implement a web application \
+      "We consider a generalization of this persistent homology called levelset zigzag \
+                    persistent homology and make a survey about how the \
+                    various linked mathematical frameworks relate to one another. We implement a web application \
                      that allows for a visualizing how levelset zigzag homology works when it is used to \
                      study the shape of spaces and point-cloud data.",
     implementation:
@@ -109,16 +102,16 @@ let projContents = [
   {
     title: "Applications of Parametric Morse Theory to Machine Learning",
     description:
-      "This project done in the context of a semester project under the supervision of Celia Hacker and \
-                  Stefania Ebli, in the Laboratory for Topology and Neuroscience at EPFL, directed by Kathryn Hess. \
+      "This project is done with Dr. Celia Hacker and \
+                  Dr. Stefania Ebli. \
                   We implement a framework for working with parametric Morse theory, which \
                   provides tools for analyzing the topological changes of a simplicial (cubical) complex \
                   through a filtration. One can build a discrete Morse function on a given complex \
                   (a real-valued labeling of all simplices or cubes that satisfies some hierarchy conditions) and \
                   study the related so-called critical cells in the complex. Those are crucial cells in the sense that, \
                   as opposed to other cells, deleting them from the complex will fundamentally change the overall \
-                  topology of the space. Generally speaking, DMT has broad applications, notably in homology \
-                  computation and, more recently, in image processing via parametric Morse theory.",
+                  topology of the space. DMT has applications in computational \
+                  geometry and image processing.",
     implementation:
     "For this work, we make use of the topology and geometry library GUDHI for the core algorithms. A lot of those\
     algorithms are implemented by us, built on top of pre-existing ones.\
@@ -261,7 +254,7 @@ let projContents = [
     title: "Graph Theoretical Label Propagation for Image Classification",
     description:
       "This project was realized in the contex of the course 'Statistical Machine \
-                     Learning' taught by Guillaume Obozinski at EPFL. In this project, we investigate a type of semi-supervised \
+                     Learning' taught by Guillaume Obozinski at EPFL. We investigate a type of semi-supervised \
                      learning algorithm designed to efficiently tackle binary and multi-classification problems \
                      with a very low proportion of labeled data. More precisely, we introduce and study the functioning of \
                      label propagation via diffusion on a graph. We evaluate the introduced model by interpreting new results \
@@ -292,10 +285,10 @@ let projContents = [
   {
     title: "Statistical Analysis for the Geneva Meteorological Observatory",
     description:
-      "This project, done with Kieran Vaudaux, was realized in the contex of the course 'Statistical Computation \
+      "This project was realized with Kieran Vaudaux, for the course 'Statistical Computation \
                      and Visualization' taught by M. Golham at EPFL. It consisted in performing a rigorous statistical \
                      analysis of meteorological data in Switzerland, and implementing a time-series forecasting model designed to make \
-                     meteorological predictions. An emphasis was put on data visualization - the project came in wrapped up as a \
+                     meteorological predictions. An emphasis was put on data visualization. The project came in wrapped up as a \
                      Streamlit web application.",
     implementation:
       "Data comes from the European Climate Assessment and Dataset Center. We used various statistical analysis frameworks, \

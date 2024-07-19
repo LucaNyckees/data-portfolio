@@ -53,7 +53,7 @@ const logosByCategory = {
         { id: 'sql-logo', logo: SQLLogoSvg, text: 'SQL', link: 'https://sql.sh/' },
         { id: 'pgsql-logo', logo: pgSQLLogoSvg, text: 'Postgres', link: 'https://www.postgresql.org/' },
         { id: 'sqlite-logo', logo: SQLiteLogoSvg, text: 'SQLite', link: 'https://www.sqlite.org/docs.html' },
-        { id: 'alembic-logo', logo: AlembicLogoPng, text: 'SQLite', link: 'https://alembic.sqlalchemy.org/en/latest/' },
+        { id: 'alembic-logo', logo: AlembicLogoPng, text: 'Alembic', link: 'https://alembic.sqlalchemy.org/en/latest/' },
     ],
     data_ops: [
         { id: 'airflow-logo', logo: AirflowLogoSvg, text: 'Apache Airflow', link: 'https://airflow.apache.org/' },
