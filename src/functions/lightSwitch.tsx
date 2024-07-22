@@ -32,8 +32,8 @@ function lightSwitchHelper(props: any) {
   let profileImage: HTMLElement = document.getElementById(
     "profileImage"
   ) as HTMLElement;
-  var items: any = document.getElementsByClassName("timeline-bottom");
-  var items2: any = document.getElementsByClassName("timeline-bottom-sub");
+  var items: any = document.getElementsByClassName("timeline");
+  var items2: any = document.getElementsByClassName("timeline-sub");
   var projectModals: any = document.getElementsByClassName("modal");
   for (let i = 0; i < items.length; i++) {
     let element = items[i];

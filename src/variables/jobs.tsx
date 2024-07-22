@@ -39,7 +39,7 @@ let jobContents = [
 
   {
     title: "Data Scientist",
-    company: "Quanthome SA",
+    company: "Quanthome",
     period: "August 2023 - present",
     description:
       "Quanthome is a data science startup based in Lausanne, aiming at digitalizing \

@@ -8,14 +8,16 @@ function displayJob(jobIndex: number) {
   box.innerHTML = `
     <h2>
       ${jobContent.title} at
-      <a href="${jobContent.href}" target="_blank" style="color: 4d4b4b;">
       ${jobContent.company}
-      </a>
     </h2>
   `;
   box.innerHTML += `<p>${jobContent.description}</p>`;
+  box.innerHTML += `<a href=${jobContent.href} target="_blank">
+    Learn more
+  </a>`;
   // box.style.backgroundColor = "white";
   box.style.border = `none`;
+  box.style.height = "40vh";
 }
 
 function undisplayJob() {
