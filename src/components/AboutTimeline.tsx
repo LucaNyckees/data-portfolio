@@ -72,20 +72,20 @@ const JobDetails: React.FC = () => {
   const { index } = useParams<{ index: string }>();
 
   if (index === undefined) {
-    return <Navigate to="/" />; // or any fallback UI
+    return <Navigate to="/" />;
   }
 
   const jobIndex = parseInt(index, 10);
 
   if (isNaN(jobIndex) || jobIndex < 0 || jobIndex >= jobContents.length) {
-    return <Navigate to="/" />; // or any fallback UI
+    return <Navigate to="/" />;
   }
 
   const jobContent = jobContents[jobIndex];
 
   return (
-    <div>
-      <h1>{jobContent.title}</h1>
+    <div className='job-details-container'>
+      <h1>{jobContent.title} at {jobContent.company}</h1>
       <p>{jobContent.description}</p>
       <a href={jobContent.href}>Learn more</a>
     </div>
@@ -93,8 +93,8 @@ const JobDetails: React.FC = () => {
 };
 
 interface JobProps {
-  index: number; // Assuming index is a number, adjust type if different
-  isActive: boolean; // Assuming isActive is a boolean, adjust type if different
+  index: number;
+  isActive: boolean;
 }
 
 function Job({ index, isActive }: JobProps) {
@@ -184,7 +184,6 @@ function Timeline2() {
           />
         ))}
       </div>
-      <div id="displayJobBox" className="displayJobBox"></div>
     </>
   );
 }
