@@ -908,7 +908,7 @@ button img {
 }
 
 .timeline-job-logo:hover {
-  background-color: var(--hovertimeline);
+  border: 10px solid var(--hovertimeline);
 }
 
 /* @keyframes pulse {

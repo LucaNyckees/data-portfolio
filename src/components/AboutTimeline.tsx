@@ -99,11 +99,18 @@ interface JobProps {
 
 function Job({ index, isActive }: JobProps) {
   const [show, setShow] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
   const navigate = useNavigate();
   const marginLeftDict = {
     job1: "0px;",
     job2: "max(-10.4vh, -100px);",
     job3: "max(-10.4vh, -100px);",
+  };
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+  const handleMouseLeave = () => {
+    setIsHovered(false);
   };
 
   let job = jobs[index];
@@ -120,7 +127,9 @@ function Job({ index, isActive }: JobProps) {
         className="timeline-job-logo"
         src={job.imageSource}
         onClick={() => navigate(`/job/${index}`)}
-        style={{ border: isActive ? '3px solid #4d4b4b' : 'none' }}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+        style={{ border: isActive || isHovered ? '3px solid #4d4b4b' : 'none' }}
       />
       <h2 style={{ fontWeight: isActive ? 'bold' : 'normal' }}>{job.title}</h2>
       <p style={{ paddingLeft: "0px", fontWeight: isActive ? 'bold' : 'normal' }}>
@@ -162,12 +171,7 @@ var jobs = [
 ];
 
 function Timeline2() {
-  const [activeJob, setActiveJob] = useState(3);
-
-  // const handleClick = (index: number) => {
-  //   utils.displayJob(index);
-  //   setActiveJob(index);
-  // };
+  const [activeJob, setActiveJob] = useState();
 
   return (
     <>
@@ -177,7 +181,6 @@ function Timeline2() {
             key={index}
             index={index}
             isActive={index === activeJob}
-          // onClick={() => handleClick(index)}
           />
         ))}
       </div>
