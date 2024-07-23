@@ -1,7 +1,8 @@
 import colors from "../variables/tagcolors";
 import { useState } from "react";
 import projContents from "../variables/projects";
-import Modal from "./Modal";
+import PortfolioDetails from "../components/PortfolioDetails";
+import { Navigate, useNavigate, useParams } from "react-router-dom";
 
 
 function Label(tag: string) {
@@ -28,6 +29,7 @@ function LabelList(tags: Array<string>, cut: number) {
 function Project(index: number) {
   let project = projContents[index];
   const [show, setShow] = useState(false);
+  const navigate = useNavigate();
   let proj_id = `proj${index}`;
   const lock =
     [4, 5, 6, 7].indexOf(index) > -1 ? (
@@ -45,7 +47,7 @@ function Project(index: number) {
     ) : (
       <></>
     );
-  const id = `myModal${index}`;
+  const id = `myProject${index}`;
   return (
     <>
       <button
@@ -53,7 +55,7 @@ function Project(index: number) {
         type="button"
         className="about-col"
         style={{ position: 'relative' }}
-        onClick={() => setShow(true)}
+        onClick={() => navigate(`/portfolio/${index}`)}
       >
         <p id={proj_id + "P"}>
           {project.title}
@@ -67,13 +69,6 @@ function Project(index: number) {
           {LabelList(project.labels, project.cut)}
         </div>
       </button>
-      <div className="App">
-        <Modal
-          className="project"
-          id={id}
-          {...{ index, show, closeModal: () => setShow(false) }}
-        />
-      </div>
     </>
   );
 }

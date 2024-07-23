@@ -3,6 +3,7 @@ import Intro from "./components/Intro";
 import Stack from "./components/Stack";
 import { AboutHead } from "./components/AboutHead";
 import { AboutTimeline, JobDetails } from "./components/AboutTimeline";
+import PortfolioDetails from "./components/PortfolioDetails"; 
 import * as PortfolioFcts from "./components/ProjectsPortfolio";
 import Contact from "./components/Contact";
 import "./App.css";
@@ -132,6 +133,7 @@ function App() {
             </>
           } />
           <Route path="/job/:index" element={<JobDetails />} />
+          <Route path="/portfolio/:index" element={<PortfolioDetails />} />
         </Routes>
       </Router>
       <section

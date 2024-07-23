@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import projContents from "../variables/projects";
 import { MediaButton, MediaButtonBlocked } from './AboutHead';
+import { Navigate, useNavigate, useParams } from "react-router-dom";
+import GoBackButton from '../components/GoBackButton';
 
 function LockSymbol(props: any) {
   const size = props.size;
@@ -20,68 +22,48 @@ function LockSymbol(props: any) {
   );
 }
 
-function Modal(props: any) {
-  const { index, show, closeModal } = props;
-  let projContent = projContents[index];
+const PortfolioDetails: React.FC = () => {
+  const { index } = useParams<{ index: string }>();
+
+  if (index === undefined) {
+    return <Navigate to="/" />;
+  }
+
+  const portfolioIndex = parseInt(index, 10);
+
+  if (isNaN(portfolioIndex) || portfolioIndex < 0 || portfolioIndex >= projContents.length) {
+    return <Navigate to="/" />;
+  }
+
+  const projContent = projContents[portfolioIndex];
   let lbls = projContent.labels;
   let git = projContent.git;
   let pres = projContent.pres;
   let report = projContent.report;
   let poster = projContent.poster;
-  const leftMargin = (-((index % 4) + 0.5) * 74.6) / 4;
   const lock =
-    [4, 5, 6, 7].indexOf(index) > -1 ? (
+    [4, 5, 6, 7].indexOf(portfolioIndex) > -1 ? (
       <LockSymbol size={16}></LockSymbol>
     ) : (
       <></>
     );
-  const w = window.innerWidth;
-  useEffect(() => {
-    // Add or remove 'no-scroll' class to body based on the modal visibility
-    if (show) {
-      document.body.classList.add("no-scroll");
-    } else {
-      document.body.classList.remove("no-scroll");
-    }
 
-    // Cleanup: remove the class when the component is unmounted
-    return () => {
-      document.body.classList.remove("no-scroll");
-    };
-  }, [show]);
-  const originalWidthString = projContent.rel_height_open;
-  const numericValue = parseFloat(originalWidthString);
-  const viewportHeight = window.innerHeight;
-  const screenCoverageProportion = viewportHeight / screen.height;
-  const newNumericValue = numericValue * screenCoverageProportion;
-  const newHeightString = `${newNumericValue}%`;
   return (
     <>
-      <div className={show ? "overlay" : "hide"} onClick={closeModal} />
+      <GoBackButton />
       <div
-        className={show ? "modal" : "hide"} id='modal'
-      // style={
-      //   w > 425
-      //     // ? { marginLeft: `${leftMargin}%`, marginTop: `${topMargin}px` }
-      //     // : { marginLeft: "-2%", marginTop: "-64vh" }
-      //     ? { marginLeft: `${leftMargin}vw` }
-      //     : { marginLeft: "-2%" }
-      // }
+        className="modal" id='modal'
       >
         <h2>{projContent.title}</h2>
         <div className='modal-left-and-right'>
           <div className='modal-left'>
-            <button type="button" className="btn-close" onClick={closeModal}>
-              <span className="icon-cross"></span>
-              <span className="visually-hidden">Close</span>
-            </button>
             <h3>Description</h3>
-            <p className="project-description-text">{projContent.description}</p>
+            <p className="modal-description-text">{projContent.description}</p>
             <h3>Implementation</h3>
-            <p className="project-description-text">{projContent.implementation}</p>
+            <p className="modal-description-text">{projContent.implementation}</p>
             <h3>Resources</h3>
             <div id="modalButtons">
-              {[4, 5, 6, 7].indexOf(index) > -1 ? (
+              {[4, 5, 6, 7].indexOf(portfolioIndex) > -1 ? (
             <p>This is a private project - don't hesitate to contact me for more details. {lock}</p>
         ) : null}
               {!(git === "") && git !== "private" && (
@@ -102,7 +84,6 @@ function Modal(props: any) {
             </div>
           </div>
           <div className='modal-right'>
-            {/* <h3>Period : {projContent.date}</h3> */}
             <div className='modal-labels'>
               {lbls.length > 0 ? <label>{lbls[0]}</label> : null}
               {lbls.length > 1 ? <label>{lbls[1]}</label> : null}
@@ -116,6 +97,6 @@ function Modal(props: any) {
       </div>
     </>
   );
-}
+};
 
-export default Modal;
+export default PortfolioDetails;
