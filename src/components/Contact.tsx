@@ -32,13 +32,13 @@ function Contact() {
   );
 }
 
-/*<div
+{/* <div
           id="mediaInfoFooter"
           style={{ display: "flex", marginLeft: "34vw" }}
         >
           {MediaInfo("+41 78 721 25 01", "fa fa-phone")}
           {MediaInfo("luca.nyckees99@gmail.com", "fa fa-envelope")}
           {MediaInfo("Lausanne, Switerland", "fa fa-map-pin")}
-        </div>*/
+        </div> */}
 
 export default Contact;

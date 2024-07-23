@@ -18,6 +18,7 @@
     "@types/mathjax": "^0.0.37",
     "@types/react-helmet": "^6.1.6",
     "@types/react-latex": "^2.0.0",
+    "@types/react-router-dom": "^5.3.3",
     "bootstrap": "^5.2.3",
     "emotion-theming": "^11.0.0",
     "material-symbols": "^0.5.0",
