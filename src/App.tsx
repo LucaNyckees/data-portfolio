@@ -2,8 +2,9 @@ import Menu from "./components/Menu";
 import Intro from "./components/Intro";
 import Stack from "./components/Stack";
 import { AboutHead } from "./components/AboutHead";
-import { AboutTimeline, JobDetails } from "./components/AboutTimeline";
-import PortfolioDetails from "./components/PortfolioDetails"; 
+import { JobsTimeline } from "./components/JobsTimeline";
+import JobDetails from "./components/JobDetails";
+import ProjectDetails from "./components/ProjectDetails";
 import * as PortfolioFcts from "./components/ProjectsPortfolio";
 import Contact from "./components/Contact";
 import "./App.css";
@@ -118,30 +119,30 @@ function App() {
               </section>
               <section className="about" id="about">
                 <AboutHead />
-                <AboutTimeline />
+                <JobsTimeline />
               </section>
               <section className="data" id="data">
                 <div className="portfolio-section-header">
                   <h1>PORTFOLIO</h1>
                   <h2>A selection of data science projects</h2>
                 </div>
-                <PortfolioFcts.Board show={show} />
+                <PortfolioFcts.Portfolio show={show} />
               </section>
               <section className="stack" id="stack">
                 <Stack></Stack>
               </section>
+              <section
+                className="information"
+                id="information"
+              >
+                <Contact></Contact>
+              </section>
             </>
           } />
           <Route path="/job/:index" element={<JobDetails />} />
-          <Route path="/portfolio/:index" element={<PortfolioDetails />} />
+          <Route path="/portfolio/:index" element={<ProjectDetails />} />
         </Routes>
       </Router>
-      <section
-        className="information"
-        id="information"
-      >
-        <Contact></Contact>
-      </section>
     </>
   );
 }

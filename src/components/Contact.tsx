@@ -1,17 +1,6 @@
 import { MediaButton } from "./AboutHead";
 import { MailButton } from "./AboutHead";
 
-function MediaInfo(text: string, icon: string) {
-  return (
-    <>
-      <div>
-        <button type="button" className={icon}></button>
-        <p>{text}</p>
-      </div>
-    </>
-  );
-}
-
 function Contact() {
   return (
     <>
@@ -31,14 +20,5 @@ function Contact() {
     </>
   );
 }
-
-{/* <div
-          id="mediaInfoFooter"
-          style={{ display: "flex", marginLeft: "34vw" }}
-        >
-          {MediaInfo("+41 78 721 25 01", "fa fa-phone")}
-          {MediaInfo("luca.nyckees99@gmail.com", "fa fa-envelope")}
-          {MediaInfo("Lausanne, Switerland", "fa fa-map-pin")}
-        </div> */}
 
 export default Contact;

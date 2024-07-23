@@ -1,8 +1,7 @@
 import colors from "../variables/tagcolors";
 import { useState } from "react";
 import projContents from "../variables/projects";
-import PortfolioDetails from "../components/PortfolioDetails";
-import { Navigate, useNavigate, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 function Label(tag: string) {
@@ -73,7 +72,7 @@ function Project(index: number) {
   );
 }
 
-function BoardRow(indices: Array<number>) {
+function PortfolioRow(indices: Array<number>) {
   let row_id = `projRow${Math.floor(indices[0] / 4)}`;
   return (
     <>
@@ -84,17 +83,17 @@ function BoardRow(indices: Array<number>) {
   );
 }
 
-function Board(props: any) {
+function Portfolio(props: any) {
   let indices = Array.from(projContents.keys());
   return (
     <>
       <div id="allProjects">
-        {BoardRow([0, 1, 2, 3])}
-        {BoardRow([4, 5, 6, 7])}
-        {BoardRow([8, 9, 10, 11])}
+        {PortfolioRow([0, 1, 2, 3])}
+        {PortfolioRow([4, 5, 6, 7])}
+        {PortfolioRow([8, 9, 10, 11])}
       </div>
     </>
   );
 }
 
-export { Board };
+export { Portfolio };

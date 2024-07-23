@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import projContents from "../variables/projects";
 import { MediaButton, MediaButtonBlocked } from './AboutHead';
-import { Navigate, useNavigate, useParams } from "react-router-dom";
-import GoBackButton from '../components/GoBackButton';
+import { Navigate, useParams } from "react-router-dom";
+import GoBackButton from './GoBackButton';
 
 function LockSymbol(props: any) {
   const size = props.size;
@@ -22,7 +22,7 @@ function LockSymbol(props: any) {
   );
 }
 
-const PortfolioDetails: React.FC = () => {
+const ProjectDetails: React.FC = () => {
   const { index } = useParams<{ index: string }>();
 
   if (index === undefined) {
@@ -99,4 +99,4 @@ const PortfolioDetails: React.FC = () => {
   );
 };
 
-export default PortfolioDetails;
+export default ProjectDetails;

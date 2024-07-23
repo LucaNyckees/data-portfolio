@@ -35,7 +35,7 @@ let projContents = [
     implementation:
       "We implement this using standard network and topology libraries, including GUDHI and NetworkX for the analysis. \
       We use PyVis and Plotly for visualisation. Moreover, Streamlit is used \
-      in order to develop a web app (interactive dashboard). The whole project is built as a Docker image. Data comes from \
+      in order to develop a web app (interactive dashPortfolio). The whole project is built as a Docker image. Data comes from \
       a collaboration between the lab and hospitals in Geneva and are confidential - we thus chose to keep the \
       GitHub repository private.",
     imageSource: UPHESS_project1,
@@ -293,7 +293,7 @@ let projContents = [
     implementation:
       "Data comes from the European Climate Assessment and Dataset Center. We used various statistical analysis frameworks, \
       including scipy, statsmodels and scikit-learn. Visualisation was made with matplotlib and Plotly. The whole project \
-      came in as a wrapped up Streamlit application, containing both the final report and a multi-pages dashboard.",
+      came in as a wrapped up Streamlit application, containing both the final report and a multi-pages dashPortfolio.",
     imageSource: EPFL_project3,
     labels: ["web-app", "forecasting", "statistical-analysis", "viz"],
     cut: 2,
