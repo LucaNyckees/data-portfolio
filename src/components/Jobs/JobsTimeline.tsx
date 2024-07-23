@@ -1,38 +1,7 @@
 import { useState } from 'react';
-import epfl_logo from "../../images/job_logos/epfl.png";
-import quanthome_logo from "../../images/job_logos/quanthome.svg";
 import Job from "./Job"
+import jobContents from '../../variables/jobs';
 
-const jobs = [
-  {
-    title: "Teaching Assistant",
-    text: "Department of Mathematics, EPFL",
-    dates: "Sept. 2019 - June 2022",
-    href: "https://www.epfl.ch/schools/sb/research/math/",
-    imageSource: epfl_logo,
-  },
-  {
-    title: "Data Science Intern",
-    text: "Laboratory for Topology and Neuroscience, EPFL",
-    dates: "Dec. 2020 - July 2021",
-    href: "https://www.epfl.ch/labs/hessbellwald-lab/",
-    imageSource: epfl_logo,
-  },
-  {
-    title: "Research Developer",
-    text: "Laboratory for Topology and Neuroscience, EPFL",
-    dates: "August 2021 - Feb. 2022",
-    href: "https://www.epfl.ch/labs/hessbellwald-lab/",
-    imageSource: epfl_logo,
-  },
-  {
-    title: "Data Scientist",
-    text: "Quanthome, Lausanne, Switzerland",
-    dates: "August 2022 - present",
-    href: "https://www.quanthome.ch/",
-    imageSource: quanthome_logo,
-  },
-];
 
 function Timeline() {
   const [activeJob, setActiveJob] = useState();
@@ -40,7 +9,7 @@ function Timeline() {
   return (
     <>
       <div className="timeline">
-        {jobs.map((job, index) => (
+        {jobContents.map((job, index) => (
           <Job
             key={index}
             index={index}

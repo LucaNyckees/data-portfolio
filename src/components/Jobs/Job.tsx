@@ -1,39 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from 'react';
-import epfl_logo from "../../images/job_logos/epfl.png";
-import quanthome_logo from "../../images/job_logos/quanthome.svg";
-
-
-const jobs = [
-    {
-        title: "Teaching Assistant",
-        text: "Department of Mathematics, EPFL",
-        dates: "Sept. 2019 - June 2022",
-        href: "https://www.epfl.ch/schools/sb/research/math/",
-        imageSource: epfl_logo,
-    },
-    {
-        title: "Data Science Intern",
-        text: "Laboratory for Topology and Neuroscience, EPFL",
-        dates: "Dec. 2020 - July 2021",
-        href: "https://www.epfl.ch/labs/hessbellwald-lab/",
-        imageSource: epfl_logo,
-    },
-    {
-        title: "Research Developer",
-        text: "Laboratory for Topology and Neuroscience, EPFL",
-        dates: "August 2021 - Feb. 2022",
-        href: "https://www.epfl.ch/labs/hessbellwald-lab/",
-        imageSource: epfl_logo,
-    },
-    {
-        title: "Data Scientist",
-        text: "Quanthome, Lausanne, Switzerland",
-        dates: "August 2022 - present",
-        href: "https://www.quanthome.ch/",
-        imageSource: quanthome_logo,
-    },
-];
+import epfl_logo from "../images/job_logos/epfl.png";
+import quanthome_logo from "../images/job_logos/quanthome.svg";
+import jobContents from "../../variables/jobs";
 
 interface JobProps {
     index: number;
@@ -56,7 +25,7 @@ export default function Job({ index, isActive }: JobProps) {
         setIsHovered(false);
     };
 
-    let job = jobs[index];
+    let job = jobContents[index];
     let id = `job${index}`;
     let margin_left = marginLeftDict[id as keyof typeof marginLeftDict] || "0px";
 
