@@ -2,10 +2,10 @@ import Menu from "./components/Menu";
 import Intro from "./components/Intro";
 import Stack from "./components/Stack";
 import { AboutHead } from "./components/AboutHead";
-import { JobsTimeline } from "./components/JobsTimeline";
-import JobDetails from "./components/JobDetails";
-import ProjectDetails from "./components/ProjectDetails";
-import * as PortfolioFcts from "./components/ProjectsPortfolio";
+import { JobsTimeline } from "./components/Jobs/JobsTimeline";
+import JobDetails from "./components/Jobs/JobDetails";
+import ProjectDetails from "./components/Projects/ProjectDetails";
+import Portfolio from "./components/Projects/ProjectsPortfolio";
 import Contact from "./components/Contact";
 import "./App.css";
 import "material-symbols";
@@ -126,7 +126,7 @@ function App() {
                   <h1>PORTFOLIO</h1>
                   <h2>A selection of data science projects</h2>
                 </div>
-                <PortfolioFcts.Portfolio show={show} />
+                <Portfolio show={show} />
               </section>
               <section className="stack" id="stack">
                 <Stack></Stack>

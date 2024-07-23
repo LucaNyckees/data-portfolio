@@ -1,5 +1,5 @@
-import cv_file from "../../files/cv_luca_nyckees.pdf";
-import profile_pic from "../../images/luca.jpeg";
+import cv_file from "../files/cv_luca_nyckees.pdf";
+import profile_pic from "../images/luca.jpeg";
 
 function MailButton(icon: string) {
   return (

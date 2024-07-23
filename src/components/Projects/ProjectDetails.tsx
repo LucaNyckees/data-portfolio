@@ -1,8 +1,8 @@
 import React from 'react';
-import projContents from "../variables/projects";
-import { MediaButton, MediaButtonBlocked } from './AboutHead';
+import projContents from "../../variables/projects";
+import { MediaButton, MediaButtonBlocked } from '../AboutHead';
 import { Navigate, useParams } from "react-router-dom";
-import GoBackButton from './GoBackButton';
+import GoBackButton from '../GoBackButton';
 
 function LockSymbol(props: any) {
   const size = props.size;

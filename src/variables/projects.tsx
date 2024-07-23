@@ -1,25 +1,25 @@
 //--- IMAGES
-import UPHESS_project1 from "../../images/UPHESS_project1.jpeg";
-import UPHESS_project2 from "../../images/UPHESS_project2.png";
-import UPHESS_project3 from "../../images/UPHESS_project3.png";
-import UPHESS_project4 from "../../images/UPHESS_project4.png";
-import QH_project1 from "../../images/QH_project1.png";
-import QH_project2 from "../../images/QH_project2.png";
-import QH_project3 from "../../images/QH_project3.png";
-import QH_project4 from "../../images/QH_project4.png";
-import EPFL_project1 from "../../images/EPFL_project1.png";
-import EPFL_project2 from "../../images/EPFL_project2.png";
-import EPFL_project3 from "../../images/EPFL_project3.png";
-import EPFL_project4 from "../../images/EPFL_project4.png";
+import UPHESS_project1 from "../images/UPHESS_project1.jpeg";
+import UPHESS_project2 from "../images/UPHESS_project2.png";
+import UPHESS_project3 from "../images/UPHESS_project3.png";
+import UPHESS_project4 from "../images/UPHESS_project4.png";
+import QH_project1 from "../images/QH_project1.png";
+import QH_project2 from "../images/QH_project2.png";
+import QH_project3 from "../images/QH_project3.png";
+import QH_project4 from "../images/QH_project4.png";
+import EPFL_project1 from "../images/EPFL_project1.png";
+import EPFL_project2 from "../images/EPFL_project2.png";
+import EPFL_project3 from "../images/EPFL_project3.png";
+import EPFL_project4 from "../images/EPFL_project4.png";
 
 //--- REPORTS AND POSTERS
-import PDM_poster from "../../files/PDM_poster.pdf";
-import PDM from "../../files/PDM.pdf";
-import LabelPropagationReport from "../../files/LabelPropagationReport.pdf";
-import CNN_report from "../../files/CNN_report.pdf";
-import covid19tda_report from "../../files/covid19tda_report.pdf";
-import PMT_report from "../../files/PMT_report.pdf";
-import PMT_presentation from "../../files/PMT_presentation.pdf";
+import PDM_poster from "../files/PDM_poster.pdf";
+import PDM from "../files/PDM.pdf";
+import LabelPropagationReport from "../files/LabelPropagationReport.pdf";
+import CNN_report from "../files/CNN_report.pdf";
+import covid19tda_report from "../files/covid19tda_report.pdf";
+import PMT_report from "../files/PMT_report.pdf";
+import PMT_presentation from "../files/PMT_presentation.pdf";
 
 //------------------------------------- DATA SCIENCE PROJECTS -------------------------------------------
 

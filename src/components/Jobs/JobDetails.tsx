@@ -1,4 +1,4 @@
-import GoBackButton from "../components/GoBackButton";
+import GoBackButton from "../GoBackButton";
 import { Navigate, useParams } from "react-router-dom";
 
 interface JobContent {

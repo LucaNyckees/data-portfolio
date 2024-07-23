@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import epfl_logo from "../../images/job_logos/epfl.png";
 import quanthome_logo from "../../images/job_logos/quanthome.svg";
-import Job from "../components/Job"
+import Job from "./Job"
 
 const jobs = [
   {
