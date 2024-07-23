@@ -2,12 +2,6 @@ import GoBackButton from "../GoBackButton";
 import { Navigate, useParams } from "react-router-dom";
 import jobContents from "../../variables/jobs";
 
-interface JobContent {
-  title: string;
-  description: string;
-  href: string;
-}
-
 const JobDetails: React.FC = () => {
   const { index } = useParams<{ index: string }>();
 
@@ -37,13 +31,9 @@ const JobDetails: React.FC = () => {
         <p>{jobContent.job_description}</p>
         <h3>Key-words</h3>
         <div className='job-labels'>
-          {lbls.length > 0 ? <label>{lbls[0]}</label> : null}
-          {lbls.length > 1 ? <label>{lbls[1]}</label> : null}
-          {lbls.length > 2 ? <label>{lbls[2]}</label> : null}
-          {lbls.length > 3 ? <label>{lbls[3]}</label> : null}
-          {lbls.length > 4 ? <label>{lbls[4]}</label> : null}
-          {lbls.length > 5 ? <label>{lbls[5]}</label> : null}
-          {lbls.length > 6 ? <label>{lbls[6]}</label> : null}
+          {lbls.slice(0, 7).map((label, index) => (
+            <label key={index}>{label}</label>
+          ))}
         </div>
       </div>
     </>

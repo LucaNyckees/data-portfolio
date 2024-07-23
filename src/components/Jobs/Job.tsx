@@ -1,7 +1,5 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from 'react';
-import epfl_logo from "../images/job_logos/epfl.png";
-import quanthome_logo from "../images/job_logos/quanthome.svg";
 import jobContents from "../../variables/jobs";
 
 interface JobProps {

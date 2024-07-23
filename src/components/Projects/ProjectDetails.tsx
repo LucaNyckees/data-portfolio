@@ -64,8 +64,8 @@ const ProjectDetails: React.FC = () => {
             <h3>Resources</h3>
             <div id="modalButtons">
               {[4, 5, 6, 7].indexOf(portfolioIndex) > -1 ? (
-            <p>This is a private project - don't hesitate to contact me for more details. {lock}</p>
-        ) : null}
+                <p>This is a private project - don't hesitate to contact me for more details. {lock}</p>
+              ) : null}
               {!(git === "") && git !== "private" && (
                 MediaButton(git, "fa fa-github")
               )}
@@ -84,6 +84,7 @@ const ProjectDetails: React.FC = () => {
             </div>
           </div>
           <div className='modal-right'>
+            <h3>Key-words</h3>
             <div className='modal-labels'>
               {lbls.length > 0 ? <label>{lbls[0]}</label> : null}
               {lbls.length > 1 ? <label>{lbls[1]}</label> : null}
@@ -91,6 +92,7 @@ const ProjectDetails: React.FC = () => {
               {lbls.length > 3 ? <label>{lbls[3]}</label> : null}
               {lbls.length > 4 ? <label>{lbls[4]}</label> : null}
             </div>
+            <h3>Snapshot</h3>
             <img src={projContent.imageSource}></img>
           </div>
         </div>

@@ -122,23 +122,13 @@ a,
 
   .modal {
     color: var(--writinglight);
-    /* flex-direction: column; */
-    position: fixed;
     top: 36px;
     bottom: 0;
-    /* text-align: center; */
-    border: none;
-    height: auto;
     width: 100%;
-    left: 0;
-    margin-top: 22px;
-    /* margin-right: auto; */
-    /* border-radius: 16px; */
     background-color: var(--white);
-    margin-bottom: auto;
-    padding-bottom: 60px;
-    z-index: 9998;
-    /* display: flex; */
+    margin-top: 14vh;
+    padding-bottom: 10vh;
+
   }
 
   .project h3,
@@ -146,17 +136,26 @@ a,
     font-size: 16px;
     font-weight: 100;
     text-align: left;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: var(--grey);
   }
 
-  .project h2,
   #modal h2 {
     font-size: 32px;
     font-weight: 260;
     margin-bottom: 6vh;
     padding-top: 12px;
-    height: 6vh;
-    width: 80vw;
-    margin-left: 10vw;
+    padding-bottom: 12px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    background-color: var(--grey);
+    border-radius: 4px;
+    font-size: 32px;
   }
 
   .project p,
@@ -473,20 +472,27 @@ h4 {
 .modal img {
   position: relative;
   margin-top: auto;
-  margin-bottom: min(1.7vh, 20px);
+  margin-bottom: 4vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: inline-block;
+  display: flex;
+  margin-left: 3vw;
+  margin-right: 3vw;
 }
 
 .modal-left {
   width: 43vw;
-  margin-left: 5vw;
-  margin-right: 2vw;
+  margin-left: 6vw;
+  margin-right: 1vw;
   padding: auto;
 }
 
 .modal-right {
   width: 43vw;
-  margin-left: 2vw;
-  margin-right: 5vw;
+  margin-left: 1vw;
+  margin-right: 6vw;
 }
 
 .modal-right img {
@@ -497,7 +503,7 @@ h4 {
   margin: auto;
 }
 
-.modal-left h3 {
+.modal-left h3, .modal-right h3 {
   width: 92%;
   margin-left: 2.2vw;
   font-weight: 500;
@@ -505,7 +511,9 @@ h4 {
 }
 
 .modal-labels {
-  margin-bottom: 4vh;
+  margin-bottom: 6vh;
+  margin-top: 4vh;
+  margin-left: 3vw;
 }
 
 .modal-left-and-right {
@@ -626,7 +634,8 @@ button img {
 .modal label {
   position: relative;
   font-size: 14px;
-  background-color: var(--color4);
+  background-color: var(--color2);
+  color: var(--color1);
   border-radius: 20px;
   margin: 48px 2px;
   padding: 8px 12px;
