@@ -1,5 +1,5 @@
 //--- IMAGES
-import UPHESS_project1 from "../images/project_pictures/EPFL_project1.png";
+import UPHESS_project1 from "../images/project_pictures/UPHESS_project1.jpeg";
 import UPHESS_project2 from "../images/project_pictures/UPHESS_project2.png";
 import UPHESS_project3 from "../images/project_pictures/UPHESS_project3.png";
 import UPHESS_project4 from "../images/project_pictures/UPHESS_project4.png";
