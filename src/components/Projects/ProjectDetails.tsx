@@ -62,10 +62,10 @@ const ProjectDetails: React.FC = () => {
             <h3>Implementation</h3>
             <p className="modal-description-text">{projContent.implementation}</p>
             <h3>Resources</h3>
-            <div id="modalButtons">
-              {[4, 5, 6, 7].indexOf(portfolioIndex) > -1 ? (
+            {[4, 5, 6, 7].indexOf(portfolioIndex) > -1 ? (
                 <p>This is a private project - don't hesitate to contact me for more details. {lock}</p>
               ) : null}
+            <div id="modalButtons">
               {!(git === "") && git !== "private" && (
                 MediaButton(git, "fa fa-github")
               )}

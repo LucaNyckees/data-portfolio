@@ -116,7 +116,7 @@ a,
     display: flex;
     margin-top: 24px;
     margin-bottom: 14px;
-    min-height: 44vh;
+    /* min-height: 44vh; */
     width: 76%;
   }
 
@@ -128,7 +128,9 @@ a,
     background-color: var(--white);
     margin-top: 14vh;
     padding-bottom: 10vh;
-
+    margin-left: calc(50vw - 730px);
+    margin-right: calc(50vw - 730px);
+    width: 1460px;
   }
 
   .project h3,
@@ -151,8 +153,8 @@ a,
     padding-bottom: 12px;
     padding-right: 20px;
     padding-left: 20px;
-    margin-left: 6vw;
-    margin-right: 6vw;
+    margin-left: 90px;
+    margin-right: 90px;
     background-color: var(--grey);
     border-radius: 4px;
     font-size: 32px;
@@ -161,9 +163,10 @@ a,
   .project p,
   .modal p {
     text-align: justify;
-    width: min(40vw, 92%, 600px);
+    padding-left: 40px;
+    padding-right: 40px;
     margin: 0;
-    margin-bottom: min(28px, 2vh);
+    margin-bottom: 28px;
     font-size: 16px;
   }
 
@@ -174,7 +177,7 @@ a,
   }
 
   .about-col {
-    min-height: min(44vh, 541px);
+    height: 352px;
     margin-top: auto;
   }
 
@@ -319,13 +322,15 @@ nav .fa {
 }
 
 .row {
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin-left: auto;
   margin-right: auto;
   left: 20%;
   right: 20%;
-  max-width: 1600px;
-  max-height: 480px;
+  max-width: 1200px;
+  max-height: 400px;
+  margin-top: 24px;
+  margin-bottom: 14px;
 }
 
 .about-col {
@@ -337,8 +342,8 @@ nav .fa {
   transition: 0.5s;
   border: none;
   background-color: var(--grey);
-  margin-left: 1vw;
-  margin-right: 1vw;
+  margin-left: 14px;
+  margin-right: 14px;
 }
 
 #modalButtons {
@@ -483,16 +488,14 @@ h4 {
 }
 
 .modal-left {
-  width: 43vw;
-  margin-left: 6vw;
-  margin-right: 1vw;
+  width: 725px;
+  margin-right: 14px;
   padding: auto;
 }
 
 .modal-right {
-  width: 43vw;
-  margin-left: 1vw;
-  margin-right: 6vw;
+  width: 725px;
+  margin-left: 14px;
 }
 
 .modal-right img {
@@ -504,8 +507,9 @@ h4 {
 }
 
 .modal-left h3, .modal-right h3 {
-  width: 92%;
-  margin-left: 2.2vw;
+  /* width: 92%; */
+  margin-left: 36px;
+  margin-right: 36px;
   font-weight: 500;
   margin-top: 3vh;
 }
@@ -520,6 +524,8 @@ h4 {
   display: flex;
   height: 80%;
   margin-top: 8vh;
+  margin-left: 90px;
+  margin-right: 90px;
 }
 
 .projLabelsChoice {
@@ -684,7 +690,7 @@ button img {
 .portfolio-section-header h2,
 .stack-section-header h2 {
   text-align: left;
-  margin-left: 13vw;
+  margin-left: max(calc(50vw - 550px), 10vw);
 }
 
 .about-section-header h1,
@@ -763,19 +769,14 @@ button img {
   cursor: pointer;
 }
 
-.timeline-job-logo:hover {
-  border: 10px solid var(--hovertimeline);
-}
-
 .job-details-container {
-  margin-left: 16vw;
-  margin-right: 16vw;
-  /* height: 100vh; */
+  margin-left: max(calc(50vw - 500px), 10vw);
+  margin-right: max(calc(50vw - 500px), 10vw);
 }
 
 .job-labels label {
   margin-right: 0.6vw;
-  font-size: 18px;
+  font-size: 16px;
   padding: 6px 12px;
   background-color: var(--writinglight);
   border-radius: 120px;
@@ -802,9 +803,9 @@ button img {
 }
 
 .job-details-container h3 {
-  font-size: 22px;
+  font-size: 18px;
   /* border: 1px solid var(--writinglight); */
-  border-bottom: 0.5px solid var(--writinglight);
+  background-color: var(--grey);
   padding-left: 8px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -814,7 +815,7 @@ button img {
 }
 
 .job-details-container p {
-  font-size: 18px;
+  font-size: 16px;
   text-align: justify;
   margin-bottom: 4vh;
   margin-top: 2vh;
@@ -858,10 +859,12 @@ button img {
   display: flex;
   margin-bottom: 8px;
   height: max(400px, 30vh);
+  max-width: 1000px;
+  margin-left: calc(50vw - 500px);
+  margin-right: calc(50vw - 500px);
 }
 
 .about-image {
-  /* display: flex; */
   flex-direction: column;
   align-items: center;
   padding: 4vh 2vw;
@@ -882,19 +885,20 @@ button img {
 }
 
 .about-image-and-buttons {
-  margin-left: 16vw;
+  /* margin-left: 16vw; */
   margin-right: 8px;
   padding-bottom: 0px;
   height: max(400px, 30vh);
 }
 
 .education-container {
-  margin-left: 16vw;
-  margin-right: 16vw;
   margin-bottom: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 1000px;
+  margin-left: calc(50vw - 500px);
+  margin-right: calc(50vw - 500px);
 }
 
 .bachelor-description {
@@ -928,7 +932,6 @@ button img {
   padding: 4px 8px;
   background-color: var(--color4);
   border-radius: 20px;
-  /* border: 1px solid var(--writinglight); */
 }
 
 .timeline-container {
@@ -936,9 +939,11 @@ button img {
   border: none;
   background-color: var(--grey);
   border-radius: 5px;
-  margin-right: 16vw;
-  margin-left: 16vw;
   padding: 8vh 6vh 2vw;
+  max-width: 1000px;
+  margin-left: calc(50vw - 500px);
+  margin-right: calc(50vw - 500px);
+
 }
 
 #aboutButtons {
@@ -957,7 +962,6 @@ button img {
   padding-right: 2vw;
   padding-top: 4vh;
   padding-bottom: 4vh;
-  margin-right: 16vw;
   font-size: min(1.1vw, 16px);
   border: 1px solid var(--writinglight);
   border: none;
@@ -1168,7 +1172,7 @@ button img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: 52%;
+  width: 760px;
 }
 
 .stack-category {
