@@ -8,9 +8,11 @@
   --writinglight: #4d4b4b;
   --white: white;
   --grey: rgb(247, 245, 245);
+  --lightgrey: rgb(219, 216, 216);
   /* --grey: rgb(254, 251, 251); */
   --blocked: red;
   --hovertimeline: #4d4b4b;
+  --bg1: #5FB0B7;
 }
 
 * {
@@ -311,9 +313,8 @@ nav .fa {
   width: 100%;
   margin: auto;
   text-align: center;
-  padding-top: 150px;
-  padding-bottom: 1vh;
-  background-color: var(--white);
+  padding-bottom: 20vh;
+  background-color: var(--color1);
 }
 
 .git {
@@ -340,7 +341,8 @@ nav .fa {
   padding: 0px min(0.83vh, 10px);
   box-sizing: border-box;
   transition: 0.5s;
-  border: none;
+  /* border: 1px solid var(--writinglight); */
+  border: 1px solid var(--grey);
   background-color: var(--grey);
   margin-left: 14px;
   margin-right: 14px;
@@ -430,27 +432,11 @@ h4 {
 }
 
 .about-col:hover {
-  background-color: var(--color4);
+  background-color: var(--color1);
   transition: 0.2s;
   color: var(--writinglight);
   cursor: pointer;
-  border: 1px solid var(--writinglight);
-}
-
-.about-col:hover p,
-.about-col:hover svg {
-  color: var(--writinglight);
-  font-weight: 500;
-}
-
-.about-col:hover label {
-  background-color: var(--white);
-  color: var(--writingdark);
-}
-
-.about-col label {
-  font-weight: 500;
-  color: var(--writinglight);
+  border: 1px solid var(--bg1);
 }
 
 .projLabelsChoice a:target {
@@ -655,8 +641,15 @@ button img {
   margin-bottom: 8px;
   font-size: 12px;
   padding: 4px 8px;
-  background-color: var(--color4);
+  background-color: var(--color1);
   border-radius: 20px;
+  color: var(--writinglight);
+}
+
+.about-col:hover .labels-front label {
+  background-color: var(--bg1);
+  color: var(--color1);
+  transition: 0.2s;
 }
 
 .labels-front {
@@ -668,8 +661,8 @@ button img {
   width: 100%;
   margin: auto;
   text-align: center;
-  /* padding-top: 20vh; */
-  background-color: var(--color1);
+  padding-bottom: 20vh;
+  background-color: var(--bg1);
 }
 
 .about-section-header,
@@ -870,7 +863,7 @@ button img {
   padding: 4vh 2vw;
   justify-content: center;
   border: none;
-  background-color: var(--grey);
+  background-color: var(--color1);
   border-radius: 5px;
   height: max(320px, 24vh);
 }
@@ -902,9 +895,8 @@ button img {
 }
 
 .bachelor-description {
-  border: 1px solid var(--writinglight);
+  background-color: var(--color1);
   border: none;
-  background-color: var(--grey);
   border-radius: 5px;
   margin-right: 4px;
   padding-top: 8px;
@@ -913,9 +905,8 @@ button img {
 }
 
 .master-description {
-  border: 1px solid var(--writinglight);
   border: none;
-  background-color: var(--grey);
+  background-color: var(--color1);
   border-radius: 5px;
   margin-left: 4px;
   padding-top: 8px;
@@ -935,9 +926,8 @@ button img {
 }
 
 .timeline-container {
-  border: 1px solid var(--writinglight);
   border: none;
-  background-color: var(--grey);
+  background-color: var(--color1);
   border-radius: 5px;
   padding: 8vh 6vh 2vw;
   max-width: 1000px;
@@ -948,7 +938,7 @@ button img {
 
 #aboutButtons {
   border: none;
-  background-color: var(--grey);
+  background-color: var(--color1);
   border-radius: 5px;
   margin-bottom: 0px;
   margin-top: 8px;
@@ -963,9 +953,8 @@ button img {
   padding-top: 4vh;
   padding-bottom: 4vh;
   font-size: min(1.1vw, 16px);
-  border: 1px solid var(--writinglight);
   border: none;
-  background-color: var(--grey);
+  background-color: var(--color1);
   border-radius: 5px;
 }
 
@@ -1146,16 +1135,12 @@ button img {
 
 /* stack section */
 
-#stack {
-  background-color: var(--color1);
-}
-
 .stack-section {
   width: 100%;
   margin: auto;
   text-align: center;
-  padding-top: 20vh;
   padding-bottom: 20vh;
+  background-color: var(--bg1);
 }
 
 .stack-container {
@@ -1177,7 +1162,6 @@ button img {
 
 .stack-category {
   margin-bottom: min(1vh, 9.2px);
-  border: none;
   border-radius: 16px;
   text-align: center;
   width: 100%;
@@ -1185,6 +1169,8 @@ button img {
   aspect-ratio: 1 / 1;
   border: 1px solid var(--writinglight);
   overflow-y: hidden;
+  background-color: var(--color1);
+  border: none;
 }
 
 .stack-logos-card {
@@ -1246,7 +1232,7 @@ button img {
   width: 14vh;
   margin-right: 3.2vh;
   margin-left: -1px;
-  margin-top: -1px;
+  /* margin-top: -1px; */
   margin-bottom: 0px;
   background-color: var(--writinglight);
   color: white;
