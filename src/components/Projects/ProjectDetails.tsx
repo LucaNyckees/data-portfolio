@@ -50,11 +50,13 @@ const ProjectDetails: React.FC = () => {
 
   return (
     <>
-      <GoBackButton />
       <div
         className="modal" id='modal'
       >
-        <h2>{projContent.title}</h2>
+        <div className="modal-header">
+          <GoBackButton />
+          <h2>{projContent.title}</h2>
+        </div>
         <div className='modal-left-and-right'>
           <div className='modal-left'>
             <h3>Description</h3>
@@ -63,8 +65,8 @@ const ProjectDetails: React.FC = () => {
             <p className="modal-description-text">{projContent.implementation}</p>
             <h3>Resources</h3>
             {[4, 5, 6, 7].indexOf(portfolioIndex) > -1 ? (
-                <p>This is a private project - don't hesitate to contact me for more details. {lock}</p>
-              ) : null}
+              <p>This is a private project - don't hesitate to contact me for more details. {lock}</p>
+            ) : null}
             <div id="modalButtons">
               {!(git === "") && git !== "private" && (
                 MediaButton(git, "fa fa-github")

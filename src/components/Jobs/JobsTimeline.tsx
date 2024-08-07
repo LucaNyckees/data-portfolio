@@ -46,6 +46,7 @@ function JobsTimeline() {
       </div>
       <div className='timeline-container'>
         <Timeline />
+        <></>
       </div>
     </>
   );

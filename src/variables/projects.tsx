@@ -132,7 +132,7 @@ let projContents = [
     title: "Estimating Energy consumption and CO2 Emissions at Building-Level",
     description:
       "In this project, we realized a framework designed to estimate both CO2 emissions and the energy consumption \
-      of buildings in Switzerland through a very standard machine learning pipeline. We make use of the class of \
+      of buildings in Switzerland by using \
       gradient boosting regressors, fit to work with on tabular data with both categorical and numerical variables. \
       The real work of this project lies in the data engineering part, in which we extract meaningful multi-granularity \
       features (i.e. building-level, district-level, locality-level and so on). This was done as part of the master \

@@ -39,7 +39,7 @@ export default function Job({ index, isActive }: JobProps) {
                 onClick={() => navigate(`/job/${index}`)}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
-                style={{ border: isActive || isHovered ? '2px solid #4d4b4b' : 'none' }}
+                style={{ border: isActive || isHovered ? '2px solid #4d4b4b' : '1px solid #4d4b4b' }}
             />
             <h2 style={{ fontWeight: isActive ? 'bold' : 'normal' }}>{job.title}</h2>
             <p style={{ paddingLeft: "0px", fontWeight: isActive ? 'bold' : 'normal' }}>

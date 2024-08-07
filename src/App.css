@@ -1,18 +1,16 @@
 :root {
   --color1: white;
-  --color3: rgb(36, 231, 238);
-  /* --color2: #903be6; */
   --color2: #4d4b4b;
-  --color4: white;
+  --color3: rgb(225, 243, 254);
+  --color4: rgb(46, 103, 211);
+  --color5: rgb(66, 134, 70);
   --writingdark: #4d4b4b;
   --writinglight: #4d4b4b;
-  --white: white;
-  --grey: rgb(247, 245, 245);
+  --grey: rgb(246, 248, 250);
   --lightgrey: rgb(219, 216, 216);
-  /* --grey: rgb(254, 251, 251); */
   --blocked: red;
   --hovertimeline: #4d4b4b;
-  --bg1: #5FB0B7;
+  --default-font-family: 'MediaSans-Light';
 }
 
 * {
@@ -23,8 +21,42 @@
   /* border: 1px solid black; */
 }
 
+.timeline-job-logo {
+  animation-name: example;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 h1 {
-  font-family: 'Impact', 'Fantasy', sans-serif;
+  font-family: var(--default-font-family), Arial, Verdana, Sans-serif;
+  font-size: 2em;
+  letter-spacing: 1.2px;
+  display: block;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+  color: var(--writinglight);
+}
+
+.text-box h1 {
+  font-size: 36px;
 }
 
 h2 {
@@ -57,7 +89,7 @@ a,
   cursor: pointer;
   width: 40px;
   height: 40px;
-  background-color: var(--white);
+  background-color: var(--color1);
   border-radius: 8px;
   border: 1px solid var(--color2);
 }
@@ -74,7 +106,7 @@ a,
 
 #particles-js {
   height: 100%;
-  background: var(--white);
+  background: var(--color1);
   width: 100vw;
   height: 100vh;
   z-index: 1;
@@ -127,12 +159,17 @@ a,
     top: 36px;
     bottom: 0;
     width: 100%;
-    background-color: var(--white);
+    background-color: var(--color1);
     margin-top: 14vh;
     padding-bottom: 10vh;
     margin-left: calc(50vw - 730px);
     margin-right: calc(50vw - 730px);
     width: 1460px;
+  }
+
+  .modal-header {
+    display: flex;
+    align-items: center;
   }
 
   .project h3,
@@ -150,7 +187,8 @@ a,
   #modal h2 {
     font-size: 32px;
     font-weight: 260;
-    margin-bottom: 6vh;
+    margin-bottom: 16px;
+    margin-top: 16px;
     padding-top: 12px;
     padding-bottom: 12px;
     padding-right: 20px;
@@ -160,6 +198,7 @@ a,
     background-color: var(--grey);
     border-radius: 4px;
     font-size: 32px;
+    width: calc(100vw - 180px);
   }
 
   .project p,
@@ -194,12 +233,6 @@ a,
     margin-bottom: min(20px, 1.66vh);
   }
 
-  h1 {
-    font-size: 36px;
-    font-weight: 100;
-    color: var(--writingdark);
-  }
-
   h2 {
     font-size: 14px;
     font-weight: 100;
@@ -222,13 +255,6 @@ a,
     text-align: center;
     background-color: transparent;
     padding-top: 120px;
-  }
-
-  .text-box h1 {
-    font-size: calc(min(3.8vw, 60px));
-    font-weight: 100;
-    text-align: center;
-    margin: auto;
   }
 
   .text-box p {
@@ -257,7 +283,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  background-color: var(--white);
+  background-color: var(--color1);
   top: 0px;
   z-index: 1;
 }
@@ -269,7 +295,8 @@ nav img {
 .nav-links {
   flex: 1;
   text-align: right;
-  box-shadow: inset 0px -2px var(--color2);
+  /* box-shadow: inset 0px -2px var(--color2); */
+  border-bottom: 1px solid var(--lightgrey);
 }
 
 .nav-links ul li {
@@ -358,20 +385,28 @@ nav .fa {
 #modalButtons a,
 #contactButtons a {
   margin: auto 10px;
-  height: 40px;
 }
 
 #aboutButtons button,
 #modalButtons button,
 #contactButtons button {
-  padding: 10px 10px;
   border-radius: 40px;
-  font-size: 24px;
+  font-size: 22px;
   height: 48px;
   width: 48px;
+}
+
+#aboutButtons button,
+#modalButtons button {
+  border: 1px solid var(--color4);
+  color: var(--color4);
+  background-color: var(--color1);
+}
+
+#contactButtons button {
   border: 1px solid var(--writinglight);
   color: var(--writinglight);
-  background-color: var(--white);
+  background-color: var(--color1);
 }
 
 #mediaInfoFooter button {
@@ -392,8 +427,8 @@ nav .fa {
 #aboutButtons button:hover,
 #modalButtons button:hover,
 #contactButtons button:hover {
-  background-color: var(--color2);
-  color: var(--white);
+  color: var(--color1);
+  background-color: var(--color4);
   transition: 0.2s;
   cursor: pointer;
 }
@@ -405,6 +440,7 @@ nav .fa {
 
 #modalButtons #media-btn-blocked:hover {
   background-color: var(--blocked);
+  border: 1px solid var(--blocked);
 }
 
 .about-col img {
@@ -436,7 +472,7 @@ h4 {
   transition: 0.2s;
   color: var(--writinglight);
   cursor: pointer;
-  border: 1px solid var(--bg1);
+  border: 1px solid var(--grey);
 }
 
 .projLabelsChoice a:target {
@@ -453,7 +489,7 @@ h4 {
   margin-left: 23%;
   margin-right: auto;
   border-radius: 16px;
-  background-color: var(--white);
+  background-color: var(--color1);
   margin-bottom: auto;
   padding-bottom: 60px;
   z-index: -1;
@@ -492,7 +528,8 @@ h4 {
   margin: auto;
 }
 
-.modal-left h3, .modal-right h3 {
+.modal-left h3,
+.modal-right h3 {
   /* width: 92%; */
   margin-left: 36px;
   margin-right: 36px;
@@ -509,7 +546,7 @@ h4 {
 .modal-left-and-right {
   display: flex;
   height: 80%;
-  margin-top: 8vh;
+  margin-top: 16px;
   margin-left: 90px;
   margin-right: 90px;
 }
@@ -626,8 +663,8 @@ button img {
 .modal label {
   position: relative;
   font-size: 14px;
-  background-color: var(--color2);
-  color: var(--color1);
+  background-color: var(--color3);
+  color: var(--color4);
   border-radius: 20px;
   margin: 48px 2px;
   padding: 8px 12px;
@@ -647,8 +684,8 @@ button img {
 }
 
 .about-col:hover .labels-front label {
-  background-color: var(--bg1);
-  color: var(--color1);
+  background-color: var(--color3);
+  color: var(--color4);
   transition: 0.2s;
 }
 
@@ -662,7 +699,7 @@ button img {
   margin: auto;
   text-align: center;
   padding-bottom: 20vh;
-  background-color: var(--bg1);
+  background-color: var(--color1);
 }
 
 .about-section-header,
@@ -673,7 +710,7 @@ button img {
   padding-top: 4vh;
   margin-top: 0vh;
   margin-bottom: 10vh;
-  border-bottom: 1px solid var(--writinglight);
+  border-bottom: 1px solid var(--lightgrey);
 }
 
 .about-section-header h1,
@@ -689,7 +726,6 @@ button img {
 .about-section-header h1,
 .portfolio-section-header h1,
 .stack-section-header h1 {
-  font-size: 36px;
   margin-bottom: 0vh;
   padding-bottom: 0vh;
   padding-top: 0vh;
@@ -719,8 +755,7 @@ button img {
 .timeline-sub {
   height: 42px;
   width: 42px;
-  background-color: var(--white);
-  border: 1px solid var(--writinglight);
+  background-color: var(--color1);
   border-radius: 100%;
   margin-left: 16%;
   margin-top: -21px;
@@ -748,7 +783,7 @@ button img {
   border-radius: 100px;
   color: var(--color2);
   border: none;
-  background-color: var(--white);
+  background-color: var(--color1);
   font-size: 16px;
   height: 32px;
   width: 32px;
@@ -760,21 +795,24 @@ button img {
   width: 100%;
   border-radius: 100%;
   cursor: pointer;
+  background-color: var(--color1);
+  border: 1px solid var(--writinglight);
 }
 
 .job-details-container {
   margin-left: max(calc(50vw - 500px), 10vw);
   margin-right: max(calc(50vw - 500px), 10vw);
+  margin-top: 120px;
 }
 
 .job-labels label {
   margin-right: 0.6vw;
   font-size: 16px;
   padding: 6px 12px;
-  background-color: var(--writinglight);
+  background-color: var(--color3);
   border-radius: 120px;
-  border: 1px solid var(--writinglight);
-  color: var(--color1);
+  border: none;
+  color: var(--color4);
 }
 
 .job-labels {
@@ -784,10 +822,11 @@ button img {
 }
 
 .job-details-container h2 {
-  margin-top: 14vh;
+  margin-top: 90px;
   margin-bottom: 0vh;
   font-size: 42px;
 }
+
 .job-details-container h4 {
   margin-top: 0vh;
   font-size: 28px;
@@ -835,15 +874,15 @@ button img {
   border-radius: 100%;
   color: var(--writinglight);
   background-color: var(--color1);
-  margin-top: -6vh;
-  margin-left: 4vw;
+  margin-left: 42px;
   font-size: 16px;
 }
 
 .learn-more:hover,
 .go-back:hover {
   color: var(--color1);
-  background-color: var(--writinglight);
+  background-color: var(--color4);
+  border: 1px solid var(--color4);
   transition: 0.3s;
   cursor: pointer;
 }
@@ -862,7 +901,7 @@ button img {
   align-items: center;
   padding: 4vh 2vw;
   justify-content: center;
-  border: none;
+  border: 1px solid var(--lightgrey);
   background-color: var(--color1);
   border-radius: 5px;
   height: max(320px, 24vh);
@@ -896,7 +935,7 @@ button img {
 
 .bachelor-description {
   background-color: var(--color1);
-  border: none;
+  border: 1px solid var(--lightgrey);
   border-radius: 5px;
   margin-right: 4px;
   padding-top: 8px;
@@ -905,7 +944,7 @@ button img {
 }
 
 .master-description {
-  border: none;
+  border: 1px solid var(--lightgrey);
   background-color: var(--color1);
   border-radius: 5px;
   margin-left: 4px;
@@ -921,23 +960,24 @@ button img {
   margin-bottom: 8px;
   font-size: 12px;
   padding: 4px 8px;
-  background-color: var(--color4);
+  background-color: var(--color3);
+  color: var(--color4);
   border-radius: 20px;
+  font-weight: 500;
 }
 
 .timeline-container {
-  border: none;
+  border: 1px solid var(--writinglight);
   background-color: var(--color1);
   border-radius: 5px;
   padding: 8vh 6vh 2vw;
   max-width: 1000px;
   margin-left: calc(50vw - 500px);
   margin-right: calc(50vw - 500px);
-
 }
 
 #aboutButtons {
-  border: none;
+  border: 1px solid var(--color4);
   background-color: var(--color1);
   border-radius: 5px;
   margin-bottom: 0px;
@@ -953,7 +993,7 @@ button img {
   padding-top: 4vh;
   padding-bottom: 4vh;
   font-size: min(1.1vw, 16px);
-  border: none;
+  border: 1px solid var(--lightgrey);
   background-color: var(--color1);
   border-radius: 5px;
 }
@@ -1140,7 +1180,7 @@ button img {
   margin: auto;
   text-align: center;
   padding-bottom: 20vh;
-  background-color: var(--bg1);
+  background-color: var(--color1);
 }
 
 .stack-container {
@@ -1170,7 +1210,7 @@ button img {
   border: 1px solid var(--writinglight);
   overflow-y: hidden;
   background-color: var(--color1);
-  border: none;
+  border: 1px solid var(--lightgrey);
 }
 
 .stack-logos-card {
@@ -1208,8 +1248,8 @@ button img {
 
 .stack-image-div .tooltiptext {
   visibility: hidden;
-  background-color: var(--color2);
-  color: #fff;
+  background-color: var(--color4);
+  color: var(--color1);
   text-align: center;
   border-radius: 6px;
   padding: 7px 9px;
@@ -1225,23 +1265,18 @@ button img {
 }
 
 .stack-category p {
-  padding-top: 1vh;
-  padding-bottom: 1vh;
+  padding-top: 0px;
+  padding-bottom: 0px;
   padding-right: 1vh;
   padding-left: 1vh;
   width: 14vh;
   margin-right: 3.2vh;
   margin-left: -1px;
-  /* margin-top: -1px; */
-  margin-bottom: 0px;
-  background-color: var(--writinglight);
-  color: white;
-  height: min(10vh, 92px);
-}
-
-.stack-section-header h1 {
+  background-color: var(--grey);
   color: var(--writinglight);
-  margin-bottom: 0vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #streamlit-logo {
