@@ -28,10 +28,10 @@ const JobDetails: React.FC = () => {
         <p>{jobContent.company_description}</p>
         <a className='learn-more' href={jobContent.href} target='blank'>Learn more</a>
         <h3>Job Description</h3>
-        <p>{jobContent.job_description}</p>
+        {jobContent.job_description}
         <h3>Key-words</h3>
         <div className='job-labels'>
-          {lbls.slice(0, 7).map((label, index) => (
+          {lbls.slice(0, 10).map((label, index) => (
             <label key={index}>{label}</label>
           ))}
         </div>

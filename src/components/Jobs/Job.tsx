@@ -23,9 +23,10 @@ export default function Job({ index, isActive }: JobProps) {
         setIsHovered(false);
     };
 
-    let job = jobContents[index];
-    let id = `job${index}`;
-    let margin_left = marginLeftDict[id as keyof typeof marginLeftDict] || "0px";
+    const job = jobContents[index];
+    const id = `job${index}`;
+    const sub_id = `jobsub${index}`;
+    const margin_left = marginLeftDict[id as keyof typeof marginLeftDict] || "0px";
 
     return (
         <div
@@ -36,6 +37,7 @@ export default function Job({ index, isActive }: JobProps) {
             <img
                 className="timeline-job-logo"
                 src={job.imageSource}
+                id={sub_id}
                 onClick={() => navigate(`/job/${index}`)}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}

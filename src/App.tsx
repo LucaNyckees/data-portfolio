@@ -35,8 +35,8 @@ function App() {
 
   return (
     <>
-      <Menu></Menu>
       <Router>
+          <Menu></Menu>
         <Routes>
           <Route path="/" element={
             <>

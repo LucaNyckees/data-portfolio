@@ -8,15 +8,13 @@ function Timeline() {
 
   return (
     <>
-      <div className="timeline">
-        {jobContents.map((job, index) => (
-          <Job
-            key={index}
-            index={index}
-            isActive={index === activeJob}
-          />
-        ))}
-      </div>
+      {jobContents.map((job, index) => (
+        <Job
+          key={index}
+          index={index}
+          isActive={index === activeJob}
+        />
+      ))}
     </>
   );
 }
@@ -46,7 +44,6 @@ function JobsTimeline() {
       </div>
       <div className='timeline-container'>
         <Timeline />
-        <></>
       </div>
     </>
   );

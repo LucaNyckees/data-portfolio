@@ -39,7 +39,7 @@ let projContents = [
       a collaboration between the lab and hospitals in Geneva and are confidential - we thus chose to keep the \
       GitHub repository private.",
     imageSource: UPHESS_project1,
-    labels: ["docker", "topology", "python", "graph-theory", "web-app"],
+    labels: ["docker", "topology", "python", "graph theory", "NetworkX"],
     cut: 3,
     rel_width: "70%",
     rel_height_open: "44%",
@@ -64,7 +64,7 @@ let projContents = [
     which we visualize with a UMAP embedding (Uniform Manifold Approximation and Projection for Dimension Reduction). \
     We make use of PyVis and Plotly for everything related to visualisation purposes.",
     imageSource: UPHESS_project2,
-    labels: ["topology", "multi-parameter", "metric", "smart-classifier"],
+    labels: ["optimization", "TensorFlow", "python", "topology", "classification"],
     cut: 2,
     rel_width: "70%",
     rel_height_open: "40%",
@@ -76,7 +76,7 @@ let projContents = [
   },
 
   {
-    title: "Computing and Visualising Levelset Zigzag Homology (TDA Theoretical Topic)",
+    title: "The Levelset Zigzag Homology Framework in Topological Data Analysis",
     description:
       "We consider a generalization of this persistent homology called levelset zigzag \
                     persistent homology and make a survey about how the \
@@ -88,7 +88,7 @@ let projContents = [
       We use both PyVis and Plotly for everything related to visualisation purposes, and wrap a part of the project \
       (the diagram bijection) as a Streamlit web app product.",
     imageSource: UPHESS_project3,
-    labels: ["topology", "multi-parameter", "viz", "survey"],
+    labels: ["web app", "topological data analysis", "multi-parameter", "data viz"],
     cut: 2,
     rel_width: "70%",
     rel_height_open: "40%",
@@ -117,7 +117,7 @@ let projContents = [
     algorithms are implemented by us, built on top of pre-existing ones.\
       We use both PyVis and Plotly for everything related to visualisation purposes.",
     imageSource: UPHESS_project4,
-    labels: ["topology", "python", "graph-theory", "geometry"],
+    labels: ["simplical complexes", "python", "graph theory", "GHUDI"],
     cut: 2,
     rel_width: "64%",
     rel_height_open: "32%",
@@ -142,7 +142,7 @@ let projContents = [
       with scikit-learn random regressor models. We use both PyVis and Plotly for \
       everything related to visualisation purposes.",
     imageSource: QH_project1,
-    labels: ["CO2", "real-estate", "energy", "building-physics"],
+    labels: ["XGBoost", "CO2 emissions", "python", "postgreSQL", "MLflow"],
     cut: 2,
     rel_width: "76%",
     rel_height_open: "42%",
@@ -167,7 +167,7 @@ let projContents = [
     with scikit-learn random regressor models. We use both PyVis and Plotly for \
     everything related to visualisation purposes.",
     imageSource: QH_project2,
-    labels: ["macro-economics", "rates", "indices", "time-series"],
+    labels: ["macro economics", "postgreSQL", "indices", "time series", "MLflow"],
     cut: 2,
     rel_width: "80%",
     rel_height_open: "40%",
@@ -190,7 +190,7 @@ let projContents = [
     implementation:
     "We combine the use of XGboost and ARIMA methods.",
     imageSource: QH_project3,
-    labels: ["ensemble-learning", "real-estate", "time-series", "postgreSQL"],
+    labels: ["ensemble learning", "MLflow", "time series", "postgreSQL", "python"],
     cut: 2,
     rel_width: "84%",
     rel_height_open: "24%",
@@ -217,7 +217,7 @@ let projContents = [
       Quanthome (for the financial and other structural features), and AECA (for the insurance data in the canton of \
         Vaud, Switzerland). ",
     imageSource: QH_project4,
-    labels: ["environment", "real-estate", "ESG", "hail", "climate"],
+    labels: ["geosciences", "real estate", "hail damage", "climate risk"],
     cut: 2,
     rel_width: "70%",
     rel_height_open: "40%",
@@ -239,7 +239,7 @@ let projContents = [
       "We use the neural network framework from Keras to build our models. Datasets of satellite images (with labels) \
       were provided beforehand by the course administrators.",
     imageSource: EPFL_project1,
-    labels: ["image-analysis", "neural-net", "segmentation", "pytorch"],
+    labels: ["image analysis", "neural networks", "segmentation", "PyTorch"],
     cut: 2,
     rel_width: "74%",
     rel_height_open: "44%",
@@ -267,10 +267,10 @@ let projContents = [
       Finally, plotly is used for everything that is visualisation-related.",
     imageSource: EPFL_project2,
     labels: [
-      "graph-theory",
-      "discrete-laplacian",
-      "smart-classifier",
-      "propagation",
+      "graph theory",
+      "weak supervision",
+      "image classification",
+      "python",
     ],
     cut: 2,
     rel_width: "90%",
@@ -295,7 +295,7 @@ let projContents = [
       including scipy, statsmodels and scikit-learn. Visualisation was made with matplotlib and Plotly. The whole project \
       came in as a wrapped up Streamlit application, containing both the final report and a multi-pages dashPortfolio.",
     imageSource: EPFL_project3,
-    labels: ["web-app", "forecasting", "statistical-analysis", "viz"],
+    labels: ["data viz", "time series forecasting", "statistical data analysis", "python"],
     cut: 2,
     rel_width: "60%",
     rel_height_open: "40%",
@@ -319,7 +319,7 @@ let projContents = [
       "We use the statistical analysis framework Biogeme, dedicated to tasks related to mathematical behavior modeling and \
       implemented by the TRANSP-OR lab of EPFL.",
     imageSource: EPFL_project4,
-    labels: ["statistical-ML", "forecasting", "behavior", "transport"],
+    labels: ["statistical ML", "forecasting", "behavior modeling", "python"],
     cut: 2,
     rel_width: "80%",
     rel_height_open: "32%",
