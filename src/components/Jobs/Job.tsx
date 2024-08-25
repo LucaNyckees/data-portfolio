@@ -11,11 +11,6 @@ export default function Job({ index, isActive }: JobProps) {
     const [show, setShow] = useState(false);
     const [isHovered, setIsHovered] = useState(false);
     const navigate = useNavigate();
-    const marginLeftDict = {
-        job1: "0px;",
-        job2: "max(-10.4vh, -100px);",
-        job3: "max(-10.4vh, -100px);",
-    };
     const handleMouseEnter = () => {
         setIsHovered(true);
     };
@@ -26,13 +21,11 @@ export default function Job({ index, isActive }: JobProps) {
     const job = jobContents[index];
     const id = `job${index}`;
     const sub_id = `jobsub${index}`;
-    const margin_left = marginLeftDict[id as keyof typeof marginLeftDict] || "0px";
 
     return (
         <div
             className="timeline-sub"
             id={id}
-            style={{ marginLeft: margin_left }}
         >
             <img
                 className="timeline-job-logo"

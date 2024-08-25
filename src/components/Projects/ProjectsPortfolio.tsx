@@ -2,10 +2,10 @@ import projContents from "../../variables/projects";
 import Project from "./Project";
 
 function PortfolioRow(indices: Array<number>) {
-  let row_id = `projRow${Math.floor(indices[0] / 4)}`;
+  // let row_id = `projRow${Math.floor(indices[0] / 4)}`;
   return (
     <>
-      <div className="row" id={row_id}>
+      <div className="row">
         {indices.map(Project)}
       </div>
     </>
@@ -17,9 +17,14 @@ export default function Portfolio(props: any) {
   return (
     <>
       <div id="allProjects">
-        {PortfolioRow([0, 1, 2, 3])}
-        {PortfolioRow([4, 5, 6, 7])}
-        {PortfolioRow([8, 9, 10, 11])}
+        <div className="public-projects">
+          <h3>Public projects</h3>
+          {PortfolioRow([0, 1, 2, 3, 4, 5, 6,])}
+        </div>
+        <div className="private-projects">
+          <h3>Private projects</h3>
+          {PortfolioRow([7, 8, 9, 10,])}
+        </div>
       </div>
     </>
   );

@@ -6,13 +6,17 @@
   --color5: rgb(66, 134, 70);
   --writingdark: #4d4b4b;
   --writinglight: #4d4b4b;
-  --grey: rgb(246, 248, 250);
+  /* --grey: rgb(246, 248, 250); */
+  --grey: rgb(236, 238, 240);
   --lightgrey: rgb(219, 216, 216);
   --blocked: red;
   --hovertimeline: #4d4b4b;
   --default-font-family: 'MediaSans-Light';
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
 * {
   margin: 0;
   padding: 0;
@@ -194,7 +198,6 @@ a,
     display: flex;
     margin-top: 24px;
     margin-bottom: 14px;
-    /* min-height: 44vh; */
     width: 76%;
   }
 
@@ -403,20 +406,63 @@ nav .fa {
   max-height: 400px;
   margin-top: 24px;
   margin-bottom: 14px;
+  overflow-x: scroll;
+  border: 1px solid var(--grey);
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* border-radius: 16px; */
+  background-color: var(--grey);
+}
+
+/* width */
+::-webkit-scrollbar {
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--color3); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color4); 
+  /* border-radius: 16px; */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
 
 .about-col {
   flex-basis: 31%;
   border-radius: 16px;
-  margin-bottom: 0%;
+  /* margin-bottom: 0%; */
   padding: 0px min(0.83vh, 10px);
   box-sizing: border-box;
   transition: 0.5s;
   /* border: 1px solid var(--writinglight); */
   border: 1px solid var(--grey);
-  background-color: var(--grey);
-  margin-left: 14px;
-  margin-right: 14px;
+  background-color: var(--color1);
+  margin-left: 5px;
+  margin-right: 5px;
+  min-width: calc((76vw - 5*10px) / 4);
+}
+
+.public-projects h3, .private-projects h3 {
+  text-align: left;
+  margin-left: calc((100vw - 76vw) / 2);
+  margin-top: 40px;
+  background-color: var(--color1);
+  border: 1px solid var(--color4);
+  width: 76%;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: var(--writinglight);
 }
 
 #modalButtons {
@@ -516,7 +562,7 @@ h4 {
   transition: 0.2s;
   color: var(--writinglight);
   cursor: pointer;
-  border: 1px solid var(--grey);
+  border: 1px solid var(--color4);
 }
 
 .projLabelsChoice a:target {
@@ -830,7 +876,6 @@ button img {
 .timeline-container {
   margin: auto;
   position: relative;
-  width: 1000px;
   max-width: 1000px;
   margin-left: calc(50vw - 500px);
   margin-right: calc(50vw - 500px);
@@ -842,7 +887,7 @@ button img {
   border-radius: 5px;
   display: flex;
   align-items: start;
-  justify-content: space-between
+  justify-content: space-between;
 }
 
 .timeline-container::before {
@@ -856,7 +901,7 @@ button img {
 }
 
 .timeline-sub h2 {
-  width: 20vh;
+  /* width: 20vh; */
   margin-top: 32px;
   margin-bottom: 0px;
   margin-left: auto;
@@ -866,7 +911,7 @@ button img {
 }
 
 .timeline-sub p {
-  width: 18vh;
+  /* width: 18vh; */
   font-size: 12px;
   text-align: center;
 }
@@ -994,7 +1039,7 @@ button img {
   align-items: center;
   padding: 4vh 2vw;
   justify-content: center;
-  border: 1px solid var(--lightgrey);
+  border: 1px solid var(--grey);
   background-color: var(--color1);
   border-radius: 5px;
   height: max(320px, 24vh);
@@ -1028,7 +1073,7 @@ button img {
 
 .bachelor-description {
   background-color: var(--color1);
-  border: 1px solid var(--lightgrey);
+  border: 1px solid var(--grey);
   border-radius: 5px;
   margin-right: 4px;
   padding-top: 8px;
@@ -1037,7 +1082,7 @@ button img {
 }
 
 .master-description {
-  border: 1px solid var(--lightgrey);
+  border: 1px solid var(--grey);
   background-color: var(--color1);
   border-radius: 5px;
   margin-left: 4px;
@@ -1071,12 +1116,12 @@ button img {
 
 .about-description {
   text-align: justify;
-  padding-left: 2vw;
-  padding-right: 2vw;
-  padding-top: 4vh;
-  padding-bottom: 4vh;
-  font-size: min(1.1vw, 16px);
-  border: 1px solid var(--lightgrey);
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 32px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  border: 1px solid var(--grey);
   background-color: var(--color1);
   border-radius: 5px;
 }
@@ -1293,7 +1338,7 @@ button img {
   border: 1px solid var(--writinglight);
   overflow-y: hidden;
   background-color: var(--color1);
-  border: 1px solid var(--lightgrey);
+  border: 1px solid var(--grey);
 }
 
 .stack-logos-card {
