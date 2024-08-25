@@ -1,0 +1,19 @@
+# terminal 2
+
+ssh estheme
+
+rm -rf /home/ubuntu/build/*
+
+# terminal 1
+
+cd Desktop/my-repos/portfolio
+
+npm run build
+
+scp -r dist/* estheme:/home/ubuntu/build
+
+# terminal 2
+
+sudo rm -rf /var/www/html/*
+
+sudo cp -r /home/ubuntu/build/* /var/www/html
