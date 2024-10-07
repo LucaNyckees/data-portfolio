@@ -21,7 +21,7 @@ Launch with `npm run dev` to work on it locally. There is no config to setup.
 
 ## Snaphost
 
-This is a snapshot of the "about section".
+This is a small video showing an open project page, the projects selection and the code stack cards.
 
 
 https://github.com/user-attachments/assets/dc81aaba-a4b7-4238-b0f4-ec7ed7de90a6
