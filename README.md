@@ -22,4 +22,7 @@ Launch with `npm run dev` to work on it locally. There is no config to setup.
 ## Snaphost
 
 This is a snapshot of the "about section".
-<img width="1127" alt="Screenshot 2024-10-04 at 17 08 33" src="https://github.com/user-attachments/assets/78d2922c-28de-4d29-ad70-9176cd51439e">
+
+
+https://github.com/user-attachments/assets/dc81aaba-a4b7-4238-b0f4-ec7ed7de90a6
+
